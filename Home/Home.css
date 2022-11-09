@@ -1,16 +1,38 @@
 header{
+    margin-top: 15px;
     text-align: center;
 }
-@media (min-width: 576px) {
-    
-    li{
-        margin-left: 10px;
-        margin-right: 10px;
+#searchBar{
+    border-radius: 15px;
+    background: #572C71;
+    border:none;
+}
+input[type="text"]::placeholder{
+    text-align: center;
+    color:white;
+}
+.nav-item{
+    margin-right: 2%;
+    margin-left: 2% ;
+    font-weight:500;
+    color:#572C71;
+}
+.nav-line{
+    width: 64%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    border-top:solid 2px #572C71;
+}
+@media (min-width: 768px) {
+    li, div{
+        font-size: 20px;
     }
 }
-@media (min-width: 0px) {
-    .nav-bar{
-        display: none;
+@media (min-width: 992px) {
+    li, div{
+        font-size: 28px;
     }
 }
+
 
