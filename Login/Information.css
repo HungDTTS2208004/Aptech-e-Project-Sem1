@@ -1,0 +1,62 @@
+.form{
+    display: block;
+    width: 80%;
+    margin: auto;
+    border: solid #572C71 5px;
+    border-radius: 30px;
+}
+
+h1{
+    text-align: center;  
+    color:#572C71;
+    margin: 60px;
+    font-weight: 700;
+    font-size: 64px;
+}
+.row{
+    align-items: center;
+    
+}
+.col-sm-5{
+    padding-left: 15%;
+    color:#572C71;
+    font-weight: 700;
+    font-size: 40px;
+}
+.col-sm-7{
+    font-size: 36px;
+}
+.col-sm-7 input{
+    width: 70%;
+}
+input[type="text"], input[type="password"]{
+    border: solid #572C71 2px;
+    border-radius: 10px;
+}
+.rowInfoForm{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+button{
+    display: block;
+    border: solid #572C71 2px;
+    border-radius: 20px;
+    color:white;
+    background-color: #572C71;
+}
+.avatar{
+    border: solid 2px #572C71;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+.infoBtn{
+    justify-content: center;
+}
+.whiteBtn{
+    background-color: white;
+    color:#572C71;
+    border: solid #572C71 3px;
+    margin-left: 10%;
+    font-weight: 600;
+}

@@ -38,21 +38,7 @@ input[type="text"]::placeholder{
     margin-top: 10px;
     border-top:solid 3px #572C71;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-    li, div{
-        font-size: 32px;
-    }
-    /* .headR{
-        text-align: right;           
-    } */
-    /* .headIcon{
-        margin-left: 3%;
-        height: 40px;
-        margin-right: 30px;
-        padding-bottom: 10px;
-    } */
-    
-}
+
 .accountDropdown{
     position: relative;
     display: inline-block;
@@ -60,15 +46,21 @@ input[type="text"]::placeholder{
 .accountDropdownContent{
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    border:solid #572C71 2px;
+    border-radius: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1021;
+    margin-left: -90px;
+    top:69px;
+    padding-top: 10px;
 }
 .accountDropdownContent a{
     color: #572C71;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 .accountDropdownContent a:hover{
     background-color: #572C71;
@@ -82,8 +74,40 @@ input[type="text"]::placeholder{
         font-size: 28px;
     }
     .headIcon{
-        margin-left: 15%;
+        margin-right: 20px;
     }
+    .headR{
+        text-align: right;
+        padding-right: 30px;          
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    li, div{
+        font-size: 32px;
+    }
+    .headR{
+        text-align: right;           
+    }
+    /* .headIcon{
+        margin-left: 3%;
+        height: 40px;
+        margin-right: 30px;
+        padding-bottom: 10px;
+    } */
+}
+@media (min-width: 575px) and (max-width: 768px) {
+    li, div{
+        font-size: 32px;
+    }
+    .headR{
+        text-align: right;           
+    }
+    /* .headIcon{
+        margin-left: 3%;
+        height: 40px;
+        margin-right: 30px;
+        padding-bottom: 10px;
+    } */
 }
 @media (max-width: 575px) {
     header, nav{
@@ -92,7 +116,12 @@ input[type="text"]::placeholder{
 }
 /* Header + Navbar css end */
 
+
+
 @font-face {
     font-family: 'Stick no Bills';
     src: url(GeneralFormat/Stick_No_Bills/StickNoBills-VariableFont_wght.ttf);
+}
+body{
+    font-family: 'Stick No Bills';
 }
