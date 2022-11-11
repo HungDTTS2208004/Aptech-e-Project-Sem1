@@ -10,18 +10,26 @@
     <link rel="stylesheet" href="Home/Home.css">
     <link rel="stylesheet" href="Navbar.css">
     <script src="https://use.fontawesome.com/36f1629376.js"></script>
+    
 </head>
 <body>
     <!-- header desktop --> 
     <header>
-        <div class="row">
+        <div class="row headerRow">
             <div class="col-sm-3">
                 <a href="index.html">Logo + Name</a>
             </div>
             <div class="col-sm-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH"></div>
             <div class="col-sm-3 headR">
                 <a href=""><img src="GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"></a>
-                <a href="Login/signIn.html"><img src="GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon"></a>
+                <div class="accountDropdown">
+                    <a href="Login/signIn.html"><img src="GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon" id="accountIcon"></a>
+                    <div class="accountDropdownContent">
+                        <a href="">Sign In</a>
+                        <a href="">Sign Up</a>
+                        <a href="">Information</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -35,7 +43,15 @@
         <div class="nav-line"></div>
     </nav>
     
-
+    <div class="accountDropdown">
+        <a href="Login/signIn.html"><img src="GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon" id="accountIcon"></a>
+        <div class="accountDropdownContent">
+            <a href="">Sign In</a>
+            <a href="">Sign Up</a>
+            <a href="">Information</a>
+        </div>
+    </div>
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     <!-- header mobile -->
     <div class="d-none d-sm-block ">
         <header>

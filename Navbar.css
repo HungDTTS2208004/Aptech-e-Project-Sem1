@@ -10,6 +10,9 @@ header{
     border:none;
     font-family: 'Stick No Bills';
     margin-top: 15px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 input[type="text"]::placeholder{
     text-align: center;
@@ -20,8 +23,10 @@ input[type="text"]::placeholder{
     margin-left: 3% ;
     padding-top: 10px;
     font-weight:500;
+    font-size: 36px;
     color:#572C71;
     font-family: 'Stick No Bills';
+    font-weight: 700;
 }
 .navbar{
     background-color: white;
@@ -35,18 +40,42 @@ input[type="text"]::placeholder{
 }
 @media (min-width: 768px) and (max-width: 992px) {
     li, div{
-        font-size: 20px;
+        font-size: 32px;
     }
-    .headR{
+    /* .headR{
         text-align: right;           
-    }
-    .headIcon{
+    } */
+    /* .headIcon{
         margin-left: 3%;
         height: 40px;
         margin-right: 30px;
         padding-bottom: 10px;
-    }
+    } */
     
+}
+.accountDropdown{
+    position: relative;
+    display: inline-block;
+}
+.accountDropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.accountDropdownContent a{
+    color: #572C71;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.accountDropdownContent a:hover{
+    background-color: #572C71;
+    color:white;    
+}
+.accountDropdown:hover .accountDropdownContent{
+    display: block;
 }
 @media (min-width: 992px) {
     li, div{

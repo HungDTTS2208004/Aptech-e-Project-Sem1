@@ -2,13 +2,10 @@
     display: block;
     width: 80%;
     margin: auto;
-    border: solid #572C71 2px;
+    border: solid #572C71 3px;
     border-radius: 30px;
 }
-/* @font-face {
-    font-family: 'Stick No Bills';
-    
-} */
+
 h1{
     text-align: center;
     font-family: 'Stick No Bills';  
@@ -20,16 +17,35 @@ h1{
 .col-sm-5{
     padding-left: 20%;
     color:#572C71;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Stick No Bills';
+    font-size: 40px;
+}
+.col-sm-7{
+    font-family: 'Stick No Bills';
+    font-size: 36px;
 }
 .col-sm-7 input{
     width: 70%;
 }
 
+hr{
+    background-color: #572C71;
+    height: 2px;
+    opacity: 1;
+    margin-top:24px;
+}
 .row{
+    justify-content: center;
+}
+.rowSignInForm{
     margin-top: 4%;
-    margin-bottom: 4%;
-    
+    margin-bottom: 2%; 
+}
+a:link, a:visited{
+    text-align: center;
+    color:#572C71;
+    font-family: 'Stick No Bills';
 }
 input[type="text"], input[type="password"]{
     border: solid #572C71 2px;
