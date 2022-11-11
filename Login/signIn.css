@@ -5,10 +5,10 @@
     border: solid #572C71 2px;
     border-radius: 30px;
 }
-@font-face {
+/* @font-face {
     font-family: 'Stick No Bills';
-    src: url(../General\ css/);
-}
+    
+} */
 h1{
     text-align: center;
     font-family: 'Stick No Bills';
