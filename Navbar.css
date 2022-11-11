@@ -1,12 +1,15 @@
 /* Header + Navbar css start */
 header{
-    margin-top: 15px;
+    padding-top: 15px;
     text-align: center;
+    font-family: 'Stick No Bills';
 }
 #searchBar{
     border-radius: 15px;
     background: #572C71;
     border:none;
+    font-family: 'Stick No Bills';
+    margin-top: 15px;
 }
 input[type="text"]::placeholder{
     text-align: center;
@@ -15,8 +18,13 @@ input[type="text"]::placeholder{
 .nav-item{
     margin-right: 3%;
     margin-left: 3% ;
+    padding-top: 10px;
     font-weight:500;
     color:#572C71;
+    font-family: 'Stick No Bills';
+}
+.navbar{
+    background-color: white;
 }
 .nav-line{
     width: 64%;
@@ -36,6 +44,7 @@ input[type="text"]::placeholder{
         margin-left: 3%;
         height: 40px;
         margin-right: 30px;
+        padding-bottom: 10px;
     }
     
 }
@@ -53,3 +62,8 @@ input[type="text"]::placeholder{
     }
 }
 /* Header + Navbar css end */
+
+@font-face {
+    font-family: 'Stick no Bills';
+    src: url(GeneralFormat/Stick_No_Bills/StickNoBills-VariableFont_wght.ttf);
+}
