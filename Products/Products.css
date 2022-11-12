@@ -1,0 +1,34 @@
+.filterForm{
+    border:solid 4px #572C57;
+    border-radius: 15px;
+    padding: 25px;
+    width: 95%;
+    margin:auto;
+}
+.item{
+    width: 275px;
+    border: solid 2px #572C57;
+    border-radius: 20px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: block;
+}
+.vote-star{
+    font-size: 16px;
+}
+.col-xl-4{
+    padding:auto;
+    margin-top: 75px;
+}
+.itemList{
+    
+}
+
+
+
+
+
+    
