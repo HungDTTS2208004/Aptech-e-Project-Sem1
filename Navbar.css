@@ -23,7 +23,9 @@
         text-align: center;
         color:white;
     }
-    
+    .cartQuantity{
+        position: absolute;
+    }
     .navbar{
         background-color: white;
     }
@@ -85,11 +87,13 @@
         display: block;
     }
 }
-@media (min-width: 768px) and (max-width: 912px) {
+@media (min-width: 768px) and (max-width: 911.5px) {
     .desktopHeader, .nav-link, .nav-line{ 
         display: none;
     }
-    
+    .cartQuantity{
+        position: absolute;
+    }
     .headR{
         text-align: right;           
     }
