@@ -1,77 +1,41 @@
 /* Header + Navbar css start */
-header{
-    padding-top: 15px;
-    text-align: center;
-    font-family: 'Stick No Bills';
-}
-#searchBar{
-    border-radius: 15px;
-    background: #572C71;
-    border:none;
-    font-family: 'Stick No Bills';
-    margin-top: 15px;
-    color:white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-input[type="text"]::placeholder{
-    text-align: center;
-    color:white;
-}
-.nav-item{
-    margin-right: 3%;
-    margin-left: 3% ;
-    padding-top: 10px;
-    font-weight:500;
-    font-size: 36px;
-    color:#572C71;
-    font-family: 'Stick No Bills';
-    font-weight: 700;
-}
-.navbar{
-    background-color: white;
-}
-.nav-line{
-    width: 64%;
-    display: flex;
-    margin: auto;
-    margin-top: 10px;
-    border-top:solid 3px #572C71;
-}
 
-.accountDropdown{
-    position: relative;
-    display: inline-block;
-}
-.accountDropdownContent{
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    border:solid #572C71 2px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1021;
-    margin-left: -90px;
-    top:69px;
-    padding-top: 10px;
-}
-.accountDropdownContent a{
-    color: #572C71;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.accountDropdownContent a:hover{
-    background-color: #572C71;
-    color:white;    
-}
-.accountDropdown:hover .accountDropdownContent{
-    display: block;
-}
-@media (min-width: 992px) {
+
+
+@media (min-width: 912px) {
+    .mobileNav{
+        display: none;
+    }
+    header{
+        padding-top: 15px;
+        text-align: center;
+    }
+    #searchBar{
+        border-radius: 15px;
+        background: #572C71;
+        border:none;
+        margin-top: 15px;
+        color:white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    input[type="text"]::placeholder{
+        text-align: center;
+        color:white;
+    }
+    
+    .navbar{
+        background-color: white;
+    }
+    .nav-line{
+        width: 64%;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-top:solid 3px #572C71;
+    }
     li, div{
-        font-size: 28px;
+        font-size: 36px;
     }
     .headIcon{
         margin-right: 20px;
@@ -80,20 +44,61 @@ input[type="text"]::placeholder{
         text-align: right;
         padding-right: 30px;          
     }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-    li, div{
-        font-size: 32px;
+    .nav-item{
+        margin-right: 3%;
+        margin-left: 3% ;
+        padding-top: 10px;
+        font-weight:500;
+        font-size: 36px;
+        color:#572C71;
+        font-weight: 700;
     }
+    .accountDropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .accountDropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        border:solid #572C71 2px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1021;
+        margin-left: -90px;
+        top:69px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .accountDropdownContent a{
+        color: #572C71;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .accountDropdownContent a:hover{
+        background-color: #572C71;
+        color:white;    
+    }
+    .accountDropdown:hover .accountDropdownContent{
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 912px) {
+    .desktopHeader, .nav-link, .nav-line{ 
+        display: none;
+    }
+    
     .headR{
         text-align: right;           
     }
-    /* .headIcon{
-        margin-left: 3%;
-        height: 40px;
-        margin-right: 30px;
-        padding-bottom: 10px;
-    } */
+    
+    .fa-bars{
+        font-size: 48px;
+        margin-left: 30px;
+    }
+    
 }
 @media (min-width: 575px) and (max-width: 768px) {
     li, div{
@@ -101,6 +106,9 @@ input[type="text"]::placeholder{
     }
     .headR{
         text-align: right;           
+    }
+    .desktopHeader, .nav-link{ 
+        display: none;
     }
     /* .headIcon{
         margin-left: 3%;
