@@ -11,6 +11,7 @@
         text-align: center;
     }
     #searchBar{
+        width: 100%;
         border-radius: 15px;
         background: #572C71;
         border:none;
@@ -39,7 +40,7 @@
     .navbar{
         background-color: white;
     }
-    .nav-line{
+    .navLineDesktop{
         width: 64%;
         display: flex;
         margin: auto;
@@ -77,7 +78,7 @@
         border-radius: 20px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1021;
-        margin-left: -90px;
+        margin-left: -115px;
         top:69px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -96,9 +97,10 @@
     .accountDropdown:hover .accountDropdownContent{
         display: block;
     }
+    
 }
-@media (min-width: 768px) and (max-width: 911.5px) {
-    .desktopHeader, .nav-link, .nav-line{ 
+@media (min-width: 768px) and (max-width: 911.9px){
+    .desktopHeader, .nav-link, .navLineDesktop{ 
         display: none;
     }
     .cartQuantity{
@@ -111,8 +113,46 @@
     .fa-bars{
         font-size: 48px;
         margin-left: 30px;
+        color:#572C71;
     }
-    
+    .mobileCart{
+        height: 48px;
+        position: absolute;
+        top: 14px;
+        right: 81px;
+    }
+    .mobileSearch{
+        height: 56px;
+        position: absolute;
+        top: 14px;
+        right: 22px;
+    }
+    .col-8{
+        text-align: center;
+    }
+    body{
+        font-size: 32px;
+    }
+    .navLineMobile{
+        width: 64%;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-top:solid 3px #572C71;
+    }
+    .cartQuantity{
+        position: absolute;
+        top: 3px;
+        right: 75px;
+        font-size: 24px;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        border:solid 1px #572C71;
+        background-color: #572C71;
+        border-radius: 100px;
+        color:white;
+    }
 }
 @media (min-width: 575px) and (max-width: 768px) {
     li, div{
@@ -124,6 +164,13 @@
     .desktopHeader, .nav-link{ 
         display: none;
     }
+    .nav-line{
+        width: 64%;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        border-top:solid 3px #572C71;
+    }
     /* .headIcon{
         margin-left: 3%;
         height: 40px;
@@ -132,7 +179,7 @@
     } */
 }
 @media (max-width: 575px) {
-    header, nav{
+    .desktopHeader, .nav-link{ 
         display: none;
     }
 }

@@ -29,7 +29,7 @@ h1{
 .col-sm-7 input{
     width: 70%;
 }
-input[type="text"], input[type="password"]{
+i.infoInput, input[type="password"]{
     border: solid #572C71 2px;
     border-radius: 10px;
 }
