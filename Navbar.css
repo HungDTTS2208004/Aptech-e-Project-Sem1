@@ -97,9 +97,17 @@
     .accountDropdown:hover .accountDropdownContent{
         display: block;
     }
-    
+    .nav-item a{
+        border: solid 4px #ffffff;
+    }
+    .nav-item a:hover{
+        transition-property: border-color;
+        transition: border-color 0.5s linear;
+        border-bottom-color: #572C71;
+        
+    }
 }
-@media (min-width: 768px) and (max-width: 911.9px){
+@media (max-width: 911.9px){
     .desktopHeader, .nav-link, .navLineDesktop{ 
         display: none;
     }
@@ -153,38 +161,18 @@
         border-radius: 100px;
         color:white;
     }
-}
-@media (min-width: 575px) and (max-width: 768px) {
-    li, div{
-        font-size: 32px;
+    .showHideBtn{
+        width: 100px;
+        border: none;
+        background-color: white;
     }
-    .headR{
-        text-align: right;           
-    }
-    .desktopHeader, .nav-link{ 
-        display: none;
-    }
-    .nav-line{
-        width: 64%;
-        display: flex;
-        margin: auto;
-        margin-top: 10px;
-        border-top:solid 3px #572C71;
-    }
-    /* .headIcon{
-        margin-left: 3%;
-        height: 40px;
-        margin-right: 30px;
-        padding-bottom: 10px;
-    } */
-}
-@media (max-width: 575px) {
-    .desktopHeader, .nav-link{ 
-        display: none;
+    .offcanvas-body a{
+        text-decoration: none;
+        color:#572C71;
     }
 }
-/* Header + Navbar css end */
 
+/* Header + Navbar css end */
 
 
 @font-face {

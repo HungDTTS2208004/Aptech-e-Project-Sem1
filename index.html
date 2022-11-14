@@ -49,13 +49,13 @@
         <nav>
             <div class="offcanvas offcanvas-start" id="mobileMenu">
                 <div class="offcanvas-header">
-                    <H1>Nailery</H1>
+                    <H1><img src="GeneralFormat/Logo.png" alt="" width="200px"></H1>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
                     <p>
                         <b><a href="">COLLECTIONS</a></b>
-                        <button class="plus" ng-click="showOrHide()">
+                        <button class="showHideBtn" ng-click="showOrHide()">
                             <span class="mobileDropdownNav" ng-show="navShow">+</span>
                             <span class="mobileDropdownNav" ng-show="!navShow">-</span>
                         </button>
@@ -64,7 +64,7 @@
                     </p>
                     <p>
                         <b><a href="Products/Products.html">PRODUCTS</a></b>
-                        <button class="plus" ng-click="mobileProductDropdown = !mobileProductDropdown">
+                        <button class="showHideBtn" ng-click="mobileProductDropdown = !mobileProductDropdown">
                             <span class="mobileDropdownNav" ng-show="mobileProductDropdown">+</span>
                             <span class="mobileDropdownNav" ng-show="!mobileProductDropdown">-</span>
                         </button>
@@ -74,8 +74,8 @@
                             <div><a href="">- Color</a></div>
                         </div>
                     </p>
-                    <p><b>ABOUT US</b></p>
-                    <p><b>CONTACT</b></p>
+                    <p><b><a href="">ABOUT US</a></b></p>
+                    <p><b><a href="">CONTACT</a></b></p>
                 </div>
             </div>
             
