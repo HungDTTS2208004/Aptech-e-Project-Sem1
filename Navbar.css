@@ -25,6 +25,16 @@
     }
     .cartQuantity{
         position: absolute;
+        top:12px;
+        right:108px;
+        font-size: 24px;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        border:solid 1px #572C71;
+        background-color: #572C71;
+        border-radius: 100px;
+        color:white;
     }
     .navbar{
         background-color: white;
