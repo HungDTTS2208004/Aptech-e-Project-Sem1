@@ -47,7 +47,7 @@ input[type="text"], input[type="password"]{
     border: solid #572C71 2px;
     border-radius: 10px;
 }
-button{
+.sign{
     display: block;
     margin: auto;
     border: solid #572C71 2px;
