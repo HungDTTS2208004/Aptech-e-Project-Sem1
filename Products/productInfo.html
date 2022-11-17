@@ -7,27 +7,27 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../Navbar.css">
-    <link rel="stylesheet" href="signIn.css">
-    <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../Navbar.css">   
+    <link rel="stylesheet" href="productInfo.css">
 
+    <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script> 
 </head>
-<body ng-app="myApp" ng-controller="navController">
+<body>
     <!-- header desktop --> 
     <header>
         <div class="row desktopHeader">
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <a href="../index.html"><img src="../GeneralFormat/Logo.png" alt="" width="200px"></a>
             </div>
-            <div class="col-md-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH"></div>
-            <div class="col-md-3 headR">
+            <div class="col-sm-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH"></div>
+            <div class="col-sm-3 headR">
                 <a href=""><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"><div  class="cartQuantity">1</div></a>
                 <div class="accountDropdown">
                     <a href="../Login/signIn.html"><img src="../GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon accountIcon"></a>
                     <div class="accountDropdownContent">
-                        <a href="signIn.html">Sign In</a>
-                        <a href="../Login/signUp.html">Sign Up</a>
-                        <a href="../Login/Information.html">Information</a>
+                        <a href="../Login/signIn.html" ng-hide="Login">Sign In</a>
+                        <a href="../Login/signUp.html" ng-hide="Login">Sign Up</a>
+                        <a href="../Login/Information.html" ng-hide="!Login">Information</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
     <nav class="navbar sticky-top">
         <div class="container-fluid justify-content-center">
             <div class="nav-item"><a class="nav-link" href="">COLLECTIONS</a></div>
-            <div class="nav-item"><a class="nav-link" href="../Products/Products.html">PRODUCTS</a></div>
+            <div class="nav-item"><a class="nav-link" href="Products.html">PRODUCTS</a></div>
             <div class="nav-item"><a class="nav-link" href="">ABOUT US</a></div>
             <div class="nav-item"><a class="nav-link" href="">CONTACT</a></div>
         </div>
@@ -63,7 +63,7 @@
                         </p>
                     </p>
                     <p>
-                        <b><a href="../Products/Products.html">PRODUCTS</a></b>
+                        <b><a href="Products/Products.html">PRODUCTS</a></b>
                         <button class="showHideBtn" ng-click="mobileProductDropdown = !mobileProductDropdown">
                             <span class="mobileDropdownNav" ng-show="mobileProductDropdown">+</span>
                             <span class="mobileDropdownNav" ng-show="!mobileProductDropdown">-</span>
@@ -76,6 +76,8 @@
                     </p>
                     <p><b><a href="">ABOUT US</a></b></p>
                     <p><b><a href="">CONTACT</a></b></p>
+                    <p><b><a href="../Login/signIn.html" ng-hide="Login"><i class="fa-solid fa-right-to-bracket"></i> Sign in </a></b></p>
+                    <p><b><a href="../Login/Information.html" ng-hide="Login">User's Information</a></b></p>
                 </div>
             </div>
             
@@ -84,7 +86,7 @@
                     <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"></i>
                 </div>
                 <div class="col-8">
-                    <a href=""><img src="../GeneralFormat/Logo.png" alt="Logo" width="150px"></a>
+                    <a href="../index.html"><img src="../GeneralFormat/Logo.png" alt="Logo" width="150px"></a>
                 </div>
                 <div class="col-2">
                     <img src="../GeneralFormat/CartIcon.png" alt="" class="mobileCart"><div class="cartQuantity">1</div>
@@ -94,43 +96,67 @@
             <div class="navLineMobile"></div>
         </nav>
     </div>
-
-    <H1>SIGN IN</H1>
     
-    <div style="width: 80%;" class="form">
-        <form action="">
-            <div class="row rowSignInForm">
-                <div class="col-md-5">Account</div>
-                <div class="col-md-7"><input type="text"></div>
-            </div>
-            <div class="row rowSignInForm">
-                <div class="col-md-5">Password</div>
-                <div class="col-md-7"><input type="Password"></div>
-            </div>
-            <div class="row rowSignInForm">
-                <button style="width:50%" class="sign">Sign in</button>
-            </div>
-        </form>
-        <div class="row rowSignInForm" id="orLine">
-            <div class="col-4">
-                <hr>
-            </div>
-            or
-            <div class="col-4">
-                <hr>
-            </div>
-        </div>
 
-        <div class="row rowSignInForm">
-            <a href="signUp.html"><button style="width:30%" class="sign">Sign up</button></a>
+
+    <section>
+        <div class="row" style="margin-top:100px">  
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-sm-12"><img src="Product/ID_001_01.jpg" alt="" width="80%"></div>
+                    <div class="col-sm-4"><img src="Product/ID_001_01.jpg" alt="" width="90%"></div>
+                    <div class="col-sm-4"><img src="Product/ID_001_02.jpg" alt="" width="90%"></div>
+                    <div class="col-sm-4"><img src="Product/ID_001_03.jpg" alt="" width="90%"></div>
+                </div>
+                
+            </div>
+            <div class="col-md-5 infoBorder">
+                <div class="itemInfoForm">
+                    <div class="row">Product's Name</div>
+                    <div class="row">
+                        <div class="col-sm-12 voteRow">
+                            xx
+                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
+                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
+                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
+                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
+                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
+                            (xx)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Price:</div>
+                        <div class="col-8">$xxxx</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">Quantity:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button ng-click="">-</button>
+                            <input type="text" value="1">
+                            <button ng-click="">+</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button ng-click="" class="">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button ng-click="" class="">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row rowSignInNav">
-            <a href="" style="padding-bottom:4%; font-size:24px">Forgot password ?</a>
-        </div>
-    </div>
+    </section>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
     <script src="../System.js"></script>
- 
+
 </body>
 </html>

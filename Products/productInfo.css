@@ -1,0 +1,16 @@
+.itemInfoForm{
+    width: 90%;
+    border: 2px solid #572c71;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.voteRow{
+    font-size: 20px;
+}
+/* @media screen {
+    
+} */
+/* .fa-solid.fa-star.voting-star{
+    font-size: 20px;
+} */

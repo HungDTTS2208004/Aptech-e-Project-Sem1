@@ -5,3 +5,8 @@ app.controller("navController",function($scope){
     $scope.mobileCollectionDropdown = true;
     $scope.Login = false;
 })
+app.controller("productsController",function ($scope) {
+    $scope.brandFilterSH = true;
+    $scope.cateFilterSH = true;
+    $scope.colorFilterSH = true;
+})
