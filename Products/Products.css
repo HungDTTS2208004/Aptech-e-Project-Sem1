@@ -9,6 +9,7 @@
 .item{
     width: 250px;
     border: solid 2px #572C57;
+    background-color: white;
     border-radius: 20px;
     padding-top:25px;
     padding-bottom: 25px;

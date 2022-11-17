@@ -10,3 +10,6 @@ app.controller("productsController",function ($scope) {
     $scope.cateFilterSH = true;
     $scope.colorFilterSH = true;
 })
+app.controller("productInfoController",function ($scope) {
+    $scope.descriptionShow = false;
+})

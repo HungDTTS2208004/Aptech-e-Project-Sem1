@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script> 
 </head>
-<body>
+<body ng-app="myApp" ng-controller="productInfoController">
     <!-- header desktop --> 
     <header>
         <div class="row desktopHeader">
@@ -107,9 +107,9 @@
                         <img src="Product/ID_001_01.jpg" alt="" width="60%" style="margin-left: 2.5%" >
                     </div>
                     <div class="col-sm-12">
-                        <img src="Product/ID_001_01.jpg" alt="" width="15%" style="margin-left: 2.5%">
-                        <img src="Product/ID_001_02.jpg" alt="" width="15%" style="margin-left: 2.5%">
-                        <img src="Product/ID_001_03.jpg" alt="" width="15%" style="margin-left: 2.5%">
+                        <img src="Product/ID_001_01.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
+                        <img src="Product/ID_001_02.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
+                        <img src="Product/ID_001_03.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
                     </div>
                     
                 </div>
@@ -156,8 +156,39 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 desription">
+                <button class="descriptionBtn" ng-click="descriptionShow = !descriptionShow">
+                    Description
+                    <span ng-show="!descriptionShow">+</span>
+                    <span ng-show="descriptionShow">-</span>
+                </button>
+                <div class="col-sm-12 descriptionDetail" ng-show="descriptionShow">
+                    This is Product's description
+                </div>
+            </div>
+        </div>
+        <hr width="70%" style="margin:auto">
+        <div class="row cmtPart">   
+            <div class="col-12">Comments</div>
+            <div class="col-9 comment">
+                <div class="row">
+                    <div class="col-3 cmtInfo">
+                        <img src="" alt="" width="100px" height="100px"> <br>
+                        Name
+                    </div>
+                    <div class="col-9">
+                        <div class="cmtContent">
+                            Comment sth in this box
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
