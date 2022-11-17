@@ -16,8 +16,16 @@
     padding-right: 10px;
     text-align: center;
     margin: auto;
-    margin-top: 45px;
+    margin-top: 50px;
     display: inline-block;
+    transition: transform .1s linear;
+}
+.itemBtn, .itemBtn:link, .item:visited, .itemBtn:hover{
+    text-decoration: none;
+    color:#572C57;
+}
+.item:hover{
+   transform: scale(1.3);
 }
 .vote-star{
     font-size: 14px;

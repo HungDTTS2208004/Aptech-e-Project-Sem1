@@ -102,17 +102,22 @@
     <section>
         <div class="row" style="margin-top:100px">  
             <div class="col-md-7">
-                <div class="row">
-                    <div class="col-sm-12"><img src="Product/ID_001_01.jpg" alt="" width="80%"></div>
-                    <div class="col-sm-4"><img src="Product/ID_001_01.jpg" alt="" width="90%"></div>
-                    <div class="col-sm-4"><img src="Product/ID_001_02.jpg" alt="" width="90%"></div>
-                    <div class="col-sm-4"><img src="Product/ID_001_03.jpg" alt="" width="90%"></div>
+                <div class="row imgFrame">
+                    <div class="col-sm-12">
+                        <img src="Product/ID_001_01.jpg" alt="" width="60%" style="margin-left: 2.5%" >
+                    </div>
+                    <div class="col-sm-12">
+                        <img src="Product/ID_001_01.jpg" alt="" width="15%" style="margin-left: 2.5%">
+                        <img src="Product/ID_001_02.jpg" alt="" width="15%" style="margin-left: 2.5%">
+                        <img src="Product/ID_001_03.jpg" alt="" width="15%" style="margin-left: 2.5%">
+                    </div>
+                    
                 </div>
                 
             </div>
             <div class="col-md-5 infoBorder">
                 <div class="itemInfoForm">
-                    <div class="row">Product's Name</div>
+                    <div class="row iName">Product's Name</div>
                     <div class="row">
                         <div class="col-sm-12 voteRow">
                             xx
@@ -125,27 +130,27 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">Price:</div>
-                        <div class="col-8">$xxxx</div>
+                        <div class="col-5 infoTitle">Price:</div>
+                        <div class="col-7">$xxxx</div>
                     </div>
                     <div class="row">
-                        <div class="col-12">Quantity:</div>
+                        <div class="col-12 infoTitle">Quantity:</div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button ng-click="">-</button>
-                            <input type="text" value="1">
-                            <button ng-click="">+</button>
+                            <button ng-click="" class="changeQuanBtn">-</button>
+                            <input type="text" value="1" class="quanInput">
+                            <button ng-click="" class="changeQuanBtn">+</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button ng-click="" class="">Add to cart</button>
+                            <button ng-click="" class="addCartBtn">Add to cart</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button ng-click="" class="">Buy now</button>
+                            <button ng-click="" class="buyBtn">Buy now</button>
                         </div>
                     </div>
                 </div>

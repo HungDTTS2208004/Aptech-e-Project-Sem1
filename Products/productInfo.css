@@ -3,6 +3,58 @@
     border: 2px solid #572c71;
     border-radius: 30px;
     padding: 20px;
+    text-align: center;
+    margin:auto;
+}
+.infoTitle{
+    text-align: left;
+    padding-left: 50px;
+}
+.changeQuanBtn{
+    color:#572c71;
+    border: solid 2px #572c71;
+    border-radius: 10px;
+    width: 48px;
+    line-height: 48px;
+    height: 48px;
+    background-color: white;
+    vertical-align: middle;
+}
+.quanInput{
+    color:#572c71;
+    background-color: white;
+    border: solid 2px #572c71;
+    border-radius: 10px;
+    width: 30%;
+    line-height: 48px;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+}
+.changeQuanBtn:hover{
+    color:white;
+    background-color: #572c71;
+}
+.addCartBtn{
+    width: 70%;
+    margin-top: 30px;
+    background-color: white;
+    border: solid 2px #572c71;
+    border-radius: 10px;
+}
+.imgFrame{
+    text-align: center;
+}
+.buyBtn{
+    width: 70%;
+    margin-top: 15px;
+    border: solid 2px #572c71;
+    border-radius: 10px;
+    background-color: #572c71;
+    color:white;
+}
+.iName{
+    justify-content: center;
 }
 
 .voteRow{
