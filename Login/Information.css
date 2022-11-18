@@ -13,25 +13,49 @@
     font-weight: 700;
     font-size: 64px;
 }
+
 .row{
     align-items: center;
     
 }
-.col-sm-5{
+.col-md-5.infoTitle{
     padding-left: 15%;
     color:#572C71;
     font-weight: 700;
     font-size: 40px;
 }
-.col-sm-7{
+.col-md-7{
     font-size: 36px;
 }
-.col-sm-7 input{
-    width: 70%;
-}
-i.infoInput, input[type="password"]{
-    border: solid #572C71 2px;
+
+.whiteBtn{
+    background-color: white;
+    color:#572C71;
+    border: solid #572C71 3px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-weight: 600;
+}
+@media (min-width: 758.1px) {
+    .col-md-5{
+        padding-left: 15%;
+    }
+}
+@media (max-width:768px) {
+    .col-md-7, .col-md-7 input{
+        text-align: center;
+    }
+    .col-md-5 img{
+        padding-left: 0px;
+    }
+    .col-md-5.avatar{
+        text-align: center;
+    }
+    .whiteBtn{
+        margin-left: unset;
+    }
+
 }
 .rowInfoForm{
     margin-top: 4%;
@@ -44,19 +68,30 @@ i.infoInput, input[type="password"]{
     color:white;
     background-color: #572C71;
 }
-.avatar{
-    border: solid 2px #572C71;
-    width: 150px;
-    height: 150px;
-    display: block;
-}
 .infoBtn{
     justify-content: center;
 }
-.whiteBtn{
+.resetBtn{
     background-color: white;
     color:#572C71;
     border: solid #572C71 3px;
-    margin-left: 10%;
+    border-radius: 10px;
     font-weight: 600;
+    margin:15px;
+}
+.saveBtn{
+    background-color: #572C71;
+    color:white;
+    border: solid #572C71 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.col-md-7 input{
+    width: 70%;
+    text-align: left;
+    border: solid #572C71 2px;
+    border-radius: 10px;
+    color:#572C71;
 }
