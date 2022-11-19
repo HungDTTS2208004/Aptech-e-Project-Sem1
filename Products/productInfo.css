@@ -22,6 +22,11 @@
     background-color: white;
     vertical-align: middle;
 }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .quanInput{
     color:#572c71;
     background-color: white;
@@ -32,6 +37,7 @@
     height: 48px;
     text-align: center;
     vertical-align: middle;
+
 }
 .changeQuanBtn:hover{
     color:white;

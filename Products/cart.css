@@ -1,9 +1,45 @@
 .item{
-    border: solid 2px #572C51;
+    width: 90%;
+    border:solid 2px #572C51;
     border-radius: 20px;
-    padding:20px;
-    width: 80%;
-    margin-left: 10%;
+    padding:15px;
+    margin-bottom: 30px;
+}
+.itemLoop{
+    margin-left: 20px;
+}
+.selectBtn{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.selectAllBtn{
+    margin:20px auto;
+}
+.selAll{
+    margin-left: 50px;
+}
+.checkOutForm{
+    border:solid 2px #572C51;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+.checkOutHeading{
+    text-align: center;
+}
+.checkOutBtn{
+    color:white;
+    background-color: #572C51;
+    border: 2px solid #572C51;
+    border-radius: 10px;
+    
+}
+.heading{
+    color:#572C51;
+    font-size: 48px;
+    text-align: center;
+    margin: 30px auto;
 }
 .changeQuanBtn{
     color:#572C51;
@@ -17,10 +53,15 @@
     border: solid 2px #572C51;
     border-radius: 10px;
 }
-.col-3 img{
-    margin-top: auto;
-    margin-bottom: auto;
+.col-3{
+    margin:auto 0px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .quanInput{
     width: 20%;
     line-height: 48px;

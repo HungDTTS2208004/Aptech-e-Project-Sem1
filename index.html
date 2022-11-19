@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script>    
     
 </head>
-<body ng-app="myApp" ng-controller="navController">
+<body>
     <!-- header desktop --> 
     <header>
         <div class="row desktopHeader">
@@ -55,20 +55,18 @@
                 <div class="offcanvas-body">
                     <p>
                         <b><a href="">COLLECTIONS</a></b>
-                        <button class="showHideBtn" ng-click="mobileCollectionDropdown = !mobileCollectionDropdown">
-                            <span class="mobileDropdownNav" ng-show="mobileCollectionDropdown">+</span>
-                            <span class="mobileDropdownNav" ng-show="!mobileCollectionDropdown">-</span>
+                        <button class="showHideBtn collDropDownBtn">
+                            +
                         </button>
                         <p>
                         </p>
                     </p>
                     <p>
                         <b><a href="Products/Products.html">PRODUCTS</a></b>
-                        <button class="showHideBtn" ng-click="mobileProductDropdown = !mobileProductDropdown">
-                            <span class="mobileDropdownNav" ng-show="mobileProductDropdown">+</span>
-                            <span class="mobileDropdownNav" ng-show="!mobileProductDropdown">-</span>
+                        <button class="showHideBtn mobileProductDropdownBtn">
+                            +
                         </button>
-                        <div class="mobileMenuDropdownAni" ng-show="!mobileProductDropdown">
+                        <div class="mobileProductDropdown">
                             <div><a href="">- Brands</a></div>
                             <div><a href="">- Categories</a></div>
                             <div><a href="">- Color</a></div>
@@ -97,8 +95,8 @@
         </nav>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
     <script src="System.js"></script>
     <script></script>
 </body>

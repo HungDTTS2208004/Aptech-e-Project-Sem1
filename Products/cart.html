@@ -21,7 +21,7 @@
             </div>
             <div class="col-sm-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH"></div>
             <div class="col-sm-3 headR">
-                <a href=""><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"><div  class="cartQuantity">1</div></a>
+                <a href="cart.html"><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"><div  class="cartQuantity">1</div></a>
                 <div class="accountDropdown">
                     <a href="../Login/signIn.html"><img src="../GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon accountIcon"></a>
                     <div class="accountDropdownContent">
@@ -100,63 +100,83 @@
     <section>
         <div class="row">
             <H1 class="heading">
-                <img src="../GeneralFormat/CartIcon.png" alt="">
+                <img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart">
                 <b>Shopping Cart</b>
-                <img src="../GeneralFormat/CartIcon.png" alt="">
+                <img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart">
             </H1>
         </div>
         <div class="cartBody">
             <div class="row">
-                <div class="col-12">
-                    <input type="checkbox"> Select all
+                <div class="col-12 selectAllBtn">
+                    <input type="checkbox" class="selAll"> Select all
                 </div>
-                <div class="col-md-8" style="horizontal-align: middle">
-                    <div class="row">
-                        <div class="col-1"><input type="checkbox" style="justify-content: center;"></div>
-                    
-                        <div class="col-11 item">
-                            <div class="row">
-                                
-                                <div class="col-3">
-                                    <img src="../Products/Product/ID_001_01.jpg" alt="" width="100%">
-                                </div>
-                                <div class="col-9">
-                                    <div class="row">
-                                        <b>Product's Name</b>
+            </div>
+            <div class="row">
+                <div class="col-md-7 ">
+                    <div class="row itemLoop">
+                        <div class="col-12 align-items-center d-flex">
+                            <input type="checkbox" class="selectBtn">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../Products/Product/ID_001_01.jpg" alt="" width="100%">
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <button ng-click="" class="changeQuanBtn">-</button>
-                                            <input type="text" value="1" class="quanInput">
-                                            <button ng-click="" class="changeQuanBtn">+</button>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <b>Product's Name</b>
                                         </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            Price:
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button ng-click="" class="changeQuanBtn">-</button>
+                                                <input type="number" min="1" value="1" class="quanInput">
+                                                <button ng-click="" class="changeQuanBtn">+</button>
+                                            </div>
                                         </div>
-                                        <div class="col-8">
-                                            $ xxxx
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                Price:
+                                            </div>
+                                            <div class="col-8">
+                                                $ xxxx
+                                            </div>
                                         </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            Total:
-                                        </div>
-                                        <div class="col-8">
-                                            $ xxxx
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                Total:
+                                            </div>
+                                            <div class="col-8">
+                                                $ xxxx
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                        
                 </div>
-                <div class="col-md-4">
-                    
+                <div class="col-md-5">
+                    <div class="checkOutForm">
+                        <div class="row">
+                            <div class="col-12 checkOutHeading"><b>Billing</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 checkOutTitle"><strong>Amount:</strong> xx Items</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 checkOutTitle"><strong>Total:</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 priceTotal">$ xxxx</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="checkOutBtn">Check out</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

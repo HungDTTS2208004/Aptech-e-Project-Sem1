@@ -1,14 +1,30 @@
 {
     "productList":[
         {
-            "id":"001",
-            "name":,
-            "price":,
-            "img":,
-            "content":,
-            "cmt":
+            "ID001":[
+                {
+                    "id":"001",
+                    "name":"Decked to the Pines",
+                    "price":14.00,
+                    "img":["ID_001_01.jpg","ID_001_02.jpg","ID_001_03.jpg"],
+                    "content":"-Bling on an edgy new attitude with this green long-lasting nail polish.<br>-Take your manicure to the next level with a gilded metallic finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
+                    "cmt":[],
+                    "category":["Nail Polish","OPI","Green"],
+                    "date":"11-11-2020"
+                }
+            ],
+            "ID002":[
+                {
+                    "id":"002",
+                    "name":"OPI’m a Gem",
+                    "price":14.00,
+                    "img":["ID_002_01.jpg","ID_002_02.jpg","ID_002_03.jpg"],
+                    "content":"Dazzle your next dinner party with a powerful black glitter long-lasting nail polish.<br>Make a statement with a blinged-out glitter finish.<br>OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>Made in the USA.",
+                    "cmt":[],
+                    "category":["Nail Polish","OPI","Black","Green"],
+                    "date":"18-11-2020"
+                }
+            ]   
         }
-    ],
-    ""
-    
+    ]
 }
