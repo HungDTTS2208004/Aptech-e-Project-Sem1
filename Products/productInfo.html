@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script> 
 </head>
-<body ng-app="myApp" ng-controller="productInfoController">
+<body>
     <!-- header desktop --> 
     <header>
         <div class="row desktopHeader">
@@ -99,99 +99,13 @@
     
 
 
-    <section>
-        <div class="row" style="margin-top:100px">  
-            <div class="col-md-7">
-                <div class="row imgFrame">
-                    <div class="col-sm-12">
-                        <img src="Product/ID_001_01.jpg" alt="" width="60%" style="margin-left: 2.5%" >
-                    </div>
-                    <div class="col-sm-12">
-                        <img src="Product/ID_001_01.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
-                        <img src="Product/ID_001_02.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
-                        <img src="Product/ID_001_03.jpg" alt="" width="17.5%" style="margin-left: 2.5%">
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <div class="col-md-5 infoBorder">
-                <div class="itemInfoForm">
-                    <div class="row iName">Product's Name</div>
-                    <div class="row">
-                        <div class="col-sm-12 voteRow">
-                            xx
-                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                            <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                            (xx)
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-5 infoTitle">Price:</div>
-                        <div class="col-7">$xxxx</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 infoTitle">Quantity:</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <button ng-click="" class="changeQuanBtn">-</button>
-                            <input type="number" min="1" value="1" class="quanInput">
-                            <button ng-click="" class="changeQuanBtn">+</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <button ng-click="" class="addCartBtn">Add to cart</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <button ng-click="" class="buyBtn">Buy now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 desription">
-                <button class="descriptionBtn" ng-click="descriptionShow = !descriptionShow">
-                    <b>Description</b>
-                    <span ng-show="!descriptionShow">+</span>
-                    <span ng-show="descriptionShow">-</span>
-                </button>
-                <div class="col-sm-12 descriptionDetail" ng-show="descriptionShow">
-                    This is Product's description
-                </div>
-            </div>
-        </div>
-        <hr width="70%" style="margin:auto">
-        <div class="row cmtPart">   
-            <div class="col-12"><b>Comments</b></div>
-            <div class="col-9 comment">
-                <div class="row">
-                    <div class="col-3 cmtInfo">
-                        <img src="" alt="" width="100px" height="100px"> <br>
-                        Name
-                    </div>
-                    <div class="col-9">
-                        <div class="cmtContent">
-                            Comment sth in this box
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+    <section class="productInfo">
+        
     </section>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="../System.js"></script>
 
 </body>

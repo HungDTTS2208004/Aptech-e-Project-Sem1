@@ -38,24 +38,29 @@
     <div style="width: 80%;" class="form">
         <div class="row rowSignUpForm">
             <div class="col-md-5">Account</div>
-            <div class="col-md-7"><input type="text"></div>
+            <div class="col-md-7"><input type="text" id="signUp-accountName" pattern="[/w]*+" required></div>
         </div>
         <div class="row rowSignUpForm">
             <div class="col-md-5">Password</div>
-            <div class="col-md-7"><input type="Password"></div>
+            <div class="col-md-7"><input type="Password" id="signUp-accountPassword" required></div>
         </div>
         <div class="row rowSignUpForm">
             <div class="col-md-5">Confirm Password</div>
-            <div class="col-md-7"><input type="Password"></div>
+            <div class="col-md-7"><input type="Password" id="signUp-accountRePass" required></div>
         </div>
-        <div class="rwo rowSignUpNav">
+        <div class="row rowSignUpNav">
             <a href="signIn.html" style="font-size: 24px">Already have an account ? <strong>Sign in ?</strong></a>
         </div>
+        <div class="row" id="signUpError" style="color:red"></div>
+        <div class="row" id="signUpInfo" style="color:green"></div>
         <div class="row rowSignUpForm">
-            <button style="width:200px">Sign up</button>
+            <button style="width:200px" class="signUp-Btn">Sign up</button>
         </div>
     </div>
     <BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR>
-    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="../System.js"></script>
+
 </body>
 </html>
