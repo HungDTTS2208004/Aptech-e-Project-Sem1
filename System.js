@@ -2,7 +2,7 @@
 var data = {
     "productList":[
         {
-            "id":"001",
+            "id":"p01",
             "name":"Decked to the Pines",
             "price":14.00,
             "img":["ID_001_01.jpg","ID_001_02.jpg","ID_001_03.jpg"],
@@ -13,8 +13,8 @@ var data = {
             "date":"11-11-2020"
         },
         {
-            "id":"002",
-            "name":"OPI’m a Gem",
+            "id":"p02",
+            "name":"OPI'm a Gem",
             "price":14.00,
             "img":["ID_002_01.jpg","ID_002_02.jpg","ID_002_03.jpg"],
             "star":4,
@@ -25,7 +25,7 @@ var data = {
             "date":"19-9-2019"
         },
         {
-            "id":"003",
+            "id":"p03",
             "name":"Rhinestone Red-y",
             "price":14.00,
             "img":["ID_003_01.jpg","ID_003_02.jpg","ID_003_03.jpg"],
@@ -39,9 +39,15 @@ var data = {
     "account":[
         {
             'name':'admin',
-            'password':'admin'
+            'password':'admin',
+            'Avatar':'ava1.png',
+            'Fullname':'Admin',
+            'Address':'FPT',
+            'Email':'FakeFace@gmail.com',
+            'Phone': '+84913636373'
         }
-    ]
+    ],
+    
 }
 
 var setting = {
@@ -58,16 +64,36 @@ var setting = {
             "description":false
     },
     "Nav":{
-        "login":false
+        "login":"false",
+        "loginIndex":-1
     }
+}
+if (localStorage.getItem("login")==null){
+    localStorage.login = setting.Nav.login;
 }
 
 localStorage.proList = data.productList;
-localStorage.accountList = data.account;
-$(".account-login").toggle(setting.Nav.login)
-$(".account-logout").toggle(!setting.Nav.login)
+
+if (localStorage.accountList==null){
+    localStorage.accountList = JSON.stringify(data.account)
+}
+
+if (localStorage.login == "false"){
+    $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
+} else {
+    $('.accountIcon').attr("src","GeneralFormat/ava1.png")
+    $('.accountIcon').attr("style",`
+        width: 50px;
+        height: 69px;
+        border: 2px solid black;
+        border-radius: 50%;
+    `)
+}
+$(".account-login").toggle(localStorage.login == "false")
+$(".account-logout").toggle(localStorage.login == "true")
 
 displayItemProduct(data.productList);
+
 $(document).ready(function(){
 
     $('.brandFilterContent').hide();
@@ -79,7 +105,9 @@ $(document).ready(function(){
     $('.descriptionContent').hide();
 });
 
-// Home Setting
+
+
+// Home feature start
 $('.collDropDownBtn').click(function(){ 
     setting.Home.mobileCollDropdown = !setting.Home.mobileCollDropdown;
     $('.mobileCollDropdownNav').toggle(100);
@@ -101,26 +129,121 @@ $('.mobileProductDropdownBtn').click(function(){
     $('.mobileProductDropdown').toggle(100);
     
 });
+// Home feature end
 
 
-//Login system
+//=====================
+//=   Login system    =
+//=====================
+
+
+// Sign Up feature start
 $('.signUp-Btn').click(function(){
     let accountName = $('#signUp-accountName').val();
     let accountPass = $('#signUp-accountPassword').val();
     let accountRePass = $('#signUp-accountRePass').val();
-    let accList = localStorage.accountList;
-    alert(accountName+" & "+accountPass+" & "+accountRePass+" & " +accList[0].password)
-    // if (accList.name.index==-1 && accountPass == accountRePass){
-    //     let newAccount = {"name":accountName,"password":accountPass}
+    let accList = JSON.parse(localStorage.accountList);
+    let err='';
+    let c=0;
+
+    for (var i in accList){
+        if (accList[i].name == accountName || accountPass != accountRePass){
+            if (accList[i].name == accountName){
+                c++;
+                err+=`<span style="color:red"> Account has already been used !! </span>`;
+            } else {
+                c++
+                err+=`<span style="color:red"> Those passwords didn't match. Try again. !!</span>`;
+            } 
+        }
+    }
+    if (c==0){
+        let newAccount = {
+            'name': accountName,
+            'password': accountPass,
+            'Avatar':'ava1.png',
+            'Fullname':'',
+            'Address':'',
+            'Email':'',
+            'Phone':''
+        };
+            accList.push(newAccount);
+            localStorage.accountList = JSON.stringify(accList);
+            location.href="../index.html"
+    }
+            
+
+    $('.signUpInfo').html(err);
+})
+// Sign Up feature end
+
+// Sign In feature start
+$('.signIn-Btn').click(function(){
+    let c=0;
+    let accountName = $('#signInName').val();
+    let accountPass = $('#signInPass').val();
+    let accList = JSON.parse(localStorage.accountList);
+    for (var i in accList){
+        if (accountName == accList[i].name && accountPass == accList[i].password){
+            localStorage.login = "true"
+            location.href = '../index.html';
+            c=0;
+            localStorage.loginIndex = i;
+            break;
+        } else {
+            c++;
+        }
         
-    //     accList.push(newAccount);
-    //     $('signUpInfo').html("Your account has been succesfully created !!");
-    //     localStorage.accountList = accList
-    // }
+    }
+    if (c!=0){
+        $('.signInInfo').html('<span style="color:red">Account or Password is wrong !!</span>')
+    }
+})
+// Sign In feature end
+
+// Sign Out feature start
+$('.signOutBtn').click(function(){
+    localStorage.login = "false";
+    localStorage.loginIndex = -1;
+    location.href='';
+})
+//Sign Out feature end
+
+// Information feature start
+
+$('#avatar').attr("src","../GeneralFormat/"+JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar)
+$('.resetBtn').click(function(){
+    let account= JSON.parse(localStorage.accountList);
+    $()
+})
+$('.saveBtn').click(function(){
+    let fullname = $('#fullNameInfo').val();
+    let address = $('#addressInfo').val();
+    let email = $('#emailInfo').val();
+    let phone = $('#phoneInfo').val();
+    let account = JSON.parse(localStorage.accountList);
+    account[localStorage.loginIndex].Fullname = fullname;
+    account[localStorage.loginIndex].Address = address;
+    account[localStorage.loginIndex].Email = email;
+    account[localStorage.loginIndex].Phone = phone;
+    localStorage.accountList = JSON.stringify(account);
+    $('.infoChange').html(`
+        <div class="alert alert-success" style="text-align:center">
+        <strong>Success!</strong> Your information have been changed
+        </div>`
+        )
+    return false;
 })
 
+// Information feature end
 
-// Products Setting
+
+
+//=========================
+//=       Products        =
+//=========================
+
+// Products feature
 $('.brandFilterBtn').click(function(){
     setting.Products.brandFilter = !setting.Products.brandFilter;
     if (setting.Products.brandFilter){
@@ -151,8 +274,11 @@ $('.colorFilterBtn').click(function(){
     $('.colorFilterContent').toggle(100);
 });
 
-// productInfo Setting
+
+
+// productInfo feature
 $('.descriptionBtn').click(function(){
+    
     setting.productInfo.description = !setting.productInfo.description;
     if (setting.productInfo.description){
         $('.descriptionBtnContent').html("Description -");
@@ -169,12 +295,12 @@ function getUrlID(){
 }
 
 function productDetail(){
-    var d = ``;
+    var d1 = ``, d2=``;
     var i = 0;
-    for (var v of data){
+    for (var v of data.productList){
         if (v.id == res){
             i++;
-            d += `
+            d1 += `
             <div class="row" style="margin-top:100px">  
                 <div class="col-md-7">
                     <div class="row imgFrame">
@@ -190,7 +316,7 @@ function productDetail(){
                 </div>
                 <div class="col-md-5 infoBorder">
                     <div class="itemInfoForm">
-                        <div class="row iName">${v.name}</div>
+                        <div class="row iName"><b>${v.name}</b></div>
                         <div class="row">
                             <div class="col-sm-12 voteRow">
                                 ${v.star}
@@ -211,31 +337,29 @@ function productDetail(){
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button ng-click="" class="changeQuanBtn">-</button>
+                                <button class="changeQuanBtn">-</button>
                                 <input type="number" min="1" value="1" class="quanInput">
-                                <button ng-click="" class="changeQuanBtn">+</button>
+                                <button class="changeQuanBtn">+</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button ng-click="" class="addCartBtn">Add to cart</button>
+                                <button class="addCartBtn">Add to cart</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button ng-click="" class="buyBtn">Buy now</button>
+                                <button class="buyBtn">Buy now</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 desription">
-                    <button class="descriptionBtn">
-                        <b class="descriptionBtnContent">Description +</b>
-                    </button>
-                    <div class="col-sm-12 descriptionContent">
-                        ${v.description}
+                <div class="col-12 desription">`
+                    
+        d2 +=`            <div class="col-sm-8 descriptionContent">
+                        ${v.content}
                     </div>
                 </div>
             </div>
@@ -264,32 +388,46 @@ function productDetail(){
     if (i == 0){
         d += `404 Not Found`;
     }
-    $(".productInfo").html(d);
+    $(".productInfo1").html(d1);
+    $(".productInfo2").html(d2);
 }
 
 function displayItemProduct(items){
     let s=``;
     $.each(items, function (k, v){
        s += `
-        <div class="col-lg-4 col-md-6">
-            <div class="item">
-            <div class="col-sm-12"><img src="Product/${v.img[0]}" alt="" width="175px" height="200px"></div>
-            <div class="col-sm-12 iName"><b>${v.name}</b></div>
-            <div class="col-sm-12">
-                <span class="voteRate">${v.star}</span>
-                <span class="star">
-                    <i class="fa-solid fa-star vote-star"></i>
-                    <i class="fa-solid fa-star vote-star "></i>
-                    <i class="fa-solid fa-star vote-star"></i>
-                    <i class="fa-solid fa-star-half-stroke vote-star"></i>
-                    <i class="fa-regular fa-star vote-star"></i>
-                </span>
-                <img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px">
+        
+            <div class="col-lg-4 col-md-6" >
+            
+                <div class="item">
+                    <a href="productInfo.html?id=${v.id}">
+                    <div class="col-sm-12"><img src="Product/${v.img[0]}" alt="" width="175px" height="200px"></div>
+                    </a> 
+                    <div class="col-sm-12 iName"><b>${v.name}</b></div>
+                    <div class="col-sm-12">
+                        <span class="voteRate">${v.star}</span>
+                        <span class="star">
+                            <i class="fa-solid fa-star vote-star"></i>
+                            <i class="fa-solid fa-star vote-star "></i>
+                            <i class="fa-solid fa-star vote-star"></i>
+                            <i class="fa-solid fa-star-half-stroke vote-star"></i>
+                            <i class="fa-regular fa-star vote-star"></i>
+                        </span>
+                        <img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px">
+                    </div>
+                       
+                </div>
+            
             </div>
-        </div>
-    </div>
+        
+
+        
     `; 
+    // 
     });
     $('.itemShow').html(s);
 }
 
+function addToCart(){
+
+}

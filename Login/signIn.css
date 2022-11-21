@@ -19,6 +19,9 @@ h1{
     font-weight: 700;
     font-size: 40px;
 }
+.signInInfo{
+    text-align: center;
+}
 .col-md-7{
     font-size: 36px;
 }

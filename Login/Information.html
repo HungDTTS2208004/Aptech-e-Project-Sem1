@@ -99,10 +99,9 @@
     <H1 class="title">INFORMATION</H1>
     
     <div class="form">
-        <form action="">
             <div  class="row rowInfoForm ">
-                <div class="col-md-5 avatar">
-                        <img src="" alt="" width="150px" height="150px">
+                <div class="col-md-5 ">
+                        <img src="" alt="" width="150px" height="150px" id="avatar">
                 </div>
                 <div class="col-md-7">
                     <button class="whiteBtn" style="width:300px">Choose your avatar</button>
@@ -110,29 +109,32 @@
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Full Name</div>
-                <div class="col-md-7"><input type="text" class="infoInput"></div>
+                <div class="col-md-7"><input type="text" class="infoInput" id="fullNameInfo" required></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Address</div>
-                <div class="col-md-7"><input type="text" class="infoInput"></div>
+                <div class="col-md-7"><input type="text" class="infoInput" id="addressInfo" required></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Email</div>
-                <div class="col-md-7"><input type="text" class="infoInput"></div>
+                <div class="col-md-7"><input type="text" class="infoInput" id="emailInfo" required></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Phone</div>
-                <div class="col-md-7"><input type="text" class="infoInput"></div>
+                <div class="col-md-7"><input type="text" class="infoInput" id="phoneInfo" required></div>
+            </div>
+            <div class="row rowInfoForm">
+                <div class="infoChange">
+
+                </div>
             </div>
             <div class="row rowInfoForm infoBtn">
                 <button style="width:120px" class="saveBtn">Save</button>
                 <button type="reset" style="width:120px" class="resetBtn">Reset</button>
             </div>
-        </form>
    </div>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
    <script src="../System.js"></script>
 
 </body>

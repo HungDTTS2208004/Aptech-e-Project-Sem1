@@ -98,19 +98,20 @@
     <H1>SIGN IN</H1>
     
     <div style="width: 80%;" class="form">
-        <form action="">
-            <div class="row rowSignInForm">
-                <div class="col-md-5">Account</div>
-                <div class="col-md-7"><input type="text"></div>
-            </div>
-            <div class="row rowSignInForm">
-                <div class="col-md-5">Password</div>
-                <div class="col-md-7"><input type="Password"></div>
-            </div>
-            <div class="row rowSignInForm">
-                <button style="width:50%" class="sign">Sign in</button>
-            </div>
-        </form>
+        <div class="row rowSignInForm">
+            <div class="col-md-5">Account</div>
+            <div class="col-md-7"><input type="text" id="signInName"></div>
+        </div>
+        <div class="row rowSignInForm">
+            <div class="col-md-5">Password</div>
+            <div class="col-md-7"><input type="Password" id="signInPass"></div>
+        </div>
+        <div class="row rowSignInForm signInInfo"></div>
+        <div class="row rowSignInForm">
+            <button style="width:50%" class="sign signIn-Btn">Sign in</button>  
+        </div>
+
+
         <div class="row rowSignInForm" id="orLine">
             <div class="col-4">
                 <hr>
@@ -128,8 +129,7 @@
             <a href="" style="padding-bottom:4%; font-size:24px">Forgot password ?</a>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="../System.js"></script>
  
 </body>
