@@ -421,7 +421,7 @@ function displayItemProduct(items){
                             <i class="fa-solid fa-star-half-stroke vote-star"></i>
                             <i class="fa-regular fa-star vote-star"></i>
                         </span>
-                        <a href="#" class="addToCartBtn" data-name="${v.name}" data-price="${v.price}" data-img=""${v.img[0]}><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px"></a>
+                        <a href="#" class="addToCartBtn" data-id="${v.id}" data-name="${v.name}" data-price="${v.price}" data-img="${v.img[0]}"><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px"></a>
                         <button class="addToCartBtn">OK</button>
                     </div>
                        
