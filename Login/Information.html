@@ -109,19 +109,19 @@
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Full Name</div>
-                <div class="col-md-7"><input type="text" class="infoInput" id="fullNameInfo" required></div>
+                <div class="col-md-7 fullNameInput"></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Address</div>
-                <div class="col-md-7"><input type="text" class="infoInput" id="addressInfo" required></div>
+                <div class="col-md-7 addressInput"></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Email</div>
-                <div class="col-md-7"><input type="text" class="infoInput" id="emailInfo" required></div>
+                <div class="col-md-7 emailInput"></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="col-md-5 infoTitle">Phone</div>
-                <div class="col-md-7"><input type="text" class="infoInput" id="phoneInfo" required></div>
+                <div class="col-md-7 phoneInput"></div>
             </div>
             <div class="row rowInfoForm">
                 <div class="infoChange">
@@ -130,12 +130,17 @@
             </div>
             <div class="row rowInfoForm infoBtn">
                 <button style="width:120px" class="saveBtn">Save</button>
-                <button type="reset" style="width:120px" class="resetBtn">Reset</button>
+                <button style="width:120px" class="resetBtn">Reset</button>
             </div>
    </div>
-
    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
    <script src="../System.js"></script>
-
+   <script>
+        var userInfo = JSON.parse(localStorage.accountList); 
+            $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+' required>');
+            $('.addressInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Address+' required>');        
+            $('.emailInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Email+' required>');
+            $('.phoneInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Phone+' required>');   
+        </script>
 </body>
 </html>

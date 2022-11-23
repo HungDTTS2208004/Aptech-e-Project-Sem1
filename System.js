@@ -152,7 +152,7 @@ $('.signUp-Btn').click(function(){
                 c++;
                 err+=`<span style="color:red"> Account has already been used !! </span>`;
             } else {
-                c++
+                c++;
                 err+=`<span style="color:red"> Those passwords didn't match. Try again. !!</span>`;
             } 
         }
@@ -213,8 +213,16 @@ $('.signOutBtn').click(function(){
 
 $('#avatar').attr("src","../GeneralFormat/"+JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar)
 $('.resetBtn').click(function(){
-    let account= JSON.parse(localStorage.accountList);
-    $()
+    let userInfo= JSON.parse(localStorage.accountList);
+    $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+' required>');
+    $('.addressInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Address+' required>');        
+    $('.emailInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Email+' required>');
+    $('.phoneInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Phone+' required>');   
+    $('.infoChange').html(`
+        <div class="alert alert-success" style="text-align:center">
+        <strong>Success!</strong> Your information have been reseted
+        </div>`
+        )
 })
 $('.saveBtn').click(function(){
     let fullname = $('#fullNameInfo').val();
@@ -329,8 +337,8 @@ function productDetail(){
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-5 infoTitle">Price:</div>
-                            <div class="col-7">$ ${v.price}</div>
+                            <div class="col-4 infoTitle">Price:</div>
+                            <div class="col-8">$ ${v.price}</div>
                         </div>
                         <div class="row">
                             <div class="col-12 infoTitle">Quantity:</div>
@@ -344,7 +352,7 @@ function productDetail(){
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="addCartBtn">Add to cart</button>
+                                <button class="addCartBtn" onclick="addToCart(${v.id})">Add to cart</button>
                             </div>
                         </div>
                         <div class="row">
@@ -358,7 +366,8 @@ function productDetail(){
             <div class="row">
                 <div class="col-12 desription">`
                     
-        d2 +=`            <div class="col-sm-8 descriptionContent">
+        d2 +=`            
+                    <div class="col-sm-8 descriptionContent">
                         ${v.content}
                     </div>
                 </div>
@@ -379,7 +388,6 @@ function productDetail(){
                         </div>
                     </div>
                 </div>
-                
             </div>  
                 `;
             break;
@@ -413,7 +421,8 @@ function displayItemProduct(items){
                             <i class="fa-solid fa-star-half-stroke vote-star"></i>
                             <i class="fa-regular fa-star vote-star"></i>
                         </span>
-                        <img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px">
+                        <a href="#" class="addToCartBtn" data-name="${v.name}" data-price="${v.price}" data-img=""${v.img[0]}><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px"></a>
+                        <button class="addToCartBtn">OK</button>
                     </div>
                        
                 </div>
@@ -426,8 +435,9 @@ function displayItemProduct(items){
     // 
     });
     $('.itemShow').html(s);
-}
-
-function addToCart(){
 
 }
+
+
+
+

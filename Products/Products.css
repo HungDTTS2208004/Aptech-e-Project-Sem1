@@ -111,7 +111,9 @@
 .titleFilter .fa-star{
     font-size: 30px;
 }
-
+.addToCartBtn{
+    cursor: pointer;
+}
 
 
 

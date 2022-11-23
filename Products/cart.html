@@ -127,9 +127,9 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
-                                                <button ng-click="" class="changeQuanBtn">-</button>
+                                                <button class="changeQuanBtn quanMinus">-</button>
                                                 <input type="number" min="1" value="1" class="quanInput">
-                                                <button ng-click="" class="changeQuanBtn">+</button>
+                                                <button class="changeQuanBtn quanPlus">+</button>
                                             </div>
                                         </div>
                                         <hr>
@@ -182,9 +182,16 @@
         </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.js"></script>
-    <script src="../System.js"></script>
- 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- <script src="../System.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $('.quanPlus, .quanMinus').click(function(){
+                $(this).hasClass("quanPlus")?$('.quanInput').attr("value",parseInt($('.quanInput').val())+1):$('.quanInput').attr("value",parseInt($('.quanInput').val())-1)
+            })
+        })
+    </script>
 </body>
 </html>
+
+
