@@ -30,6 +30,8 @@ $('.addToCartBtn').click(function(w){
 function cartDisplay(){
     let cartList = JSON.parse(localStorage.shopCart);
     let output = '';
+    let iTotalQuan = 0;
+    let iTotalPrice = 0;
     $.each(cartList, function(k, v){
         output += `
         <div class="col-12 align-items-center d-flex">
@@ -65,7 +67,7 @@ function cartDisplay(){
                                 Total:
                             </div>
                             <div class="col-8">
-                                $ xxxx
+                                $ ${v.price * v.quantity}
                             </div>
                         </div>
                     </div>
@@ -73,8 +75,24 @@ function cartDisplay(){
             </div>
         </div>
         `
+        iTotalQuan += v.quantity;
+        iTotalPrice += v.quantity * v.price;
     })
+    $('.totalPriceCart').html(iTotalPrice);
+    $('.totalQuanCart').html(iTotalQuan);
     $('.itemLoop').html(output);
+    $('.quanMinus, .quanPlus').click(function(){
+        let iIndex = $(this).data("index");
+        let cartList = JSON.parse(localStorage.shopCart);
+        
+        if($(this).hasClass("quanPlus")){
+            cartList[iIndex].quantity++;
+        } else {
+            cartList[iIndex].quantity--;
+        }
+        localStorage.shopCart = JSON.stringify(cartList);
+        cartDisplay()
+    })
 }
 
     

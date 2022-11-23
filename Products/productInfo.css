@@ -43,7 +43,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     color:white;
     background-color: #572c71;
 }
-.addCartBtn{
+.addToCartBtn{
     width: 70%;
     margin-top: 30px;
     background-color: white;

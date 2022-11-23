@@ -308,6 +308,7 @@ function productDetail(){
     for (var v of data.productList){
         if (v.id == res){
             i++;
+            
             d1 += `
             <div class="row" style="margin-top:100px">  
                 <div class="col-md-7">
@@ -345,14 +346,14 @@ function productDetail(){
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="changeQuanBtn">-</button>
+                                <button class="changeQuanBtn minusBtn">-</button>
                                 <input type="number" min="1" value="1" class="quanInput">
-                                <button class="changeQuanBtn">+</button>
+                                <button class="changeQuanBtn plusBtn">+</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="addCartBtn" onclick="addToCart(${v.id})">Add to cart</button>
+                                <button class="addToCartBtn" data-name>Add to cart</button>
                             </div>
                         </div>
                         <div class="row">
@@ -392,12 +393,21 @@ function productDetail(){
                 `;
             break;
         }
+
     }
     if (i == 0){
         d += `404 Not Found`;
     }
     $(".productInfo1").html(d1);
     $(".productInfo2").html(d2);
+    $('.plusBtn, .minusBtn').click(function(){
+        if ($(this).hasClass('plusBtn')){
+            $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))+1)
+        } else {
+            $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))-1)
+        }
+    })
+    
 }
 
 function displayItemProduct(items){
