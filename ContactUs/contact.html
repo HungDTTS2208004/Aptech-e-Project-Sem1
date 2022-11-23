@@ -13,42 +13,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/Navbar.css">
     <link rel="stylesheet" href="contact.css">
+    
 </head>
 <body>
     <div>
-        <h1> Our contact details</h1>
+        <h1 class="title"> Our contact details</h1>
         <hr>
         <div class="container" id="con1">
             <div class="row">
-                <div class="col-6" id="row1">
-                    <div class="col1">
+                <div class="col-sm-6" id="row1">
+                    <div class="col1 cardContainer">
                         <div class="row" id="iphone">
                             <div class="card rounded">
                                 <i class="fas fa-phone mt-4 fa-2x" ></i>
-                                <p>0838150169</p>
+                                <p class="word">0838150169</p>
                             </div>
                         </div>
                         <div class="row" id="iadd" > 
                             <div class="card rounded">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Lấy trường</p>
+                            <i class="fas fa-map-marker-alt fa-2x" id="mark"></i>
+                            <p class="word">100 Nguyen Kiem, VietNam</p>
                         </div>
                         </div>
                         <div class="row" id="imail">
                             <div class="card rounded">
-                            <i class="fas fa-envelope mt-4 fa-2x" id="mail"></i>
-                            <p>Burh dark </p>
+                            <i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p class="word">nailery@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6" id="row2">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=100 nguyễn kiệm&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style></style></div>
+               
+                <div class="col-sm-6 cardContainer" id="row2">
+                    <div class="card rounded" id="card2">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=100 nguyễn kiệm&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div></div>
+                </div>
                 </div>
             </div>
         </div>
         <hr>
+        <h1>Feedback Form</h1>
         <div class="container" id="con2">
             <div class="input">
                 <label for="name">Full name</label>
@@ -62,7 +68,7 @@
                 <label for="sub">Subject</label>
                 <input type="text" id="sub" placeholder="Subject...">
                 <label for="content">Content</label>
-                <textarea id="content" placeholder="Your writing..." cols="20" rows="10" ></textarea>
+                <textarea id="content" placeholder="Your writing..." cols="10" rows="4" ></textarea>
                 <input type="submit" value="Submit">
             </div>
         </div>

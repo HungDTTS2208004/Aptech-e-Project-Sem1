@@ -1,11 +1,13 @@
 
 #con1{
+  margin-top: 30px;
   text-align: center;
-  margin-right: 150px;
-  margin-left: 80px;
+  margin-right: 200px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 #con2{
-
+  margin-top: 30px;
 }
 .col1{
   text-align: center;
@@ -13,16 +15,16 @@
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
+    border: 2px solid #572C57; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #572C57;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -43,22 +45,35 @@ input[type=text], select, textarea {
     padding-left: 0px;
     padding-right: 0px;
     width: 300px;
-    height: 90px;
+    height: auto;
     display: flex;
     justify-content: center;
+    border: 4px #572C57 solid;
+    /* background-color:#b19cd9; */
+  }
+  #mark{
+    padding-top: 15px;
+  }
+  .fa-2x{
+    font-size:40px;
+  }
+ @media screen and (max-width: 600px) {
+    .fa-2x{
+      font-size: 20px;
+    }
   }
   #iphone{
     padding-top: 0px;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 10px;
   }
   #iadd{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 10px;
   }
   #imail{
-    font-size: 20px;
+    font-size: 10px;
     padding-bottom: 0px;
     padding-top: 20px;
   }
@@ -66,21 +81,39 @@ input[type=text], select, textarea {
     text-align: left;
     padding-right: 0px;
     padding-left: 0px;
-    border: solid;
   }
-  .mapouter{position:relative;text-align:right;width:100%;height:400px;}
+  .mapouter{position:relative;text-align:right;width:100%;height:100%;}
   .gmap_canvas {
     overflow:hidden;
     background:none!important;
     width:100%;
-    height:400px;}
+    height:100%;}
   .gmap_iframe {
     width:100%!important;
-    height:400px!important;
+    height:100%!important;
   }
   .input{
     text-align: left;
     width: 50%;
     margin: auto;
-    display: bloc
+    display: block;
+    font-size: 20px;
   }
+ #card2{
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 4px solid #572C57;
+    width: 100%;
+    height:100%;
+ }
+ hr{
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  border-top:solid 3px black;
+  background-color: black;
+ }
+ h1{
+  text-align: center;
+  font-size: 60px;
+ }
