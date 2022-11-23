@@ -114,47 +114,7 @@
             <div class="row">
                 <div class="col-md-7 ">
                     <div class="row itemLoop">
-                        <div class="col-12 align-items-center d-flex">
-                            <input type="checkbox" class="selectBtn">
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="../Products/Product/ID_001_01.jpg" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9">
-                                        <div class="row">
-                                            <b>Product's Name</b>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <button class="changeQuanBtn quanMinus">-</button>
-                                                <input type="number" min="1" value="1" class="quanInput">
-                                                <button class="changeQuanBtn quanPlus">+</button>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                Price:
-                                            </div>
-                                            <div class="col-8">
-                                                $ xxxx
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                Total:
-                                            </div>
-                                            <div class="col-8">
-                                                $ xxxx
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -183,14 +143,13 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- <script src="../System.js"></script> -->
+    <script src="../System.js"></script>
+    <script src="../Cart.js"></script>
+    
     <script>
-        $(document).ready(function(){
-            $('.quanPlus, .quanMinus').click(function(){
-                $(this).hasClass("quanPlus")?$('.quanInput').attr("value",parseInt($('.quanInput').val())+1):$('.quanInput').attr("value",parseInt($('.quanInput').val())-1)
-            })
-        })
+        cartDisplay();
     </script>
+    <script src="../CartFunction.js"></script>
 </body>
 </html>
 
