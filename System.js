@@ -68,6 +68,13 @@ var setting = {
         "loginIndex":-1
     }
 }
+var cart=[];
+
+if (localStorage.shopCart == null){
+    localStorage.shopCart = JSON.stringify(cart);
+}
+
+
 if (localStorage.getItem("login")==null){
     localStorage.login = setting.Nav.login;
 }
@@ -89,13 +96,18 @@ if (localStorage.login == "false"){
         border-radius: 50%;
     `)
 }
+if (localStorage.shopCart == "[]"){
+    localStorage.cartQuan = 0;
+} 
+
+
+
 $(".account-login").toggle(localStorage.login == "false")
 $(".account-logout").toggle(localStorage.login == "true")
 
 displayItemProduct(data.productList);
 
 $(document).ready(function(){
-
     $('.brandFilterContent').hide();
     $('.cateFilterContent').hide();
     $('.colorFilterContent').hide();
@@ -193,7 +205,6 @@ $('.signIn-Btn').click(function(){
         } else {
             c++;
         }
-        
     }
     if (c!=0){
         $('.signInInfo').html('<span style="color:red">Account or Password is wrong !!</span>')
@@ -353,7 +364,7 @@ function productDetail(){
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="addToCartBtn" data-name>Add to cart</button>
+                                <button class="addToCartBtn" data-id="${v.id}" data-name="${v.name}" data-price="${v.price}" data-img="${v.img[0]}">Add to cart</button>
                             </div>
                         </div>
                         <div class="row">
@@ -400,6 +411,8 @@ function productDetail(){
     }
     $(".productInfo1").html(d1);
     $(".productInfo2").html(d2);
+    $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+
     $('.plusBtn, .minusBtn').click(function(){
         if ($(this).hasClass('plusBtn')){
             $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))+1)
@@ -407,7 +420,30 @@ function productDetail(){
             $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))-1)
         }
     })
-    
+    $('.addToCartBtn').click(function(){
+        let itemID = $(this).data("id");
+        let itemName = $(this).data("name");
+        let itemPrice = $(this).data("price");
+        let itemImg = $(this).data("img");
+        let iQuan = $('.quanInput').val();
+        let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":iQuan};
+        // alert(JSON.stringify(cartItem));
+        let cartList = JSON.parse(localStorage.shopCart);
+        let count = 0;
+        for (var i in cartList){
+            if (cartList[i].id === itemID){
+                cartList[i].quantity = iQuan;
+                count++;
+            }
+        }
+        if (count==0){
+            localStorage.cartQuan=parseInt(localStorage.cartQuan) + parseInt(iQuan);
+
+            cartList.push(cartItem);
+        }
+        localStorage.shopCart = JSON.stringify(cartList)
+        $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    })  
 }
 
 function displayItemProduct(items){
@@ -445,7 +481,28 @@ function displayItemProduct(items){
     // 
     });
     $('.itemShow').html(s);
-
+    $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    $('.addToCartBtn').click(function(w){
+        let itemID = $(this).data("id");
+        let itemName = $(this).data("name");
+        let itemPrice = $(this).data("price");
+        let itemImg = $(this).data("img");
+        let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":1};
+        let cartList = JSON.parse(localStorage.shopCart);
+        let count = 0;
+        for (var i in cartList){
+            if (cartList[i].id === itemID){
+                count++;
+            }
+        }
+        if (count == 0){
+            localStorage.cartQuan=parseInt(localStorage.cartQuan) + parseInt(1);
+            cartList.push(cartItem);
+        }
+        localStorage.shopCart = JSON.stringify(cartList);
+        alert(localStorage.shopCart)
+        $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    });
 }
 
 

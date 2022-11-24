@@ -1,29 +1,5 @@
-var cart=[];
-
-if (localStorage.shopCart ==""){
-    localStorage.shopCart = JSON.stringify(cart);
-}
 
 
-$('.addToCartBtn').click(function(w){
-    let itemID = $(this).data("id");
-    let itemName = $(this).data("name");
-    let itemPrice = $(this).data("price");
-    let itemImg = $(this).data("img");
-    let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":1};
-    let cartList = JSON.parse(localStorage.shopCart);
-    let count = 0;
-    for (var i in cartList){
-        if (cartList[i].id === itemID){
-            count++;
-        }
-    }
-    if (count == 0){
-        cartList.push(cartItem);
-    }
-    localStorage.shopCart = JSON.stringify(cartList);
-    alert(localStorage.shopCart);
-});
 
 // show Cart
 
@@ -32,6 +8,7 @@ function cartDisplay(){
     let output = '';
     let iTotalQuan = 0;
     let iTotalPrice = 0;
+    
     $.each(cartList, function(k, v){
         output += `
         <div class="col-12 align-items-center d-flex">
@@ -75,12 +52,15 @@ function cartDisplay(){
             </div>
         </div>
         `
-        iTotalQuan += v.quantity;
+        iTotalQuan += parseInt(v.quantity);
         iTotalPrice += v.quantity * v.price;
+        localStorage.cartQuan = iTotalQuan;
     })
+    
     $('.totalPriceCart').html(iTotalPrice);
     $('.totalQuanCart').html(iTotalQuan);
     $('.itemLoop').html(output);
+    $('.cartQuantity').html(localStorage.cartQuan);
     $('.quanMinus, .quanPlus').click(function(){
         let iIndex = $(this).data("index");
         let cartList = JSON.parse(localStorage.shopCart);
