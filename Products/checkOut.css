@@ -1,0 +1,89 @@
+.checkOutForm{
+    color:#572C71;
+    border: solid 3px #572C71;
+    border-radius: 30px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.checkListBtn{
+    color:#572C71;
+    background-color: white;
+    border: solid 2px #572C71;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    font-weight: 600;
+}
+.checkListBtn:hover{
+    color:white;
+    background-color: #572C71;
+    border: solid 2px white;
+}
+.checkOutLine{
+    border-bottom: solid 2px #572C71;
+    width: 80%;
+    margin: 30px auto;
+}
+.checkOutTitle{
+    font-weight: 600;
+    padding-left: 90px;
+}
+.checkOutInput{
+    width: 90%;
+    border: solid 2px #572C71;
+    border-radius: 15px;
+    color:#572C71;
+    padding-left: 15px;
+}
+.checkOutFormInline{
+    margin: 20px auto;
+}
+.placeOrderBtn{
+    color:white;
+    width: 100%;
+    background-color: #572C71;
+    border: solid 2px #572C71;
+    border-radius: 10px;
+}
+@media (max-width: 768px){
+    .checkOutInput{
+        width: 70%;
+        margin-left: 80px;
+    }
+}
+@media (min-width: 1150px){
+    .checkOutTitle{
+        padding-left: 150px;
+    }
+    
+}
+@media (min-width: 1400px){
+    .checkOutTitle{
+        padding-left: 250px;
+    }
+    
+}
+
+/* check List */
+.listTitle, .listContent{
+    font-size: 24px;
+    line-height: 26px;
+}
+.listTitle{
+    font-weight: bold;
+}
+
+.col-10{
+    margin: auto;
+    border: solid 3px#572C71;
+    border-radius: 20px;
+    padding:20px;
+}

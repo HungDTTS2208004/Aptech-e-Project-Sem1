@@ -80,3 +80,6 @@ input::-webkit-inner-spin-button {
     text-align: center;
     vertical-align: middle;
 }
+b{
+    display: inline;
+}
