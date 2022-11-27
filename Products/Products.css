@@ -41,7 +41,10 @@
 .col-xl-4{
     margin-top: 75px;
 }
-
+.itemPrice{
+    color:green;
+    font-size: 36px;
+}
 .sortByBtn{
     color:white;
     background-color: #572C57;

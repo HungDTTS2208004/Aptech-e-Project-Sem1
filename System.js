@@ -1,4 +1,5 @@
 
+// products data
 var data = {
     "productList":[
         {
@@ -21,7 +22,7 @@ var data = {
             "starRate":33,
             "content":"-Dazzle your next dinner party with a powerful black glitter long-lasting nail polish.<br>-Make a statement with a blinged-out glitter finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Red"],
+            "category":["Nail Polish","OPI","Black","Blue"],
             "date":"19-9-2019"
         },
         {
@@ -32,7 +33,7 @@ var data = {
             "star":4.3,
             "content":"-Spread holiday joy with a sophisticated and versatile red long-lasting nail polish.<br>-The striking pearl finish will set you apart from the crowd this season.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Black","Green"],
+            "category":["Nail Polish","OPI","Red"],
             "date":"18-11-2020"
         }
     ],
@@ -50,6 +51,7 @@ var data = {
     
 }
 
+// website setting data
 var setting = {
     "Home":{
             "mobileCollDropdown":false,
@@ -68,34 +70,79 @@ var setting = {
         "loginIndex":-1
     }
 }
+
+//cart variable start
+var cart=[];
+
+if (localStorage.shopCart == null){
+    localStorage.shopCart = JSON.stringify(cart);
+}
+
+//checkOut variable start
+if (localStorage.checkOut == null)
+localStorage.checkOut = "[]";
+
+
+
+// login status
 if (localStorage.getItem("login")==null){
     localStorage.login = setting.Nav.login;
 }
 
-localStorage.proList = data.productList;
+
+//save products data
+localStorage.proList = JSON.stringify(data.productList);
 
 if (localStorage.accountList==null){
     localStorage.accountList = JSON.stringify(data.account)
 }
 
-if (localStorage.login == "false"){
-    $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
-} else {
-    $('.accountIcon').attr("src","GeneralFormat/ava1.png")
-    $('.accountIcon').attr("style",`
-        width: 50px;
-        height: 69px;
-        border: 2px solid black;
-        border-radius: 50%;
-    `)
-}
+//show avatar of user
+$(document).ready(function(){
+    if (localStorage.login == "false"){
+        if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
+        } else {
+            $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
+        }
+    
+    } else {
+        let ava = JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar;
+        if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","GeneralFormat/"+ava);
+            $('.accountIcon').attr("style",`
+                width: 50px;
+                height: 69px;
+                border: 2px solid black;
+                border-radius: 50%;
+            `)
+        } else {
+            $('.accountIcon').attr("src","../GeneralFormat/"+ava);
+            $('.accountIcon').attr("style",`
+                width: 50px;
+                height: 69px;
+                border: 2px solid black;
+                border-radius: 50%;
+            `)
+        }
+    }
+})
+
+//show cart quantity
+if (localStorage.shopCart == "[]"){
+    localStorage.cartQuan = 0;
+} 
+
+
+// toggle by Sign in and out status
 $(".account-login").toggle(localStorage.login == "false")
 $(".account-logout").toggle(localStorage.login == "true")
 
+
 displayItemProduct(data.productList);
 
+// hide content when start
 $(document).ready(function(){
-
     $('.brandFilterContent').hide();
     $('.cateFilterContent').hide();
     $('.colorFilterContent').hide();
@@ -119,6 +166,7 @@ $('.collDropDownBtn').click(function(){
     
 });
 
+// dropdown hide/show nav-products bar
 $('.mobileProductDropdownBtn').click(function(){
     setting.Home.mobileProductDropdown = !setting.Home.mobileProductDropdown;
     if (setting.Home.mobileProductDropdown){
@@ -193,7 +241,6 @@ $('.signIn-Btn').click(function(){
         } else {
             c++;
         }
-        
     }
     if (c!=0){
         $('.signInInfo').html('<span style="color:red">Account or Password is wrong !!</span>')
@@ -211,7 +258,7 @@ $('.signOutBtn').click(function(){
 
 // Information feature start
 
-$('#avatar').attr("src","../GeneralFormat/"+JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar)
+// Reset Button
 $('.resetBtn').click(function(){
     let userInfo= JSON.parse(localStorage.accountList);
     $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+' required>');
@@ -224,13 +271,15 @@ $('.resetBtn').click(function(){
         </div>`
         )
 })
+
+// Save changes Button
 $('.saveBtn').click(function(){
     let fullname = $('#fullNameInfo').val();
     let address = $('#addressInfo').val();
     let email = $('#emailInfo').val();
     let phone = $('#phoneInfo').val();
     let account = JSON.parse(localStorage.accountList);
-    account[localStorage.loginIndex].Fullname = fullname;
+    account[parseInt(localStorage.loginIndex)].Fullname = fullname;
     account[localStorage.loginIndex].Address = address;
     account[localStorage.loginIndex].Email = email;
     account[localStorage.loginIndex].Phone = phone;
@@ -240,7 +289,45 @@ $('.saveBtn').click(function(){
         <strong>Success!</strong> Your information have been changed
         </div>`
         )
-    return false;
+    
+})
+
+//Choose Avatar
+$('.chooseAva').click(function(){
+    let ava = JSON.parse(localStorage.accountList);
+    let avaChange = $(this).data("id");
+    ava[localStorage.loginIndex].Avatar=avaChange;
+    localStorage.accountList = JSON.stringify(ava);
+    $('#avatar').attr("src","../GeneralFormat/"+JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar)
+    $(document).ready(function(){
+        if (localStorage.login == "false"){
+            if (window.location.href.slice(-10)=="index.html"){
+                $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
+            } else {
+                $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
+            }
+        
+        } else {
+            let ava = JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar;
+            if (window.location.href.slice(-10)=="index.html"){
+                $('.accountIcon').attr("src","GeneralFormat/"+ava);
+                $('.accountIcon').attr("style",`
+                    width: 50px;
+                    height: 69px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                `)
+            } else {
+                $('.accountIcon').attr("src","../GeneralFormat/"+ava);
+                $('.accountIcon').attr("style",`
+                    width: 50px;
+                    height: 69px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                `)
+            }
+        }
+    })
 })
 
 // Information feature end
@@ -251,7 +338,7 @@ $('.saveBtn').click(function(){
 //=       Products        =
 //=========================
 
-// Products feature
+// Products show/hide feature
 $('.brandFilterBtn').click(function(){
     setting.Products.brandFilter = !setting.Products.brandFilter;
     if (setting.Products.brandFilter){
@@ -296,6 +383,7 @@ $('.descriptionBtn').click(function(){
     $('.descriptionContent').toggle(100);
 });
 
+//each product Showcase
 var res = '';
 function getUrlID(){
     var urlID = window.location.href;
@@ -308,6 +396,7 @@ function productDetail(){
     for (var v of data.productList){
         if (v.id == res){
             i++;
+            
             d1 += `
             <div class="row" style="margin-top:100px">  
                 <div class="col-md-7">
@@ -345,19 +434,19 @@ function productDetail(){
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="changeQuanBtn">-</button>
+                                <button class="changeQuanBtn minusBtn">-</button>
                                 <input type="number" min="1" value="1" class="quanInput">
-                                <button class="changeQuanBtn">+</button>
+                                <button class="changeQuanBtn plusBtn">+</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="addCartBtn" onclick="addToCart(${v.id})">Add to cart</button>
+                                <button class="addToCartBtn" data-id="${v.id}" data-name="${v.name}" data-price="${v.price}" data-img="${v.img[0]}">Add to cart</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button class="buyBtn">Buy now</button>
+                                <button class="buyBtn" data-id="${v.id}" data-name="${v.name}" data-price="${v.price}" data-img="${v.img[0]}">Buy now</button>
                             </div>
                         </div>
                     </div>
@@ -392,14 +481,66 @@ function productDetail(){
                 `;
             break;
         }
+
     }
     if (i == 0){
         d += `404 Not Found`;
     }
     $(".productInfo1").html(d1);
     $(".productInfo2").html(d2);
+    $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+
+    // +/- Button in productInfo
+    $('.plusBtn, .minusBtn').click(function(){
+        if ($(this).hasClass('plusBtn')){
+            $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))+1)
+        } else {
+            $('.quanInput').attr("value",parseInt($('.quanInput').attr("value"))-1)
+        }
+    })
+
+    //add to cart button
+    $('.addToCartBtn').click(function(){
+        let itemID = $(this).data("id");
+        let itemName = $(this).data("name");
+        let itemPrice = $(this).data("price");
+        let itemImg = $(this).data("img");
+        let iQuan = $('.quanInput').val();
+        let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":iQuan};
+        let cartList = JSON.parse(localStorage.shopCart);
+        let count = 0;
+        for (var i in cartList){
+            if (cartList[i].id === itemID){
+                cartList[i].quantity = iQuan;
+                count++;
+            }
+        }
+        if (count==0){
+            localStorage.cartQuan=parseInt(localStorage.cartQuan) + parseInt(iQuan);
+
+            cartList.push(cartItem);
+        }
+        localStorage.shopCart = JSON.stringify(cartList)
+        $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    })  
+
+    //buy now button
+    $('.buyBtn').click(function(){
+        localStorage.checkOut ="[]"  
+        let quantity = $('.quanInput').val();
+        let itemID = $(this).data("id");
+        let itemName = $(this).data("name");
+        let itemPrice = $(this).data("price");
+        let itemImg = $(this).data("img");
+        let buyNowItem = {"id":itemID,"Name":itemName,"Img":itemImg,"Price":itemPrice,"quantity":quantity};
+        let checkOutList = JSON.parse(localStorage.checkOut);
+        checkOutList.push(buyNowItem);
+        localStorage.checkOut = JSON.stringify(checkOutList);
+        location.href = "../Products/checkOut.html"
+    })
 }
 
+//show each Products in product list
 function displayItemProduct(items){
     let s=``;
     $.each(items, function (k, v){
@@ -422,22 +563,133 @@ function displayItemProduct(items){
                             <i class="fa-regular fa-star vote-star"></i>
                         </span>
                         <a href="#" class="addToCartBtn" data-id="${v.id}" data-name="${v.name}" data-price="${v.price}" data-img="${v.img[0]}"><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="cart" width="30px"></a>
-                        <button class="addToCartBtn">OK</button>
+                        <br>
+                         <span class="itemPrice">$ ${v.price}</span>    
                     </div>
                        
                 </div>
             
             </div>
-        
-
-        
     `; 
-    // 
     });
     $('.itemShow').html(s);
-
+    $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    
+    //add to cart button
+    $('.addToCartBtn').click(function(w){
+        let itemID = $(this).data("id");
+        let itemName = $(this).data("name");
+        let itemPrice = $(this).data("price");
+        let itemImg = $(this).data("img");
+        let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":1};
+        let cartList = JSON.parse(localStorage.shopCart);
+        let count = 0;
+        for (var i in cartList){
+            if (cartList[i].id === itemID){
+                count++;
+            }
+        }
+        if (count == 0){
+            localStorage.cartQuan=parseInt(localStorage.cartQuan) + parseInt(1);
+            cartList.push(cartItem);
+        }
+        localStorage.shopCart = JSON.stringify(cartList);
+        alert(localStorage.shopCart)
+        $('.cartQuantity').html(parseInt(localStorage.cartQuan));
+    });
 }
 
 
+//filter feature
+$('.applyBtn').click(function(){
+    let filter = $('.filter:checked');
+    let filterList =[];
+    let productList = JSON.parse(localStorage.proList);
+    let productFilter = [];
+    if (filter.length > 0){
+        filter.each(function(){
+            filterList.push($(this).val());
+        })
+    }
+    for (var i in productList){
+        for (var j in productList[i].category){
+            for (var k in filterList){
+                if (productList[i].category[j] == filterList[k]){
+                    if (productFilter.indexOf(productList[i]) ==-1){
+                        productFilter.push(productList[i])
+                    } 
+                }
+            }
+        }
+    }
+    if (filterList.length==0){
+        displayItemProduct(data.productList);
+    } else {
+            displayItemProduct(productFilter);
+
+    }
+})
+
+
+
+//==============================
+//=         Check Out          =
+//==============================
+
+//check out List item Showcase
+function checkOutListShow(){
+    let checkOutList = JSON.parse(localStorage.checkOut);
+    let output=``;
+    let totalPrice = 0;
+    $.each(checkOutList,function(k,v){
+        
+        output+=`
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="../Products/Product/${v.Img}" alt="Product Image" width="100%px" >
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row listRow"><b>${v.Name}</b></div>
+                                        <hr>
+
+                                        <div class="row listRow">
+                                            <div class="col-4 listTitle">Quantity:</div>
+                                            <div class="col-8 listContent">${v.quantity}</div>
+                                        </div>
+                                        <hr>
+                                        <div class="row listRow">
+                                            <div class="col-4 listTitle">Price:</div>
+                                            <div class="col-8 listContent">$ ${v.Price} </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row listRow">
+                                            <div class="col-4 listTitle">Total:</div>
+                                            <div class="col-8 listContent">$ ${v.Price * v.quantity}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        `
+        totalPrice += parseInt(v.Price*v.quantity);
+    })
+    $('.priceCheckOut').html(totalPrice);
+    $('.checkListLoop').html(output);
+    $('.totalCheckOut').html(parseInt(totalPrice)+30);
+}
+
+//check out form cart
+$('.checkOutBtn').click(function(){
+    let cartList = JSON.parse(localStorage.shopCart);
+    let checkOutList =[];
+    $.each(cartList,function(k,v){
+        let item = {"id":v.id,"Name":v.name,"quantity":v.quantity,"Img":v.img,"Price":v.price};
+        checkOutList.push(item);
+    })
+    localStorage.checkOut = JSON.stringify(checkOutList);
+    location.href = "checkOut.html"
+})
 
 

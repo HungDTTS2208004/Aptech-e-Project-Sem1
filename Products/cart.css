@@ -21,7 +21,8 @@
 .checkOutForm{
     border:solid 2px #572C51;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px;  
+    padding-left: 50px;
     width: 90%;
     margin: auto;
 }
@@ -33,7 +34,14 @@
     background-color: #572C51;
     border: 2px solid #572C51;
     border-radius: 10px;
-    
+}
+.checkOut{
+    text-align: center;
+    margin-top: 30px;
+}
+.priceTotal{
+    text-align: center;
+    font-size: 48px;
 }
 .heading{
     color:#572C51;
@@ -71,4 +79,7 @@ input::-webkit-inner-spin-button {
     color: #572C51;
     text-align: center;
     vertical-align: middle;
+}
+b{
+    display: inline;
 }

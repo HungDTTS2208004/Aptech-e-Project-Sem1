@@ -96,3 +96,9 @@
     color:#572C71;
     font-size: 28px;
 }
+.avaModal{
+    width: 70%;
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 30px ;
+}
