@@ -13,127 +13,291 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="/Navbar.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-        <div class="container" ng-app="myApp" ng-controller="about">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="mb-3 text-primary">About us</h2>
-                </div>
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#History"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
+  <h1>About Us</h1>
+  <hr>
+  <h2> About Our Creator</h2>
 
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#Creator"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#Journey"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-                        
-                    </div>
-                </div>
-
-                <hr style="border: solid;">
-    
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
-                        <a type="button" data-toggle="modal" data-target="#History"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-8">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#History"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-                       
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-8">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#History"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-    
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
-    
-                        <a type="button" data-toggle="modal" data-target="#History"><img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail" width="100%" height="500px"></a>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <!-- History -->
-            <div class="modal fade" id="History" role="dialog">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">History</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p></p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- History -->
-
-              <!-- Creator -->
-              <div class="modal fade" id="Creator" role="dialog">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Creator</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p></p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Creator -->
-
-              <!-- Journey -->
-              <div class="modal fade" id="Journey" role="dialog">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Our Journey</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p></p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Journey -->
-              
-            </div>
-            
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"> 
+        <div class="card rounded">
+          <img src="/AboutUs/Img/Tuan.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><b>Tuan-Our-CEO</b></h5>
+            <p class="card-text">A beloved and passionate person who . . .</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Tuan">Expand</a>
+          </div>
         </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card rounded" >
+          <img src="/AboutUs/Img/Hung.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+             <h5 class="card-title"><b>Hung-Our-DEV</b></h5>
+             <p class="card-text">A beloved and passionate developer who ...</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Hung">Expand</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card rounded">
+          <img src="/AboutUs/Img/Tam.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title"><b>Tam-Our-Designer</b></h5>
+               <p class="card-text">A beloved and passionate designer who . . .</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Tam">Expand</a>
+            </div>
+         </div>
+      </div>
+    </div>
+    <hr>
+    <h2> About Our Company</h2>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card rounded">
+          <img src="/AboutUs/Img/Ourjourney.png" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title"><b>Our Journey and Misson</b></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Journey">Expand</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="card rounded">
+          <img src="/AboutUs/Img/History.png" class="card-img-top" alt="..." height="348px">
+            <div class="card-body">
+               <h5 class="card-title"><b>Our History</b></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#History">Expand</a>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card rounded">
+          <img src="/AboutUs/Img/Archivement.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title"><b>Our Archivement</b></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Achivement">Expand</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card rounded">
+          <img src="/AboutUs/Img/Nailart.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title"><b>Our Nail Art</b></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NailArt">Expand</a>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+
+<!-- The Modal Tuan -->
+<div class="modal" id="Tuan">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Tuan-Our-CEO</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-6"><img src="/AboutUs/Img/Tuan.svg" alt="Tuan" id="Tuanimg"></div>
+            <div class="col-6 content">
+              A beloved and passionate person who founded us Nailery. He is our leader, leading us through hard time and one of the main member that contributed to our success to today
+            </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- The Modal Tuan -->
+
+<!-- The Modal Hung -->
+<div class="modal" id="Hung">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Hung-Our-DEV</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6"><img src="/AboutUs/Img/Hung.svg" alt="Tuan" id="Tuanimg"></div>
+          <div class="col-6 content">
+           A beloved and passionate developer who help us created this page. He is our developer, fix our stuff and one of the main member that contributed to our success to today
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal Hung -->
+
+<!-- The Modal Tam -->
+<div class="modal" id="Tam">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Tam-Our-Designer</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6"><img src="/AboutUs/Img/Tam.svg" alt="Tuan" id="Tuanimg"></div>
+          <div class="col-6 content">
+            A beloved and passionate designer who created the nail art of Nailery . She is our artist, design the best art out there and one of the main member that contributed to our success to today
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal Tam -->
+
+<!-- The Modal Journey -->
+<div class="modal" id="Journey">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Our Journey and Misson</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row m-row">
+          <div><img src="/AboutUs/Img/JourneyImg.jpg" alt="OurJourney" id="journeyimg"></div>
+          <div class="content modal-con">
+           Our company's brand has been well-nown around the world for it's finest quality and nail art.We also have one of the best Nail designer in world, Tam who has won several prestigious awards for Nail designer. Our misson is to bring the best quality products as well as finest form of Nail Art to those beloved Nail lover.
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal Journey -->
+
+<!-- The Modal History -->
+<div class="modal" id="History">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Our History</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <img src="/AboutUs/Img/HistoryModal.png" alt="History" id="HistoryImg">
+       <div class="content" id="History-con">Founded by Tuan, Hung and Tam in 2007, Nailery has over 15 years of work in the Nail world and Nailery is one of the largest companies about Nail out there. Over 15 years, we have gone through a lot of ups and downs and we are still working to improve our service and quality for all of you.  </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal History -->
+
+<!-- The Modal achivement -->
+<div class="modal" id="Achivement">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Achivement</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal Achivement -->
+
+<!-- The Modal NailArt -->
+<div class="modal" id="NailArt">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"><b>Nail Art</b></h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal NailArt -->
+
+
+
+
+
 </html>
