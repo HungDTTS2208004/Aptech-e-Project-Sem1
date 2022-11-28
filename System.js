@@ -42,7 +42,7 @@ var data = {
             "price":14.00,
             "img":["ID_004_01.jpg","ID_004_02.jpg","ID_004_03.jpg"],
             "star":4.3,
-            "content":"-Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>-Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.",
+            "content":"-Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>-Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.",
             "cmt":[],
             "category":["Nail Polish","OPI","Blue"],
             "date":"18-11-2020"
@@ -54,8 +54,8 @@ var data = {
             "img":["ID_005_01.jpg","ID_005_02.jpg","ID_005_03.jpg"],
             "star":4.3,
             "content":`
-                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>
-                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>
+                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>
+                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>
                 -Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.
             `,
             "cmt":[],
@@ -64,21 +64,21 @@ var data = {
         },
         {
             "id":"p06",
-            "name":"Jane",
-            "price":20.00,
+            "name":"Charmed, I'm Sure",
+            "price":14.00,
             "img":["ID_006_01.jpg","ID_006_02.jpg","ID_006_03.jpg"],
             "star":4.3,
             "content":`
-                -A milky neutral pink for an instant boost of brightness. Feminine and flattering. 0.45 fl oz/13.3 mL.<br>
-                <b>-8-free + cruelty-free + vegan:</b><br>
-                + does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
-                <b>-Ingredients</b><br>
-                + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
+                - Bling holiday cheer wherever you go with a rich fuchsia long-lasting nail polish.<br>
+                - Dial up your elegance with a shimmery finish.<br>   
+                - OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>
+                - Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear. <br>
+                - Made in the USA.             
             `,
             "cmt":[],
-            "category":["Nail Polish","Tenoverten","Yellow"],
+            "category":["Nail Polish","OPI","Purple"],
             "date":"18-11-2020"
-        },
+        },  
         {
             "id":"p07",
             "name":"Cherry",
@@ -115,14 +115,14 @@ var data = {
         },
         {
             "id":"p09",
-            "name":"Church",
-            "price":12.00,
+            "name":"Jane",
+            "price":20.00,
             "img":["ID_009_01.jpg","ID_009_02.jpg","ID_009_03.jpg"],
             "star":4.3,
             "content":`
-                -Show-stopping Bordeaux, dense and deep. A midnight burgundy to savor for days. 0.45 fl oz/13.3 mL.<br>
+                -A milky neutral pink for an instant boost of brightness. Feminine and flattering. 0.45 fl oz/13.3 mL.<br>
                 <b>-8-free + cruelty-free + vegan:</b><br>
-                + Does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
+                + does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
                 <b>-Ingredients</b><br>
                 + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
             `,
@@ -132,7 +132,7 @@ var data = {
         },
         {
             "id":"p10",
-            "name":"Church",
+            "name":"(Un)Guilty pleasures",
             "price":9.00,
             "img":["ID_010_01.jpg","ID_010_02.jpg","ID_010_03.jpg"],
             "star":4.3,
@@ -144,7 +144,90 @@ var data = {
                 - from the essie collection, which has produced more than 1,000 shades and counting.<br>
             `,
             "cmt":[],
-            "category":["Nail Polish","Essie","Green"],
+            "category":["Nail Polish","Essie","Blue"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p11",
+            "name":"Tropic low",
+            "price":10.00,
+            "img":["ID_011_01.jpg","ID_011_02.jpg","ID_011_03.jpg"],
+            "star":4.3,
+            "content":`
+                <b><u>summer 2022</u></b><br>
+                steal the spotlight on the dance floor with this shimmering, mossy green nail polish with gold duochrome pearls (shimmer)<br>
+                - inspired by sizzling summer days and sultry summer nights, essie proudly introduces the limited edition summer 2022 collection. this steamy range features five bold creams and one mesmerizing shimmer that set the tiki bar high. this season, get away from it all with vacay-ready shades that will leave you saying “isle see you later.”
+                salon quality formula for flawless coverage.<br>
+                - our exclusive easy glide brush for quick, even professional application on nails.
+                from the essie collection, which has produced more than 1,000 shades and counting.<br>
+                - over a thousand nuanced colors, essie original nail polish takes from the latest fashion and cultural trends to make your manicure possibilities endless, with a wink and story always on hand. your partner for playful inspiration.<br>
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Essie","Yellow"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p12",
+            "name":"Caught in the rain",
+            "price":10.00,
+            "img":["ID_012_01.jpg","ID_012_02.jpg","ID_012_03.jpg"],
+            "star":4.3,
+            "content":`
+                <b><u>(un)guilty pleasures cream green</u></b><br>
+                dance like no one's watching and enjoy that it's pouring with this muted neutral sage green vegan nail polish with gray undertones<br>
+                - inspired by your favorite (un)guilty pleasures, the new essie (un)guilty pleasures collection is all about saying yes to the things that make you happy and leaving the guilt behind.<br>
+                - salon quality, 8-free, vegan formula for flawless coverage.<br>
+                - our exclusive easy glide brush for quick, even professional application on nails.<br>
+                - from the essie collection, which has produced more than 1,000 shades and counting.<br>
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Essie","Grey"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p13",
+            "name":"The Big Clip",
+            "price":30.00,
+            "img":["ID_013_01.jpg","ID_013_02.jpg","ID_013_03.jpg"],
+            "star":4.3,
+            "content":`
+                <b><u>Detail</u></b><br>
+                Start your pedicure off on the right foot with this durable, straight-edged toenail trimmer.<br>
+                <br>
+                Crafted in Germany of stainless steel and coated in ultra-hard, scratch-resistant black coating that repels water, oil, and bacteria for the ultimate in clean clipping.<br>
+                <b><u>How to</u></b><br>
+                Lift handle and rotate. Begin by clipping nails at the left and right edges. Then, move to the center, trimming gradually to achieve the desired length and shape. Starting at the corners minimizes stress to the nail, helping to prevent breakage and ingrowns.<br>
+            `,
+            "cmt":[],
+            "category":["Tool","Tenoverten"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p14",
+            "name":"Tool Roll",
+            "price":38.00,
+            "img":["ID_014_01.jpg","ID_014_02.jpg","ID_014_03.jpg"],
+            "star":4.3,
+            "content":`
+                <b><u>Detail</u></b><br>
+                Upgrade your drawer or cosmetic bag full of nail tools with our vegan leather tool roll. Store your Tenoverten manicure & pedicure tools in the roomy pouch, which folds over and secures with an elastic closure. 6.5" x 4" when open. <br>
+            `,
+            "cmt":[],
+            "category":["Tool","Tenoverten"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p15",
+            "name":"Tool Roll",
+            "price":38.00,
+            "img":["ID_015_01.jpg","ID_015_02.jpg","ID_015_03.jpg"],
+            "star":4.3,
+            "content":`
+                <b><u>Detail</u></b><br>
+                Upgrade your drawer or cosmetic bag full of nail tools with our vegan leather tool roll. Store your Tenoverten manicure & pedicure tools in the roomy pouch, which folds over and secures with an elastic closure. 6.5" x 4" when open. <br>
+            `,
+            "cmt":[],
+            "category":["Accessory"],
             "date":"18-11-2020"
         },
     ],
@@ -736,8 +819,11 @@ $('.applyBtn').click(function(){
     if (filterList.length==0){
         displayItemProduct(data.productList);
     } else {
+        if (productFilter.length ==0){
+            $('.itemShow').html("There's no item in this filter list");
+        } else {
             displayItemProduct(productFilter);
-
+        }
     }
 })
 
