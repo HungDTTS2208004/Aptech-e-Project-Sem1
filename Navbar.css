@@ -187,3 +187,84 @@ body{
     font-family: 'Stick No Bills';
     overflow-x: hidden;
 }
+
+
+footer.container-fluid{
+    background-color: #896C9B;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    border-top: #572C57 2px solid;
+    color: white;
+}
+.thankSen{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+}
+#row{
+    padding-top: 50px;
+}
+.col-sm-4{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#pb{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+a.btn{
+    text-align: center;
+    width: 360px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: #572C57 2px solid;
+    color: #572C57;
+    background-color: white;
+}
+.btn-primary{
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #572C57;
+    --bs-btn-hover-border-color: #572C57;
+
+}
+#col{
+    border-left: white 2px solid;
+    padding-left: 20px;
+}
+#col1{
+    height: 60%;
+    border-left: white 2px solid;
+}
+#col2{
+    margin-top: 120px;
+    border-left: white solid 2px;
+    padding-left: 20px;
+}
+
+
+
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    border: 2px solid #572C57; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+   button.btn{
+    background-color: #572C57;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
