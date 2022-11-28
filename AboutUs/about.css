@@ -21,9 +21,14 @@ h2{
 img{
     border-bottom: solid 2px #572C57;
 }
-.btn{
+a.but1{
     background-color: #572C57 ;
     font-size: 20px;
+    color: white;
+    width: 100px;
+    padding-top: 9px;
+    
+    
     
 }
 a{
@@ -85,4 +90,17 @@ img#HistoryImg{
     width:100%;
     border: #572C57 2px solid;
     margin-top: 20px;
+}
+div.row1{
+    padding-top: 0px;
+    text-align: start;
+}
+img#Achievement{
+    width: 100%;
+    padding-top: 50px;
+    border-bottom: unset;
+}
+img#NailArt{
+    width: 100%;
+    border-bottom: unset;
 }
