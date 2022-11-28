@@ -1,0 +1,46 @@
+.rtecenter1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    -ms-transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+.rtecenter2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    -ms-transform: translate(-50%,-50%);
+    font-size: 18px;
+}
+.panel{
+    position: relative;
+}
+
+.overlay {
+    background: rgb(255, 248, 248);
+    position: absolute;
+    height: 30%;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    margin-left: 100px;
+}
+.b-lazy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nail-art-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 300px;
+}
