@@ -218,18 +218,69 @@ var data = {
         },
         {
             "id":"p15",
-            "name":"Tool Roll",
-            "price":38.00,
+            "name":"Heart Shape Nail Charms",
+            "price":4.00,
             "img":["ID_015_01.jpg","ID_015_02.jpg","ID_015_03.jpg"],
             "star":4.3,
             "content":`
-                <b><u>Detail</u></b><br>
-                Upgrade your drawer or cosmetic bag full of nail tools with our vegan leather tool roll. Store your Tenoverten manicure & pedicure tools in the roomy pouch, which folds over and secures with an elastic closure. 6.5" x 4" when open. <br>
+                - Material: Acrylic<br>
+                - Perfect for: Nail Art, Craft, Phone Pop Sockets Art etc.<br>
+                - Quantity: 20pcs/ pack<br>
+                - Please NOTE that what you are purchasing is Nail Charms, excluding acrylic nails. And the actual color may vary slightly from your monitor. This is due to the fact that every computer monitor displays colors differently            `,
+            "cmt":[],
+            "category":["Accessory"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p16",
+            "name":"Metal Nail Charms",
+            "price":3.5,
+            "img":["ID_016_01.jpg","ID_016_02.jpg","ID_016_03.jpg"],
+            "star":4.3,
+            "content":`
+                - 50pcs mixed chrome cross nail charms, 10 different style includes cross, goat, key, star...<br>
+                - Size: 5-10mm<br>
+                - Color: Silver or Gold<br>
+                - + 10ml UV glue $3.5 (*Must use UV light)<br>
+                - The glue is so clear and won't appear any white color<br>
             `,
             "cmt":[],
             "category":["Accessory"],
             "date":"18-11-2020"
         },
+        {
+            "id":"p17",
+            "name":"Moon and Stars Decals",
+            "price":3.5,
+            "img":["ID_017_01.jpg","ID_017_02.jpg","ID_017_03.jpg"],
+            "star":4.3,
+            "content":`
+                - Create your own design with these gold stars and moon nail decals!<br>
+                - SIZE: The size of the temporary nail tattoo sheet is 9,6 x 6,6 cm (3 4/5 inch x 2 3/5 inch).<br>
+                - WHAT YOU GET: This listing is for one sheet of high quality temporary tattoo nail tattoos. Tattoorary offers high quality temporary nail tattoos. Application directions are included in your package.<br>
+            `,
+            "cmt":[],
+            "category":["Accessory"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p18",
+            "name":"Polar Light Crystals",
+            "price":6.5,
+            "img":["ID_018_01.jpg","ID_018_02.jpg","ID_018_03.jpg"],
+            "star":4.3,
+            "content":`
+                - Glass aurora geometrical crystals color changing super shine<br>
+                - Material: Glass<br>
+                - Mixed size, 14 styles, 5pcs each.<br>
+                - Price for 70pcs total.<br>
+                - Item purpose: Nail art, jewelry/ accessories design, DIY crafts.<br>
+                - Target customer: handmade lovers, nail art lovers, designers,<br>
+            `,
+            "cmt":[],
+            "category":["Accessory"],
+            "date":"18-11-2020"
+        }
     ],
     "account":[
         {
