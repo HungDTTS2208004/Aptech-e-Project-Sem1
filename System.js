@@ -9,7 +9,7 @@ var data = {
             "img":["ID_001_01.jpg","ID_001_02.jpg","ID_001_03.jpg"],
             "star":4.9,
             "content":"-Bling on an edgy new attitude with this green long-lasting nail polish.<br>-Take your manicure to the next level with a gilded metallic finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
-            "cmt":"",
+            "cmt":[],
             "category":["Nail Polish","OPI","Green"],
             "date":"11-11-2020"
         },
@@ -35,7 +35,118 @@ var data = {
             "cmt":[],
             "category":["Nail Polish","OPI","Red"],
             "date":"18-11-2020"
-        }
+        },
+        {
+            "id":"p04",
+            "name":"Tealing Festive",
+            "price":14.00,
+            "img":["ID_004_01.jpg","ID_004_02.jpg","ID_004_03.jpg"],
+            "star":4.3,
+            "content":"-Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>-Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.",
+            "cmt":[],
+            "category":["Nail Polish","OPI","Blue"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p05",
+            "name":"Sleigh Bells Bling",
+            "price":20.00,
+            "img":["ID_005_01.jpg","ID_005_02.jpg","ID_005_03.jpg"],
+            "star":4.3,
+            "content":`
+                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>
+                -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh–and are perfect for mixing and matching for multiple looks and moods.<br>
+                -Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.
+            `,
+            "cmt":[],
+            "category":["Nail Polish","OPI","Yellow"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p06",
+            "name":"Jane",
+            "price":20.00,
+            "img":["ID_006_01.jpg","ID_006_02.jpg","ID_006_03.jpg"],
+            "star":4.3,
+            "content":`
+                -A milky neutral pink for an instant boost of brightness. Feminine and flattering. 0.45 fl oz/13.3 mL.<br>
+                <b>-8-free + cruelty-free + vegan:</b><br>
+                + does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
+                <b>-Ingredients</b><br>
+                + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Tenoverten","Yellow"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p07",
+            "name":"Cherry",
+            "price":12.00,
+            "img":["ID_007_01.jpg","ID_007_02.jpg","ID_007_03.jpg"],
+            "star":4.3,
+            "content":`
+                -Cerise and shine. A beyond-bombshell red. Elegant and eternally modern. 0.45 fl oz/13.3 mL.<br>
+                <b>-8-free + cruelty-free + vegan:</b><br>
+                + Does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
+                <b>-Ingredients</b><br>
+                + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Tenoverten","Red"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p08",
+            "name":"Church",
+            "price":12.00,
+            "img":["ID_008_01.jpg","ID_008_02.jpg","ID_008_03.jpg"],
+            "star":4.3,
+            "content":`
+                -Show-stopping Bordeaux, dense and deep. A midnight burgundy to savor for days. 0.45 fl oz/13.3 mL.<br>
+                <b>-8-free + cruelty-free + vegan:</b><br>
+                + Does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
+                <b>-Ingredients</b><br>
+                + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Tenoverten","Black"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p09",
+            "name":"Church",
+            "price":12.00,
+            "img":["ID_009_01.jpg","ID_009_02.jpg","ID_009_03.jpg"],
+            "star":4.3,
+            "content":`
+                -Show-stopping Bordeaux, dense and deep. A midnight burgundy to savor for days. 0.45 fl oz/13.3 mL.<br>
+                <b>-8-free + cruelty-free + vegan:</b><br>
+                + Does not contain: dibutyl phthalate (dbp), toluene, formaldehyde, formaldehyde resin, camphor, ethyl tosylamide, xylene, triphenyl phosphate (tphp) <br>
+                <b>-Ingredients</b><br>
+                + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Tenoverten","Yellow"],
+            "date":"18-11-2020"
+        },
+        {
+            "id":"p10",
+            "name":"Church",
+            "price":9.00,
+            "img":["ID_010_01.jpg","ID_010_02.jpg","ID_010_03.jpg"],
+            "star":4.3,
+            "content":`
+                life is too short for regrets, so leave the guilt behind with this rich teal green vegan nail polish with blue undertones<br>
+                - inspired by your favorite (un)guilty pleasures, the new essie (un)guilty pleasures collection is all about saying yes to the things that make you happy and leaving the guilt behind.<br>
+                - salon quality, 8-free, vegan formula for flawless coverage.<br>
+                - our exclusive easy glide brush for quick, even professional application on nails.<br>
+                - from the essie collection, which has produced more than 1,000 shades and counting.<br>
+            `,
+            "cmt":[],
+            "category":["Nail Polish","Essie","Green"],
+            "date":"18-11-2020"
+        },
     ],
     "account":[
         {
