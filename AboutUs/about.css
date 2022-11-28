@@ -1,0 +1,88 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+hr{
+    margin-top: 10px;
+    border-top:solid 3px black;
+    background-color: black;
+}
+h2{
+    text-align: center;
+    font-size:  40px;
+}
+.row{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.card{
+    border: solid 3px #572C57;
+}
+img{
+    border-bottom: solid 2px #572C57;
+}
+.btn{
+    background-color: #572C57 ;
+    font-size: 20px;
+    
+}
+a{
+    width: 100px;
+}
+.card-title{
+    font-size: 30px;
+}
+.card-text{
+    font-size: 20px;
+}
+.modal-content{
+    border: solid 3px #572C57;
+}
+.modal-header{
+    text-align: center;
+    border-bottom: #572C57 solid 4px;
+}
+.modal-title{
+    font-size: 60px;
+    text-align: center;
+}
+.modal-body{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+img#Tuanimg{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: unset;
+}
+.content{
+    border-left: solid 2px black;
+    font-size: 30px;
+    padding-left: 50px;  
+    padding-right: 50px;  
+}
+img#journeyimg{
+    width: 100%;
+}
+div.modal-con{
+    font-size: 40px;
+}
+div.m-row{
+    padding-top: 20px;
+}
+div.modal-con{
+    border-left: unset;
+    font-size: 30px;
+    padding-top: 20px;
+}
+div#History-con{
+    border-left: unset;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+img#HistoryImg{
+    width:100%;
+    border: #572C57 2px solid;
+    margin-top: 20px;
+}

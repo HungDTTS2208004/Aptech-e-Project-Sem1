@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="Home/Home.css">
@@ -97,6 +98,134 @@
         </nav>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+    <!-- Carousel -->
+    <div id="homeSlideshow" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeSlideshow" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#homeSlideshow" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#homeSlideshow" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Home/HomeContent/Home6.jpg" alt="Slideshow" class="homeImg w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Home\HomeContent\Home7.jpg" alt="Slideshow" class="homeImg w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Home\HomeContent\Home5.jpg" alt="Slideshow" class="homeImg w-100">
+            </div>
+        </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeSlideshow" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeSlideshow" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <hr>
+    <div class="col-7 bodyContent">
+        <div>
+            <img src="Home/HomeContent/Home3.jpg" alt="" class="imgContent">
+        </div>
+        <div class="black-opacity"></div>
+        <div class="sectionNavBtn">Colections</div>
+    </div>
+
+
+
+    
+
+    <footer class="container-fluid">
+        <h1 class="thankSen">We truly appreciate your access and also your support !</h1>
+        <div class="row" id="row">
+            <div class="col-sm-4">
+                <p id="pb"><b>Send feedback to us</b></p>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer"><b>Click here to feedback</b></a>
+            </div>
+            <div class="col-sm-3" id="col">
+                <b>Collections</b>
+                <div>
+                    <p>- Season</p>
+                    <p>- Events</p>
+                    <p>- For kids</p>
+                    <p>- Bling</p>
+                    <p>- Crystal</p>
+                </div>
+            </div>
+            <div class="col-sm-2" id="col1">
+                <b>Products</b>
+                <div>
+                    <p>- Brands</p>
+                    <p>- Categories</p>
+                    <p>- Colors</p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <b  class="row" id="col">About Us</b>
+                <b class="row" id="col2">Contact Us</b>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- The Modal Footer -->
+    <div class="modal" id="footer">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title"><b>Feedback Form</b></h4>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="input">
+                        <form action="">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" placeholder="Your full name...">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" placeholder="Your phone number...">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Your email...">
+                            <label for="add">Address</label>
+                            <input type="text" id="add" placeholder="Your address...">
+                            <label for="sub">Subject</label>
+                            <input type="text" id="sub" placeholder="Subject...">
+                            <label for="content">Content</label>
+                            <textarea id="content" placeholder="Your writing..." cols="5" rows="2" ></textarea>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <bu tton type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>  
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="System.js"></script>
     <script src="Cart.js"></script>

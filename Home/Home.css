@@ -1,3 +1,26 @@
+.carousel{
+    width: 80%;
+    margin: 50px auto;
 
+}
+.homeImg{
+    width: 100%;
+}
+.black-opacity{
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+    height: 250px;
+    bottom :250px;
+}
+.bodyContent{
+    margin: auto;
+}
+.imgContent{
+    width: 100%;
+}
+.sectionNavBtn{
+    color: white;
+}
 
 
