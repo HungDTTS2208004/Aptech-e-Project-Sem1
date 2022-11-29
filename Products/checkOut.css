@@ -36,7 +36,7 @@ h1{
     font-weight: 600;
     padding-left: 90px;
 }
-.checkOutInput{
+input.checkOutInput, textarea.checkOutInput, select.checkOutInput{
     width: 90%;
     border: solid 2px #572C71;
     border-radius: 15px;

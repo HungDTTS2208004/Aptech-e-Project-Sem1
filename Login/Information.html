@@ -148,7 +148,7 @@
     <div class="modal" id="myModal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-  
+
             <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Select avatar</h4>
@@ -174,16 +174,16 @@
             </div>
         </div>
     </div>
-   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-   <script src="../System.js"></script>
-   <script src="../Cart.js"></script>
-   <script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../System.js"></script>
+    <script src="../Cart.js"></script>
+    <script>
         var userInfo = JSON.parse(localStorage.accountList); 
         $('#avatar').attr("src","../GeneralFormat/"+userInfo[localStorage.loginIndex].Avatar);
-        $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+' required>');
-        $('.addressInput').html('<input type="text" class="infoInput" id="addressInfo" value='+userInfo[localStorage.loginIndex].Address+' required>');        
-        $('.emailInput').html('<input type="text" class="infoInput" id="emailInfo" value='+userInfo[localStorage.loginIndex].Email+' required>');
-        $('.phoneInput').html('<input type="text" class="infoInput" id="phoneInfo" value='+userInfo[localStorage.loginIndex].Phone+' required>');   
+        $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+'>');
+        $('.addressInput').html('<input type="text" class="infoInput" id="addressInfo" value='+userInfo[localStorage.loginIndex].Address+'>');        
+        $('.emailInput').html('<input type="text" class="infoInput" id="emailInfo" value='+userInfo[localStorage.loginIndex].Email+'>');
+        $('.phoneInput').html('<input type="text" class="infoInput" id="phoneInfo" value='+userInfo[localStorage.loginIndex].Phone+'>');   
 
     </script>
 </body>

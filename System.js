@@ -10,19 +10,23 @@ var data = {
             "star":4.9,
             "content":"-Bling on an edgy new attitude with this green long-lasting nail polish.<br>-Take your manicure to the next level with a gilded metallic finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Green"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Green"],
             "date":"11-11-2020"
         },
         {
             "id":"p02",
-            "name":"OPI'm a Gem",
+            "name":"OPIm a Gem",
             "price":14.00,
             "img":["ID_002_01.jpg","ID_002_02.jpg","ID_002_03.jpg"],
             "star":4,
             "starRate":33,
             "content":"-Dazzle your next dinner party with a powerful black glitter long-lasting nail polish.<br>-Make a statement with a blinged-out glitter finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Black","Blue"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Black","Blue"],
             "date":"19-9-2019"
         },
         {
@@ -33,7 +37,9 @@ var data = {
             "star":4.3,
             "content":"-Spread holiday joy with a sophisticated and versatile red long-lasting nail polish.<br>-The striking pearl finish will set you apart from the crowd this season.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Red"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Red"],
             "date":"18-11-2020"
         },
         {
@@ -44,7 +50,9 @@ var data = {
             "star":4.3,
             "content":"-Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>-Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.",
             "cmt":[],
-            "category":["Nail Polish","OPI","Blue"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Blue"],
             "date":"18-11-2020"
         },
         {
@@ -59,12 +67,14 @@ var data = {
                 -Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.
             `,
             "cmt":[],
-            "category":["Nail Polish","OPI","Yellow"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Yellow"],
             "date":"18-11-2020"
         },
         {
             "id":"p06",
-            "name":"Charmed, I'm Sure",
+            "name":"Charmed, Im Sure",
             "price":14.00,
             "img":["ID_006_01.jpg","ID_006_02.jpg","ID_006_03.jpg"],
             "star":4.3,
@@ -76,7 +86,9 @@ var data = {
                 - Made in the USA.             
             `,
             "cmt":[],
-            "category":["Nail Polish","OPI","Purple"],
+            "brand":["OPI"],
+            "category":["Nail Polish"],
+            "color":["Purple"],
             "date":"18-11-2020"
         },  
         {
@@ -93,7 +105,9 @@ var data = {
                 + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
             `,
             "cmt":[],
-            "category":["Nail Polish","Tenoverten","Red"],
+            "brand":["Tenoverten"],
+            "category":["Nail Polish"],
+            "color":["Red"],
             "date":"18-11-2020"
         },
         {
@@ -110,7 +124,9 @@ var data = {
                 + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
             `,
             "cmt":[],
-            "category":["Nail Polish","Tenoverten","Black"],
+            "brand":["Tenoverten"],
+            "category":["Nail Polish"],
+            "color":["Black"],
             "date":"18-11-2020"
         },
         {
@@ -127,7 +143,9 @@ var data = {
                 + butyl acetate, ethyl acetate, nitrocellulose, adipic acid / neopentyl glycol / trimellitic anhydride copolymer, acetyl tributyl citrate, isopropyl alcohol, acrylates copolymer, stearalkonium bentonite, n-butyl alcohol, benzophenone-1, silica, alumina, trimethylpentanediyl dibenzoate, polyvinyl butyral, styrene / acrylates copolymer, polyethylene terephthalate, polybutylene terephthalate, ethylene / va copolymer. may contain (+/-): aluminum powder (ci 77000), iron oxides (ci 77499 / ci 77491), red 34 lake(ci 15880), red 6 lake (ci 15850), red 7 lake (ci 15850), yellow 5 lake (ci 19140), ferric ammonium ferrocyanide (ci 77510), mica (ci 77019), blue 1 (ci 42090), yellow 11 (ci 47000), titanium dioxide (ci 77891), violet 2 (ci 60725).
             `,
             "cmt":[],
-            "category":["Nail Polish","Tenoverten","Yellow"],
+            "brand":["Tenoverten"],
+            "category":["Nail Polish"],
+            "color":["Yellow"],
             "date":"18-11-2020"
         },
         {
@@ -144,7 +162,9 @@ var data = {
                 - from the essie collection, which has produced more than 1,000 shades and counting.<br>
             `,
             "cmt":[],
-            "category":["Nail Polish","Essie","Blue"],
+            "brand":["Essie"],
+            "category":["Nail Polish"],
+            "color":["Blue"],
             "date":"18-11-2020"
         },
         {
@@ -163,7 +183,9 @@ var data = {
                 - over a thousand nuanced colors, essie original nail polish takes from the latest fashion and cultural trends to make your manicure possibilities endless, with a wink and story always on hand. your partner for playful inspiration.<br>
             `,
             "cmt":[],
-            "category":["Nail Polish","Essie","Yellow"],
+            "brand":["Essie"],
+            "category":["Nail Polish"],
+            "color":["Yellow"],
             "date":"18-11-2020"
         },
         {
@@ -181,7 +203,9 @@ var data = {
                 - from the essie collection, which has produced more than 1,000 shades and counting.<br>
             `,
             "cmt":[],
-            "category":["Nail Polish","Essie","Grey"],
+            "brand":["Essie"],
+            "category":["Nail Polish"],
+            "color":["Grey"],
             "date":"18-11-2020"
         },
         {
@@ -199,7 +223,9 @@ var data = {
                 Lift handle and rotate. Begin by clipping nails at the left and right edges. Then, move to the center, trimming gradually to achieve the desired length and shape. Starting at the corners minimizes stress to the nail, helping to prevent breakage and ingrowns.<br>
             `,
             "cmt":[],
-            "category":["Tool","Tenoverten"],
+            "brand":["Tenoverten"],
+            "category":["Tool"],
+            "color":[],
             "date":"18-11-2020"
         },
         {
@@ -213,7 +239,9 @@ var data = {
                 Upgrade your drawer or cosmetic bag full of nail tools with our vegan leather tool roll. Store your Tenoverten manicure & pedicure tools in the roomy pouch, which folds over and secures with an elastic closure. 6.5" x 4" when open. <br>
             `,
             "cmt":[],
-            "category":["Tool","Tenoverten"],
+            "brand":["Tenoverten"],
+            "category":["Tool"],
+            "color":[],
             "date":"18-11-2020"
         },
         {
@@ -228,7 +256,9 @@ var data = {
                 - Quantity: 20pcs/ pack<br>
                 - Please NOTE that what you are purchasing is Nail Charms, excluding acrylic nails. And the actual color may vary slightly from your monitor. This is due to the fact that every computer monitor displays colors differently            `,
             "cmt":[],
+            "brand":[],
             "category":["Accessory"],
+            "color":[],
             "date":"18-11-2020"
         },
         {
@@ -245,7 +275,9 @@ var data = {
                 - The glue is so clear and won't appear any white color<br>
             `,
             "cmt":[],
+            "brand":[],
             "category":["Accessory"],
+            "color":[],
             "date":"18-11-2020"
         },
         {
@@ -260,7 +292,9 @@ var data = {
                 - WHAT YOU GET: This listing is for one sheet of high quality temporary tattoo nail tattoos. Tattoorary offers high quality temporary nail tattoos. Application directions are included in your package.<br>
             `,
             "cmt":[],
+            "brand":[],
             "category":["Accessory"],
+            "color":[],
             "date":"18-11-2020"
         },
         {
@@ -278,7 +312,9 @@ var data = {
                 - Target customer: handmade lovers, nail art lovers, designers,<br>
             `,
             "cmt":[],
+            "brand":[],
             "category":["Accessory"],
+            "color":[],
             "date":"18-11-2020"
         }
     ],
@@ -370,6 +406,7 @@ $(document).ready(function(){
                 border-radius: 50%;
             `)
         }
+        
     }
 })
 
@@ -438,34 +475,36 @@ $('.signUp-Btn').click(function(){
     let accList = JSON.parse(localStorage.accountList);
     let err='';
     let c=0;
-
-    for (var i in accList){
-        if (accList[i].name == accountName || accountPass != accountRePass){
-            if (accList[i].name == accountName){
-                c++;
-                err+=`<span style="color:red"> Account has already been used !! </span>`;
-            } else {
-                c++;
-                err+=`<span style="color:red"> Those passwords didn't match. Try again. !!</span>`;
-            } 
+    if (accountName!="" && accountName.indexOf(" ")==-1 && accountPass!="" && accountPass.indexOf(" ")==-1){
+        let c=0;
+        for (var i in accList){
+            if (accList[i].name == accountName || accountPass != accountRePass){
+                if (accList[i].name == accountName){
+                    c++;
+                    err+=`<span style="color:red"> Account has already been used !! </span>`;
+                } else {
+                    c++;
+                    err+=`<span style="color:red"> Those passwords didn't match. Try again. !!</span>`;
+                } 
+            }
         }
-    }
-    if (c==0){
-        let newAccount = {
-            'name': accountName,
-            'password': accountPass,
-            'Avatar':'ava1.png',
-            'Fullname':'',
-            'Address':'',
-            'Email':'',
-            'Phone':''
-        };
+        if (c==0){
+            let newAccount = {
+                'name': accountName,
+                'password': accountPass,
+                'Avatar':'ava1.png',
+                'Fullname':'',
+                'Address':'',
+                'Email':'',
+                'Phone':''
+            };
             accList.push(newAccount);
             localStorage.accountList = JSON.stringify(accList);
-            location.href="../index.html"
+            location.href="signIn.html"
+        }
+    } else {
+        err+=`<span style="color:red">Name and Password cannot be empty</span>`
     }
-            
-
     $('.signUpInfo').html(err);
 })
 // Sign Up feature end
@@ -506,10 +545,10 @@ $('.signOutBtn').click(function(){
 // Reset Button
 $('.resetBtn').click(function(){
     let userInfo= JSON.parse(localStorage.accountList);
-    $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+' required>');
-    $('.addressInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Address+' required>');        
-    $('.emailInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Email+' required>');
-    $('.phoneInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Phone+' required>');   
+    $('.fullNameInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Fullname+'>');
+    $('.addressInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Address+'>');        
+    $('.emailInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Email+'>');
+    $('.phoneInput').html('<input type="text" class="infoInput" id="fullNameInfo" value='+userInfo[localStorage.loginIndex].Phone+'>');   
     $('.infoChange').html(`
         <div class="alert alert-success" style="text-align:center">
         <strong>Success!</strong> Your information have been reseted
@@ -847,34 +886,83 @@ function displayItemProduct(items){
 
 //filter feature
 $('.applyBtn').click(function(){
-    let filter = $('.filter:checked');
-    let filterList =[];
+    let brandFilter = $('.brandFilter:checked');
+    let brandFilterList =[];
+    let cateFilter = $('.cateFilter:checked');
+    let cateFilterList = [];
+    let colorFilter = $('.colorFilter:checked');
+    let colorFilterList = [];
     let productList = JSON.parse(localStorage.proList);
     let productFilter = [];
-    if (filter.length > 0){
-        filter.each(function(){
-            filterList.push($(this).val());
+    let productFilterAfter =[];
+    if (brandFilter.length > 0){
+        brandFilter.each(function(){
+            brandFilterList.push($(this).val());
         })
     }
-    for (var i in productList){
-        for (var j in productList[i].category){
-            for (var k in filterList){
-                if (productList[i].category[j] == filterList[k]){
-                    if (productFilter.indexOf(productList[i]) ==-1){
-                        productFilter.push(productList[i])
-                    } 
+    if (cateFilter.length > 0){
+        cateFilter.each(function(){
+            cateFilterList.push($(this).val());
+        })
+    }
+    if (colorFilter.length > 0){
+        colorFilter.each(function(){
+            colorFilterList.push($(this).val());
+        })
+    }
+
+    if (brandFilterList.length != 0){
+        for (var i in productList){
+            for (var j in productList[i].brand){
+                for (var k in brandFilterList){
+                    if (productList[i].brand[j] == brandFilterList[k]){
+                        if (productFilter.indexOf(productList[i]) ==-1){
+                            productFilter.push(productList[i])
+                        } 
+                    }
                 }
             }
         }
-    }
-    if (filterList.length==0){
-        displayItemProduct(data.productList);
     } else {
-        if (productFilter.length ==0){
-            $('.itemShow').html("There's no item in this filter list");
-        } else {
-            displayItemProduct(productFilter);
+        productFilter = productList;
+    }
+    
+    if (cateFilterList.length != 0){
+        for (var i in productFilter){
+            for (var j in productFilter[i].category){
+                for (var k in cateFilterList){
+                    if (productFilter[i].category[j] == cateFilterList[k]){
+                        if (productFilterAfter.indexOf(productFilter[i]) ==-1){
+                            productFilterAfter.push(productFilter[i])
+                        } 
+                    }
+                }
+            }
         }
+        productFilter = productFilterAfter;
+        productFilterAfter = [];
+    }
+    
+    if (colorFilterList.length !=0){
+        for (var i in productFilter){
+            for (var j in productFilter[i].color){
+                for (var k in colorFilterList){
+                    if (productFilter[i].color[j] == colorFilterList[k]){
+                        if (productFilterAfter.indexOf(productFilter[i]) ==-1){
+                            productFilterAfter.push(productFilter[i])
+                        } 
+                    }
+                }
+            }
+        }
+        productFilter = productFilterAfter;
+        productFilterAfter = [];
+    }
+    
+    
+    displayItemProduct(productFilter);
+    if (JSON.stringify(productFilter) == "[]" ){
+        $('.itemShow').html("There's no item in this filter list");
     }
 })
 
@@ -892,7 +980,7 @@ function checkOutListShow(){
     $.each(checkOutList,function(k,v){
         
         output+=`
-                        <div class="row">
+                        <div class="row" style="margin-bottom:40px">
                             <div class="col-10">
                                 <div class="row">
                                     <div class="col-3">
@@ -929,15 +1017,6 @@ function checkOutListShow(){
 }
 
 //check out form cart
-$('.checkOutBtn').click(function(){
-    let cartList = JSON.parse(localStorage.shopCart);
-    let checkOutList =[];
-    $.each(cartList,function(k,v){
-        let item = {"id":v.id,"Name":v.name,"quantity":v.quantity,"Img":v.img,"Price":v.price};
-        checkOutList.push(item);
-    })
-    localStorage.checkOut = JSON.stringify(checkOutList);
-    location.href = "checkOut.html"
-})
+
 
 

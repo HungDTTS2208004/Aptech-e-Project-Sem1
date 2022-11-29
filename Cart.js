@@ -8,11 +8,11 @@ function cartDisplay(){
     let output = '';
     let iTotalQuan = 0;
     let iTotalPrice = 0;
-    
+    let buyList = [];
     $.each(cartList, function(k, v){
         output += `
         <div class="col-12 align-items-center d-flex">
-            <input type="checkbox" class="selectBtn">
+            <input type="checkbox" class="selectBtn child" value='${JSON.stringify(v)}'>
             <div class="item">
                 <div class="row">
                     <div class="col-3">
@@ -57,10 +57,12 @@ function cartDisplay(){
         localStorage.cartQuan = iTotalQuan;
     })
     
+    
     $('.totalPriceCart').html(iTotalPrice);
     $('.totalQuanCart').html(iTotalQuan);
     $('.itemLoop').html(output);
     $('.cartQuantity').html(localStorage.cartQuan);
+
     $('.quanMinus, .quanPlus').click(function(){
         let iIndex = $(this).data("index");
         let cartList = JSON.parse(localStorage.shopCart);
@@ -72,6 +74,25 @@ function cartDisplay(){
         }
         localStorage.shopCart = JSON.stringify(cartList);
         cartDisplay()
+    });
+
+    $('.checkOutBtn').click(function(){
+        let cartList = JSON.parse(localStorage.shopCart);
+        let checkOutList =[];
+        let buy = $('.selectBtn:checked');
+        let buyList = [];
+        if (buy.length > 0){
+            buy.each(function(){
+                buyList.push(JSON.parse($(this).val()));
+            })
+        }
+        // alert(JSON.stringify(buyList));
+        $.each(buyList,function(k,v){
+            let item = {"id":v.id,"Name":v.name,"quantity":v.quantity,"Img":v.img,"Price":v.price};
+            checkOutList.push(item);
+        })
+        localStorage.checkOut = JSON.stringify(checkOutList);
+        location.href = "checkOut.html"
     })
 }
 

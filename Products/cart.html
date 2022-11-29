@@ -108,7 +108,7 @@
         <div class="cartBody">
             <div class="row">
                 <div class="col-12 selectAllBtn">
-                    <input type="checkbox" class="selAll"> Select all
+                    <input type="checkbox" class="selAll" id="parent"> Select all
                 </div>
             </div>
             <div class="row">
@@ -148,6 +148,19 @@
     <script src="../Cart.js"></script>
     <script>
         cartDisplay();
+        $(document).ready(function() {
+            $("#parent").click(function() {
+                $(".child").prop("checked", this.checked);
+            });
+
+            $('.child').click(function() {
+                if ($('.child:checked').length == $('.child').length) {
+                    $('#parent').prop('checked', true);
+                } else {
+                    $('#parent').prop('checked', false);
+                }
+            });
+        });
     </script>
 </body>
 </html>
