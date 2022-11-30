@@ -78,6 +78,9 @@
 .col-lg-9{
     text-align: center;
 }
+.productSec{
+    margin-top: 30px;
+}
 .applyBtn{
     color: white;
     border: #572C57 2px solid;
@@ -99,9 +102,13 @@
     width: 100px;
     width: 90%;
 }
-.sortByDropdownContent span:hover{
-    background-color: #572C71;
-    color:white;
+.filterBigTitle{
+    text-align:center;
+    font-weight:600; 
+    color:#572C71;
+}
+.star-filterTitle{
+    color:#572C71
 }
 .titleFilter, .titleFilter:hover{
     color: #572C57;
