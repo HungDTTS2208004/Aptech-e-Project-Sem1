@@ -79,10 +79,13 @@ div.colText a{
     width: 100%;
     padding: 0 0;
     margin: auto auto;
+    border-radius: 20px ;
 }
 .infoBody{
     background-color: rgb(206, 126, 206);
     margin: 30px auto;
+    padding: 30px 30px;
+    border-radius: 30px;
 }
 .col-4, .col-8{
     padding: 0 0;

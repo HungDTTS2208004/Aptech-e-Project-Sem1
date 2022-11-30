@@ -43,7 +43,7 @@
     </header>
     <nav class="navbar sticky-top">
         <div class="container-fluid justify-content-center">
-            <div class="nav-item"><a class="nav-link" href="">COLLECTIONS</a></div>
+            <div class="nav-item"><a class="nav-link" href="Collection/collection.html">COLLECTIONS</a></div>
             <div class="nav-item"><a class="nav-link" href="Products/Products.html">PRODUCTS</a></div>
             <div class="nav-item"><a class="nav-link" href="AboutUs/about.html">ABOUT US</a></div>
             <div class="nav-item"><a class="nav-link" href="ContactUs/contact.html">CONTACT</a></div>
@@ -66,8 +66,13 @@
                         <button class="showHideBtn collDropDownBtn">
                             +
                         </button>
-                        <p>
-                        </p>
+                        <div class="mobileCollDropdown">
+                            <div><a href="Collection/art/crystal.html">- Crystal</a></div>
+                            <div><a href="Collection/art/holiday.html">- Holiday</a></div>
+                            <div><a href="Collection/art/kid.html">- Kid</a></div>
+                            <div><a href="Collection/art/season.html">- Season</a></div>
+                            <div><a href="Collection/art/twinkle.html">- Twinkle</a></div>
+                        </div>
                     </p>
                     <p>
                         <b><a href="Products/Products.html">PRODUCTS</a></b>
@@ -150,16 +155,45 @@
 
 
 
-    <div class="col-9 colContainer">
-        <img src="Home/HomeContent/Home4.jpg" alt="Avatar" class="colImg">
-        <div class="colOverlay1">
-          <div class="colText"><a href="" class="unDecorLink colLink">Collections<i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="row">
+        <div class="col-9 colContainer">
+            <a href="Collection/collection.html">
+                <img src="Home/HomeContent/Home4.jpg" alt="Avatar" class="colImg">
+                <div class="colOverlay1">
+                    <div class="colText">Collections<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </a>
         </div>
-      </div>
+    </div>
+    <div class="row">
+        <div class="col-9 infoBody">
+            <div class="row">
+                <div class="col-4"><img src="Home/HomeContent/Home5.jpg" alt="" class="introImg"></div>
+                <div class="col-8 bodyBox">
+                    <p class="infoTitle">Beautiful Style</p>
+                    <div class="infoContent">
+                        There are a lot of style for you to choose for your special days.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9 infoBody">
+            <div class="row">
+                <div class="col-8 bodyBox">
+                    <p class="infoTitle">Beautiful Style</p>
+                    <div class="infoContent">
+                        There are a lot of style for you to choose for your special days.
+                    </div>
+                </div>
+                <div class="col-4"><img src="Home/HomeContent/Home5.jpg" alt="" class="introImg"></div>
+            </div>
+        </div>
+    </div>
 
 
-S
-    
+
 
     <footer class="container-fluid">
         <h1 class="thankSen">We truly appreciate your access and also your support !</h1>
@@ -197,41 +231,41 @@ S
 
 
     <!-- The Modal Footer -->
-<div class="modal" id="footer">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+    <div class="modal" id="footer">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
           <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
             <div>
                 <form action="#" class="foot">
-                <label for="name">Full name</label>
+                            <label for="name">Full name</label>
                 <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
-                <label for="phone">Phone</label>
+                            <label for="phone">Phone</label>
                 <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
-                <label for="email">Email</label>
+                            <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
-                <label for="sub">Subject</label>
+                            <label for="sub">Subject</label>
                 <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
-                <label for="content">Content</label>
+                            <label for="content">Content</label>
                 <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
-                </form>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
+                </div>
             </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
