@@ -81,11 +81,20 @@ div.colText a{
     margin: auto auto;
     border-radius: 20px ;
 }
-.infoBody{
-    background-color: rgb(206, 126, 206);
+.infoBody1{
+    background-color: rgb(246, 161, 246);
     margin: 30px auto;
     padding: 30px 30px;
     border-radius: 30px;
+}
+.infoBody2{
+    background-color: rgb(170, 215, 254);
+    margin: 30px auto;
+    padding: 30px 30px;
+    border-radius: 30px;
+}
+.collNavBody{
+    margin: 30px auto;
 }
 .col-4, .col-8{
     padding: 0 0;
