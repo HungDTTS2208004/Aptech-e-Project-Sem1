@@ -113,5 +113,23 @@ div.colText a{
     font-size: 36px;
     margin: 0 30px;
 }
+.productRow{
+    margin: 0px auto;
+}
+.bigImgProduct{
+    border:2px solid #572C51;
+    border-radius: 30px;
+}
+.smallImgProduct{
+    border:2px solid #572C51;
+    border-radius: 20px;
+    margin: 4%;
+    width: 40%;
+}
+.productH1{
+    margin-left:20% ;
+    text-align: left;
+    font-weight: 600;
+}
 
 

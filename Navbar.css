@@ -106,10 +106,9 @@
         transition-property: border-color;
         transition: border-color 0.5s linear;
         border-bottom-color: #572C71;
-        
     }
 }
-@media (max-width: 911.9px){
+@media (max-width: 911.5px){
     .desktopHeader, .nav-link, .navLineDesktop{ 
         display: none;
     }
