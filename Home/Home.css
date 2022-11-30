@@ -130,6 +130,19 @@ div.colText a{
     margin-left:20% ;
     text-align: left;
     font-weight: 600;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
-
+.productH1-2{ 
+    font-weight: 600;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.smallImgProduct2{
+    border:2px solid #572C51;
+    border-radius: 30px;
+    margin: 30px;
+    text-align: center;
+    width: 80%;
+}
 
