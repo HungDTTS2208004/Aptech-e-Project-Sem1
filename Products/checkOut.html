@@ -177,11 +177,18 @@
     <script src="../System.js"></script>
     <script src="../Cart.js"></script>
     <script>
+        checkOutListShow();
+        if (localStorage.login == "true"){
             let acc = JSON.parse(localStorage.accountList)[localStorage.loginIndex];
-            $('.fullNameCheckOut').html("<input type='text' class='checkOutInput' value="+ acc.Fullname +" required>");
+            $('.fullNameCheckOut').html("<input type='text' class='checkOutInput' value='"+ acc.Fullname +"' required>");
             $('.phoneCheckOut').html("<input type='text' class='checkOutInput' value="+ acc.Phone +" required>");
             $('.addressCheckOut').html("<input type='text' class='checkOutInput' value="+ acc.Address +" required>");
-            checkOutListShow();
+        } else {
+            $('.fullNameCheckOut').html("<input type='text' class='checkOutInput' required>");
+            $('.phoneCheckOut').html("<input type='text' class='checkOutInput' required>");
+            $('.addressCheckOut').html("<input type='text' class='checkOutInput' required>");
+        }
+            
     </script>
 </body>
 </html>

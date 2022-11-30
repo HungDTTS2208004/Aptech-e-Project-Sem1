@@ -358,7 +358,9 @@ var cart=[];
 if (localStorage.shopCart == null){
     localStorage.shopCart = JSON.stringify(cart);
 }
-
+if (localStorage.login == false){
+    localStorage.loginIndex = -1;
+}
 //checkOut variable start
 if (localStorage.checkOut == null)
 localStorage.checkOut = "[]";
@@ -428,7 +430,7 @@ $(document).ready(function(){
     $('.brandFilterContent').hide();
     $('.cateFilterContent').hide();
     $('.colorFilterContent').hide();
-
+    $('.mobileCollDropdown').hide();
     $('.mobileProductDropdown').hide();
 
     $('.descriptionContent').hide();
@@ -439,12 +441,13 @@ $(document).ready(function(){
 // Home feature start
 $('.collDropDownBtn').click(function(){ 
     setting.Home.mobileCollDropdown = !setting.Home.mobileCollDropdown;
-    $('.mobileCollDropdownNav').toggle(100);
+    $('.mobileCollDropdown').toggle(100);
     if (setting.Home.mobileCollDropdown){
         $('.collDropDownBtn').html("-");
     } else {
         $('.collDropDownBtn').html("+");
     }
+
     
 });
 
@@ -459,6 +462,8 @@ $('.mobileProductDropdownBtn').click(function(){
     $('.mobileProductDropdown').toggle(100);
     
 });
+
+
 // Home feature end
 
 
@@ -536,7 +541,14 @@ $('.signIn-Btn').click(function(){
 $('.signOutBtn').click(function(){
     localStorage.login = "false";
     localStorage.loginIndex = -1;
-    location.href='';
+    if (window.location.href.slice(-10)=="index.html"){
+        location.href='index.html';
+    } else {
+        location.href='../index.html';
+    }
+    localStorage.cartQuan = 0;
+    localStorage.shopCart = "[]";
+    
 })
 //Sign Out feature end
 
@@ -685,13 +697,13 @@ function productDetail(){
             <div class="row" style="margin-top:100px">  
                 <div class="col-md-7">
                     <div class="row imgFrame">
-                        <div class="col-sm-12">
-                            <img src="Product/${v.img[0]}" alt="" width="60%" style="margin-left: 2.5%" >
+                        <div class="col-sm-12" >
+                            <img src="Product/${v.img[0]}" alt="" width="60%" style="margin-left: 2.5%" class="thumbnail">
                         </div>
-                        <div class="col-sm-12">
-                            <img src="Product/${v.img[0]}" alt="" width="17.5%" style="margin-left: 2.5%">
-                            <img src="Product/${v.img[1]}" alt="" width="17.5%" style="margin-left: 2.5%">
-                            <img src="Product/${v.img[2]}" alt="" width="17.5%" style="margin-left: 2.5%">
+                        <div class="col-sm-12" >
+                            <img data-path="${v.img[0]}" src="Product/${v.img[0]}" alt="" width="17.5%" style="margin-left: 2.5%;margin-top: 30px" class="imgChange">
+                            <img data-path="${v.img[1]}" src="Product/${v.img[1]}" alt="" width="17.5%" style="margin-left: 2.5%;margin-top: 30px" class="imgChange">
+                            <img data-path="${v.img[2]}" src="Product/${v.img[2]}" alt="" width="17.5%" style="margin-left: 2.5%;margin-top: 30px" class="imgChange">
                         </div>
                     </div>
                 </div>
@@ -699,7 +711,7 @@ function productDetail(){
                     <div class="itemInfoForm">
                         <div class="row iName"><b>${v.name}</b></div>
                         <div class="row">
-                            <div class="col-sm-12 voteRow">
+                            <div class="col-sm-12 voteRow" >
                                 ${v.star}
                                 <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
                                 <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
@@ -770,6 +782,7 @@ function productDetail(){
     if (i == 0){
         d += `404 Not Found`;
     }
+    
     $(".productInfo1").html(d1);
     $(".productInfo2").html(d2);
     $('.cartQuantity').html(parseInt(localStorage.cartQuan));
@@ -807,7 +820,9 @@ function productDetail(){
         localStorage.shopCart = JSON.stringify(cartList)
         $('.cartQuantity').html(parseInt(localStorage.cartQuan));
     })  
-
+    $('.imgChange').click(function(){
+        $('.thumbnail').attr("src",`Product/${$(this).data("path")}`)
+    })
     //buy now button
     $('.buyBtn').click(function(){
         localStorage.checkOut ="[]"  
@@ -820,6 +835,20 @@ function productDetail(){
         let checkOutList = JSON.parse(localStorage.checkOut);
         checkOutList.push(buyNowItem);
         localStorage.checkOut = JSON.stringify(checkOutList);
+        let cartItem = {"id":itemID,"name":itemName,"price":itemPrice,"img":itemImg,"quantity":1};
+        let cartList = JSON.parse(localStorage.shopCart);
+        let count = 0;
+        for (var i in cartList){
+            if (cartList[i].id === itemID){
+                count++;
+            }
+        }
+        if (count == 0){
+            localStorage.cartQuan=parseInt(localStorage.cartQuan) + parseInt(1);
+            cartList.push(cartItem);
+        }
+        localStorage.shopCart = JSON.stringify(cartList);
+
         location.href = "../Products/checkOut.html"
     })
 }

@@ -75,5 +75,34 @@ div.colText a{
 .colText:hover .colLink{
     color: white;
 }
+.introImg{
+    width: 100%;
+    padding: 0 0;
+    margin: auto auto;
+    border-radius: 20px ;
+}
+.infoBody{
+    background-color: rgb(206, 126, 206);
+    margin: 30px auto;
+    padding: 30px 30px;
+    border-radius: 30px;
+}
+.col-4, .col-8{
+    padding: 0 0;
+}
+.bodyBox{
+    margin: auto auto;
+}
+.infoTitle{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 30px;
+}
+.infoContent{
+    color:white;
+    font-size: 36px;
+    margin: 0 30px;
+}
 
 

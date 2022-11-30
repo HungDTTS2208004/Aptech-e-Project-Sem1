@@ -8,7 +8,6 @@ function cartDisplay(){
     let output = '';
     let iTotalQuan = 0;
     let iTotalPrice = 0;
-    let buyList = [];
     $.each(cartList, function(k, v){
         output += `
         <div class="col-12 align-items-center d-flex">
