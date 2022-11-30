@@ -59,17 +59,15 @@
             <div class="input">
                 <form action="">
                 <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="Your full name...">
+                <input type="text" id="name" placeholder="Your full name..." required pattern="\w{2,}">
                 <label for="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Your phone number...">
+                <input type="text" id="phone" placeholder="Your phone number..." required pattern="\d{10}">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Your email...">
-                <label for="add">Address</label>
-                <input type="text" id="add" placeholder="Your address...">
+                <input type="text" id="email" placeholder="Your email..." required pattern="\w{2}">
                 <label for="sub">Subject</label>
-                <input type="text" id="sub" placeholder="Subject...">
+                <input type="text" id="sub" placeholder="Subject..." required pattern="\w{2,}">
                 <label for="content">Content</label>
-                <textarea id="content" placeholder="Your writing..." cols="10" rows="4" ></textarea>
+                <textarea id="content" placeholder="Your writing..." cols="10" rows="4" required pattern="\w{2,}" ></textarea>
                 <input type="submit" value="Submit">
             </form>
             </div>

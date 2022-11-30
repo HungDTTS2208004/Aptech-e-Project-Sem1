@@ -10,7 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     
     <link rel="stylesheet" href="Navbar.css">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="Home/Home.css">
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="footer.css">
+=======
+    <link rel="stylesheet" href="Home/Home.css">
+>>>>>>> 9355983b137db7de1f1a1cd9bbec848554387bd0
+>>>>>>> Stashed changes
     <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script>    
     
 </head>
@@ -21,7 +29,7 @@
             <div class="col-md-3">
                 <a href="index.html"><img src="GeneralFormat/Logo.png" alt="" width="200px"></a>
             </div>
-            <div class="col-md-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH"></div>
+            <div class="col-md-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH" class="searchBar"></div>
             <div class="col-md-3 headR">
                 <a href="Products/cart.html"><img src="GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"><div class="cartQuantity"></div></a>
                 <div class="accountDropdown">
@@ -157,76 +165,85 @@
     
 
     <footer class="container-fluid">
+<<<<<<< Updated upstream
         <h1 class="thankSen">We truly appreciate your access and also your support !</h1>x
+=======
+<<<<<<< HEAD
+        <h1>We truly appreciate your access and also your support !</h1>
+=======
+        <h1 class="thankSen">We truly appreciate your access and also your support !</h1>x
+>>>>>>> 9355983b137db7de1f1a1cd9bbec848554387bd0
+>>>>>>> Stashed changes
         <div class="row" id="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="col-4">
                 <p id="pb"><b>Send feedback to us</b></p>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer"><b>Click here to feedback</b></a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer" id="afooter"><b>Click here to feedback</b></a>
             </div>
             <div class="col-sm-3" id="col">
-                <b>Collections</b>
+                <a href="" id="a"><b>Collections</b></a>
                 <div>
-                    <p>- Season</p>
-                    <p>- Events</p>
-                    <p>- For kids</p>
-                    <p>- Bling</p>
-                    <p>- Crystal</p>
+                    <a href="" id="a">- Season</a> <br>
+                    <a href="" id="a">- Events</a><br>
+                    <a href="" id="a">- For kids</a><br>
+                    <a href="" id="a">- Bling</a><br>
+                    <a href="" id="a">- Crystal</a>
                 </div>
             </div>
             <div class="col-sm-2" id="col1">
-                <b>Products</b>
+                <a href="" id="a"><b>Products</b></a>
                 <div>
-                    <p>- Brands</p>
-                    <p>- Categories</p>
-                    <p>- Colors</p>
+                    <p><a href="" id="a">- Brands</a></p>
+                    <p><a href="" id="a">- Categories</a></p>
+                    <p><a href="" id="a">- Colors</a></p>
+                    
                 </div>
             </div>
             <div class="col-sm-2">
-                <b  class="row" id="col">About Us</b>
-                <b class="row" id="col2">Contact Us</b>
+                <b  class="row" id="col"><a href="" id="a"> About Us</a></b>
+                <b class="row" id="col2"><a href="" id="a">Contact Us</a></b>
             </div>
         </div>
     </footer>
 
 
-
     <!-- The Modal Footer -->
-    <div class="modal" id="footer">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <h4 class="modal-title"><b>Feedback Form</b></h4>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="input">
-                        <form action="">
-                            <label for="name">Full name</label>
-                            <input type="text" id="name" placeholder="Your full name...">
-                            <label for="phone">Phone</label>
-                            <input type="text" id="phone" placeholder="Your phone number...">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" placeholder="Your email...">
-                            <label for="add">Address</label>
-                            <input type="text" id="add" placeholder="Your address...">
-                            <label for="sub">Subject</label>
-                            <input type="text" id="sub" placeholder="Subject...">
-                            <label for="content">Content</label>
-                            <textarea id="content" placeholder="Your writing..." cols="5" rows="2" ></textarea>
-                        </form>
-                    </div>
-                </div>
-        
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                <bu tton type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
-                </div>
+<div class="modal" id="footer">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div>
+                <form action="#" class="foot">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
+                <label for="sub">Subject</label>
+                <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
+                <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
+                </form>
             </div>
         </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>  
 

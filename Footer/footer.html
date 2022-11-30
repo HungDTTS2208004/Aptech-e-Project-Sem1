@@ -14,42 +14,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="/Navbar.css">
-    <link rel="stylesheet" href="/Footer/footer.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <footer class="container-fluid">
         <h1>We truly appreciate your access and also your support !</h1>
         <div class="row" id="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="col-4">
                 <p id="pb"><b>Send feedback to us</b></p>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer"><b>Click here to feedback</b></a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer" id="afooter"><b>Click here to feedback</b></a>
             </div>
             <div class="col-sm-3" id="col">
-                <a href=""><b>Collections</b></a>
+                <a href="" id="a"><b>Collections</b></a>
                 <div>
-                    <a href="">- Season</a> <br>
-                    <a href="">- Events</a><br>
-                    <a href="">- For kids</a><br>
-                    <a href="">- Bling</a><br>
-                    <a href="">- Crystal</a>
+                    <a href="" id="a">- Season</a> <br>
+                    <a href="" id="a">- Events</a><br>
+                    <a href="" id="a">- For kids</a><br>
+                    <a href="" id="a">- Bling</a><br>
+                    <a href="" id="a">- Crystal</a>
                 </div>
             </div>
             <div class="col-sm-2" id="col1">
-                <a href=""><b>Products</b></a>
+                <a href="" id="a"><b>Products</b></a>
                 <div>
-                    <p><a href="">- Brands</a></p>
-                    <p><a href="">- Categoríe</a></p>
-                    <p><a href="">- Colors</a></p>
+                    <p><a href="" id="a">- Brands</a></p>
+                    <p><a href="" id="a">- Categories</a></p>
+                    <p><a href="" id="a">- Colors</a></p>
                     
                 </div>
             </div>
             <div class="col-sm-2">
-                <b  class="row" id="col"><a href=""> About Us</a></b>
-                <b class="row" id="col2"><a href="">Contact Us</a></b>
+                <b  class="row" id="col"><a href="" id="a"> About Us</a></b>
+                <b class="row" id="col2"><a href="" id="a">Contact Us</a></b>
             </div>
         </div>
     </footer>
-
 
 
     <!-- The Modal Footer -->
@@ -59,32 +58,31 @@
   
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title"><b>Feedback Form</b></h4>
+          <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
   
         <!-- Modal body -->
         <div class="modal-body">
-            <div class="input">
-                <form action="">
+            <div>
+                <form action="#" class="foot">
                 <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="Your full name...">
+                <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
                 <label for="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Your phone number...">
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Your email...">
-                <label for="add">Address</label>
-                <input type="text" id="add" placeholder="Your address...">
+                <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
                 <label for="sub">Subject</label>
-                <input type="text" id="sub" placeholder="Subject...">
+                <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
                 <label for="content">Content</label>
-                <textarea id="content" placeholder="Your writing..." cols="5" rows="2" ></textarea>
-            </form>
+                <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
+                </form>
             </div>
         </div>
   
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
         </div>
       </div>
     </div>

@@ -14,33 +14,14 @@ h1{
     font-size: 55px;
     padding-top: 50px;
 }
-#row{
-    padding-top: 50px;
-}
-.col-sm-4{
-    padding-top: 100px;
+div#con-4{
+    padding-top: 90px;
     padding-bottom: 30px;
     text-align: center;
 }
 #pb{
     font-size: 40px;
     margin-bottom: 0px;
-}
-a.btn{
-    text-align: center;
-    width: 360px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 10px;
-    border: #572C57 2px solid;
-    color: #572C57;
-    background-color: white;
-}
-.btn-primary{
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg: #572C57;
-    --bs-btn-hover-border-color: #572C57;
-
 }
 #col{
     border-left: white 2px solid;
@@ -56,11 +37,7 @@ a.btn{
     padding-left: 20px;
 }
 
-
-
-
-
-input[type=text], select, textarea {
+form.foot input[type=text], select, textarea {
     width: 100%; /* Full width */
     border: 2px solid #572C57; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -68,9 +45,10 @@ input[type=text], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    
   }
   /* Style the submit button with a specific background color etc */
-   button.btn{
+   button#btn{
     background-color: #572C57;
     color: white;
     padding: 12px 20px;
@@ -78,9 +56,41 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  a{
+  a#afooter{
+    color: #572C57;
+    background-color: white;
+    text-align: center;
+    width: 360px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: #572C57 2px solid;
+    color: #572C57;
+    background-color: white;
+  }
+  a#afooter:hover{
+    background-color: #572C57;
     color: white;
   }
-  a:hover{
+  h1#title{
+    padding-top: 0px;
+    text-align: center;
+  }
+  .in::placeholder{
+    color: gray;
+    opacity: 1;
+  }
+  input[type=submit]{
+    background-color: #572C57;
+    border: unset;
+  }
+  input[type=submit]:hover{
+    background-color: red;
+  }
+  a#a{
+    color: white;
+    text-decoration: none;
+  }
+  a#a:hover{
     color: #572C57;
   }
