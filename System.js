@@ -383,31 +383,31 @@ if (localStorage.accountList==null){
 //show avatar of user
 $(document).ready(function(){
     if (localStorage.login == "false"){
-        if (window.location.href.slice(-10)=="index.html"){
-            $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
-        } else {
-            $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
-        }
+        // if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","/GeneralFormat/AccountIcon.png");
+        // } else {
+        //     $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
+        // }
     
     } else {
         let ava = JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar;
-        if (window.location.href.slice(-10)=="index.html"){
-            $('.accountIcon').attr("src","GeneralFormat/"+ava);
+        // if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","/GeneralFormat/"+ava);
             $('.accountIcon').attr("style",`
                 width: 50px;
                 height: 69px;
                 border: 2px solid black;
                 border-radius: 50%;
             `)
-        } else {
-            $('.accountIcon').attr("src","../GeneralFormat/"+ava);
-            $('.accountIcon').attr("style",`
-                width: 50px;
-                height: 69px;
-                border: 2px solid black;
-                border-radius: 50%;
-            `)
-        }
+        // } else {
+        //     $('.accountIcon').attr("src","../GeneralFormat/"+ava);
+        //     $('.accountIcon').attr("style",`
+        //         width: 50px;
+        //         height: 69px;
+        //         border: 2px solid black;
+        //         border-radius: 50%;
+        //     `)
+        // }
         
     }
 })
