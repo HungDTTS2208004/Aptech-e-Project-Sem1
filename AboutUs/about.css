@@ -1,4 +1,4 @@
-h1{
+h1.about{
     text-align: center;
     font-size: 60px;
 }
@@ -7,7 +7,7 @@ hr{
     border-top:solid 3px black;
     background-color: black;
 }
-h2{
+h2.about{
     text-align: center;
     font-size:  40px;
 }
@@ -18,7 +18,7 @@ h2{
 .card{
     border: solid 3px #572C57;
 }
-img{
+img.about{
     border-bottom: solid 2px #572C57;
 }
 a.but1{
@@ -30,9 +30,6 @@ a.but1{
     
     
     
-}
-a{
-    width: 100px;
 }
 .card-title{
     font-size: 30px;
