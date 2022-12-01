@@ -101,3 +101,6 @@ img#NailArt{
     width: 100%;
     border-bottom: unset;
 }
+div#row-about{
+    padding-top: 0px;
+}
