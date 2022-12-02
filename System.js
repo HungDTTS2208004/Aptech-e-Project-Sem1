@@ -925,7 +925,6 @@ function displayItemProduct(items){
             cartList.push(cartItem);
         }
         localStorage.shopCart = JSON.stringify(cartList);
-        alert(localStorage.shopCart)
         $('.cartQuantity').html(parseInt(localStorage.cartQuan));
     });
 }
@@ -1011,8 +1010,8 @@ $('.applyBtn').click(function(){
     if (JSON.stringify(productFilter) == "[]" ){
         $('.itemShow').html("There's no item in this filter list");
     }
+    return false;
 })
-
 
 
 //==============================
