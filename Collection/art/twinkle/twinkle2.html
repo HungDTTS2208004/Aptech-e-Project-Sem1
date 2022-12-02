@@ -337,8 +337,25 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="../../../System.js"></script>
 <script src="../../../Cart.js"></script>
+<script src="../../../System.js"></script>
+<script src="../../../Cart.js"></script>
 <script>
     cartDisplay();
+    $(document).ready(function(){
+        if (localStorage.login == "false"){
+            $('.accountIcon').attr("src","../../../GeneralFormat/AccountIcon.png");
+        } else {
+            let ava = JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar;
+            $('.accountIcon').attr("src","../../../GeneralFormat/"+ava);
+            $('.accountIcon').attr("style",`
+                width: 50px;
+                height: 69px;
+                border: 2px solid black;
+                border-radius: 50%;
+            `)
+            $('#accountLogoNav').attr("href","../../../Login/Information.html")
+        }
+    })
 </script>
 </body>
 </html>
