@@ -113,6 +113,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="filterForm">
+                    <form>
                         <H1 class="filterBigTitle">FILTER</H1>
                         <div class="row">
                             <div class="col-sm-12">
@@ -123,15 +124,15 @@
                             </div>
                             <div class="row brandFilterContent">
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="OPIFilter" name="filter" class="brandFilter" value="OPI"> 
+                                    <input type="checkbox" id="OPIFilter" name="filter" class="brandFilter filterCB" value="OPI"> 
                                     <label for="OPIFilter">O.P.I</label>
                                 </div>
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="EssieFilter" name="filter" class="brandFilter" value="Essie"> 
+                                    <input type="checkbox" id="EssieFilter" name="filter" class="brandFilter filterCB" value="Essie"> 
                                     <label for="EssieFilter">Essie</label>
                                 </div>
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="TenovertenFilter" name="filter" class="brandFilter" value="Tenoverten">
+                                    <input type="checkbox" id="TenovertenFilter" name="filter" class="brandFilter filterCB" value="Tenoverten">
                                     <label for="TenovertenFilter">Tenoverten</label> 
                                 </div>
                             </div>
@@ -148,15 +149,15 @@
                         </div>
                         <div class="row cateFilterContent">
                             <div class="col-sm-12">
-                                <input type="checkbox" id="NailPolishFilter" name="filter" class="cateFilter" value="Nail Polish">
+                                <input type="checkbox" id="NailPolishFilter" name="filter" class="cateFilter filterCB" value="Nail Polish">
                                 <label for="NailPolishFilter">Nail Polish</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="AccessoryFilter" name="filter" class="cateFilter" value="Accessory"> 
+                                <input type="checkbox" id="AccessoryFilter" name="filter" class="cateFilter filterCB" value="Accessory"> 
                                 <label for="AccessoryFilter">Accessory</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="ToolFilter" name="filter" class="cateFilter" value="Tool">
+                                <input type="checkbox" id="ToolFilter" name="filter" class="cateFilter filterCB" value="Tool">
                                 <label for="ToolFilter">Tool</label>    
                             </div>
                         </div>
@@ -171,27 +172,27 @@
                         </div>
                         <div class="row colorFilterContent">
                             <div class="col-sm-12">
-                                <input type="checkbox" id="BlackFilter" name="filter" class="colorFilter" value="Black"> 
+                                <input type="checkbox" id="BlackFilter" name="filter" class="colorFilter filterCB" value="Black"> 
                                 <label for="BlackFilter">Black</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="BlueFilter" name="filter" class="colorFilter" value="Blue">
+                                <input type="checkbox" id="BlueFilter" name="filter" class="colorFilter filterCB" value="Blue">
                                 <label for="BlueFilter">Blue</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="GreenFilter" name="filter" class="colorFilter" value="Green"> 
+                                <input type="checkbox" id="GreenFilter" name="filter" class="colorFilter filterCB" value="Green"> 
                                 <label for="GreenFilter">Green</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="PurpleFilter" name="filter" class="colorFilter" value="Purple"> 
+                                <input type="checkbox" id="PurpleFilter" name="filter" class="colorFilter filterCB" value="Purple"> 
                                 <label for="PurpleFilter">Purple</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="RedFilter" name="filter" class="colorFilter" value="Red">
+                                <input type="checkbox" id="RedFilter" name="filter" class="colorFilter filterCB" value="Red">
                                 <label for="RedFilter">Red</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="YellowFilter" name="filter" class="colorFilter" value="Yellow"> 
+                                <input type="checkbox" id="YellowFilter" name="filter" class="colorFilter filterCB" value="Yellow"> 
                                 <label for="YellowFilter">Yellow</label>
                             </div>
                         </div>
@@ -204,6 +205,7 @@
                                 </div>
                             </div>
                         </div>
+                    </form>
                 </div>
             </div>
             
@@ -301,7 +303,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>  
-
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="/System.js"></script>
     <script src="/Cart.js"></script>
