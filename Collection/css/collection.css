@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     color: black;
     -ms-transform: translate(-50%,-50%);
-    font-size: 40px;
+    font-size: 30px;
 }
 .rtecenter2 {
     position: absolute;
@@ -15,7 +15,7 @@
     text-align: center;
     color: black;
     -ms-transform: translate(-50%,-50%);
-    font-size: 18px;
+    font-size: 12px;
 }
 .panel{
     position: relative;
@@ -29,7 +29,7 @@
     left: 0;
     bottom: 0;
     opacity: 0.8;
-    margin-left: 100px;
+    margin-left: 74.75px;
 }
 .b-lazy {
     display: block;
