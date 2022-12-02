@@ -10,6 +10,9 @@
         padding-top: 15px;
         text-align: center;
     }
+    div.row.desktopHeader{
+        padding: 0 0;
+    }
     #searchBar{
         width: 100%;
         border-radius: 15px;
@@ -19,6 +22,7 @@
         color:white;
         padding-left: 20px;
         padding-right: 20px;
+        height: 48px;
     }
     .searchBar::placeholder{
         text-align: center;

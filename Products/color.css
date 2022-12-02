@@ -1,0 +1,19 @@
+.title{
+    text-align: left;
+    margin-left: 20%;
+    color:#572C51;
+}
+.iRow{
+    width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+}
+.item{
+    border: solid 2px #572C51;
+    border-radius: 20px;
+    width: 90%;
+}
+.gotoProduc:link, .gotoProduct:visited{
+    color:#572C51;
+    text-decoration: none;
+}
