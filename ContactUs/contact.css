@@ -1,5 +1,5 @@
 
-#con1{
+#col-con{
   margin-top: 30px;
   text-align: center;
   margin-right: 200px;
@@ -7,9 +7,9 @@
   margin-bottom: 30px;
 }
 #con2{
-  margin-top: 30px;
+  margin-top: 0px;
 }
-.col1{
+.col1-con{
   text-align: center;
 }
 input[type=text], select, textarea {
@@ -31,7 +31,7 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  #row1{
+  #row1-con{
    text-align: center;
    width: 500x;
    padding-left: 0px;
@@ -113,7 +113,15 @@ input[type=text], select, textarea {
   border-top:solid 3px black;
   background-color: black;
  }
- h1{
+ h1.con{
   text-align: center;
   font-size: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+ .row-con{
+  padding-top: 30px;
+  padding-bottom: 30px;
  }

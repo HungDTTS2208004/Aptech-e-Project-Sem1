@@ -93,6 +93,10 @@ function cartDisplay(){
         localStorage.checkOut = JSON.stringify(checkOutList);
         location.href = "checkOut.html"
     })
+    $('.clearCartBtn').click(function(){
+        localStorage.shopCart ="[]";
+        cartDisplay();
+    })
 }
 
     

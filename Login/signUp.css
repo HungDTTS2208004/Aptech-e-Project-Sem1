@@ -6,29 +6,29 @@
     border-radius: 30px;
 }
 
-h1{
+h1.h1title{
     text-align: center;  
     color:#572C71;
     margin: 60px;
     font-weight: 700;
     font-size: 64px;
 }
-.row{
+.row1{
     align-items: center;
 }
-.col-md-5{
+.colMd5{
     padding-left: 20%;
     color:#572C71;
     font-weight: 700;
     font-size: 40px;
 }
-.col-md-7{
+.colMd7{
     font-size: 36px;
 }
-.col-md-7 input{
+.colMd7 input{
     width: 70%;
 }
-a:link, a:visited{
+a.a1:link, a.a1:visited{
     color:#572C71;
 }
 .rowSignUpNav{
@@ -48,7 +48,7 @@ input[type="text"], input[type="password"]{
     border: solid #572C71 2px;
     border-radius: 10px;
 }
-button{
+button.signUp-Btn{
     display: block;
     margin: auto;
     border: solid #572C71 2px;
@@ -57,7 +57,7 @@ button{
     background-color: #572C71;
 }
 @media (max-width: 767.9px){
-    .col-md-7 input{
+    .colMd7 input{
         margin-left: 20%;
         width: 60%;
     }

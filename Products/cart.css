@@ -39,6 +39,15 @@
     text-align: center;
     margin-top: 30px;
 }
+.clearCartBtn{
+    background-color:#572C51;
+    color:white;
+    border: solid 2px #572C51;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
 .priceTotal{
     text-align: center;
     font-size: 48px;

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../Navbar.css">
+    <link rel="stylesheet" href="../footer.css">
+    <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="brand.css">
+   
+</head>
+<body>
+     
+    <!-- header desktop --> 
+    <header>
+        <div class="row row1 desktopHeader">
+            <div class="col-md-3">
+                <a href="../index.html"><img src="../GeneralFormat/Logo.png" alt="" width="200px"></a>
+            </div>
+            <div class="col-md-6"><input type="text" id="searchBar" style="width:100%" placeholder="SEARCH" class="searchBar"></div>
+            <div class="col-md-3 headR">
+                <a href="../Products/cart.html"><img src="../GeneralFormat/CartIcon.png" alt="Shopping Cart" class="headIcon"><div class="cartQuantity"></div></a>
+                <div class="accountDropdown">
+                    <a href="../Login/signIn.html" id="accountLogoNav"><img src="../GeneralFormat/AccountIcon.png" alt="Account Icon" class="headIcon accountIcon"></a>
+                    <div class="accountDropdownContent">
+                            <a href="../Login/signIn.html" class="account-login">Sign In</a>
+                            <a href="../Login/signUp.html" class="account-login">Sign Up</a>
+                            <a href="../Login/Information.html" class="account-logout">Information</a>
+                            <a href="#" class="account-logout signOutBtn">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top">
+        <div class="container-fluid justify-content-center">
+            <div class="nav-item"><a class="nav-link" href="../Collection/collection.html">COLLECTIONS</a></div>
+            <div class="nav-item"><a class="nav-link" href="../Products/Products.html">PRODUCTS</a></div>
+            <div class="nav-item"><a class="nav-link" href="../AboutUs/about.html">ABOUT US</a></div>
+            <div class="nav-item"><a class="nav-link" href="../ContactUs/contact.html">CONTACT</a></div>
+        </div>
+        <div class="navLineDesktop"></div>
+    </nav>
+    
+    
+    <!-- header mobile -->
+    <div class="mobileNav">
+        <nav>
+            <div class="offcanvas offcanvas-start" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <H1><img src="../GeneralFormat/Logo.png" alt="" width="200px"></H1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>
+                        <b><a href="../Collection/collection.html">COLLECTIONS</a></b>
+                        <button class="showHideBtn collDropDownBtn">
+                            +
+                        </button>
+                        <div class="mobileCollDropdown">
+                            <div><a href="../Collection/art/crystal.html">- Crystal</a></div>
+                            <div><a href="../Collection/art/holiday.html">- Holiday</a></div>
+                            <div><a href="../Collection/art/kid.html">- Kid</a></div>
+                            <div><a href="../Collection/art/season.html">- Season</a></div>
+                            <div><a href="../Collection/art/twinkle.html">- Twinkle</a></div>
+                        </div>
+                    </p>
+                    <p>
+                        <b><a href="../Products/Products.html">PRODUCTS</a></b>
+                        <button class="showHideBtn mobileProductDropdownBtn">
+                            +
+                        </button>
+                        <div class="mobileProductDropdown">
+                            <div><a href="../Products/brand.html">- Brands</a></div>
+                            <div><a href="../Products/category.html">- Categories</a></div>
+                            <div><a href="../Products/color.html">- Color</a></div>
+                        </div>
+                    </p>
+                    <p><b><a href="../AboutUs/about.html">ABOUT US</a></b></p>
+                    <p><b><a href="../ContactUs/contact.html">CONTACT</a></b></p>
+                    <p><b><a href="../Login/signIn.html" class="account-login"><i class="fa-solid fa-right-to-bracket"></i> Sign in </a></b></p>
+                    <p><b><a href="../Login/Information.html" class="account-logout"><i class="fa-solid fa-file-invoice"></i> User's Information</a></b></p>
+                    <p><b><a href="#" class="account-logout signOutBtn"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a></b></p>   
+                </div>
+            </div>
+            
+            <div class="row row1">
+                <div class="col-2">
+                    <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"></i>
+                </div>
+                <div class="col-8">
+                    <a href="../index.html"><img src="../GeneralFormat/Logo.png" alt="Logo" width="150px"></a>
+                </div>
+                <div class="col-2">
+                    <a href="../Products/cart.html"><img src="../GeneralFormat/CartIcon.png" alt="" class="mobileCart"><div class="cartQuantity"></div></a>
+                    <a href=""><img src="../GeneralFormat/searchButton.png" alt="" class="mobileSearch"></a>
+                </div>
+            </div>
+            <div class="navLineMobile"></div>
+        </nav>
+    </div>
+    
+    <section>
+        <div class="row">
+            <H1 class="title">O.P.I</H1>
+            <div class="row iRow">
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p01"><img src="/Products/Product/ID_001_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p02"><img src="/Products/Product/ID_002_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p03"><img src="/Products/Product/ID_003_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p04"><img src="/Products/Product/ID_004_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p05"><img src="/Products/Product/ID_005_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p06"><img src="/Products/Product/ID_006_01.jpg" alt="" class="item"></a></div>
+            </div>
+        </div>
+        <div class="row iRow">
+            <H1 class="title">Essie</H1>
+            <div class="row">
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p07"><img src="/Products/Product/ID_007_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p08"><img src="/Products/Product/ID_008_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p09"><img src="/Products/Product/ID_009_01.jpg" alt="" class="item"></a></div>
+            </div>
+        </div>
+        <div class="row iRow">
+            <H1 class="title">Tenoverten</H1>
+            <div class="row">
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p10"><img src="/Products/Product/ID_010_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p11"><img src="/Products/Product/ID_011_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p12"><img src="/Products/Product/ID_012_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p13"><img src="/Products/Product/ID_013_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p14"><img src="/Products/Product/ID_014_01.jpg" alt="" class="item"></a></div>
+            </div>
+        </div>
+        <div class="row iRow">
+            <H1 class="title">Other brand</H1>
+            <div class="row">
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p15"><img src="/Products/Product/ID_015_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p16"><img src="/Products/Product/ID_016_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p17"><img src="/Products/Product/ID_017_01.jpg" alt="" class="item"></a></div>
+                <div class="col-2 iFrame"><a href="/Products/productInfo.html?id=p18"><img src="/Products/Product/ID_018_01.jpg" alt="" class="item"></a></div>
+            </div>
+        </div>
+        <H2 style="text-align:right;margin-right: 10%;"><a href="/Products/Products.html" class="gotoProduct">Go to Product Page <i class="fa-solid fa-arrow-right"></i></a></H2>
+    </section>
+
+
+
+
+    <footer class="container-fluid">
+        <h1 class="thankSen">We truly appreciate your access and also your support !</h1>
+
+        <div class="row" id="row">
+            <div class="col-sm-4" id="col-4">
+                <p id="pb"><b>Send feedback to us</b></p>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer" id="afooter"><b>Click here to feedback</b></a>
+            </div>
+            <div class="col-sm-3" id="col">
+                <a href="/Collection/collection.html" id="a"><b>Collections</b></a>
+                <div>
+                    <a href="/Collection/art/season.html" id="a">- Season</a> <br>
+                    <a href="/Collection/art/holiday.html" id="a">- Holiday</a><br>
+                    <a href="/Collection/art/kid.html" id="a">- Kid</a><br>
+                    <a href="/Collection/art/twinkle.html" id="a">- Twinkle</a><br>
+                    <a href="/Collection/art/crystal.html" id="a">- Crystal</a>
+                </div>
+            </div>
+            <div class="col-sm-2" id="col1">
+                <a href="/Products/Products.html" id="a"><b>Products</b></a>
+                <div>
+                    <p><a href="/Products/brand.html" id="a">- Brands</a></p>
+                    <p><a href="/Products/category.html" id="a">- Categories</a></p>
+                    <p><a href="/Products/color.html" id="a">- Colors</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <b  class="row" id="col"><a href="/AboutUs/about.html" id="a"> About Us</a></b>
+                <b class="row" id="col2"><a href="/ContactUs/contact.html" id="a">Contact Us</a></b>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- The Modal Footer -->
+    <div class="modal" id="footer">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+          <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+            <div>
+                <form action="#" class="foot">
+                            <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
+                            <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
+                            <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
+                            <label for="sub">Subject</label>
+                <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
+                            <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>  
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../System.js"></script>
+    <script src="../Cart.js"></script>
+    <script>
+        cartDisplay();
+    </script>
+</body>
+</html>

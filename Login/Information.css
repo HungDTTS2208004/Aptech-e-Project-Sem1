@@ -14,17 +14,17 @@
     font-size: 64px;
 }
 
-.row{
+.row1{
     align-items: center;
     
 }
-.col-md-5.infoTitle{
+.colMd5.infoTitle{
     padding-left: 15%;
     color:#572C71;
     font-weight: 700;
     font-size: 40px;
 }
-.col-md-7{
+.colMd7{
     font-size: 36px;
 }
 
@@ -38,18 +38,18 @@
     font-weight: 600;
 }
 @media (min-width: 758.1px) {
-    .col-md-5{
+    .colMd5{
         padding-left: 15%;
     }
 }
 @media (max-width:768px) {
-    .col-md-7, .col-md-7 input{
+    .colMd7, .colMd7 input{
         text-align: center;
     }
-    .col-md-5 img{
+    .colMd5 img{
         padding-left: 0px;
     }
-    .col-md-5.avatar{
+    .colMd5.avatar{
         text-align: center;
     }
     .whiteBtn{
@@ -88,7 +88,7 @@
     font-weight: 600;
     margin-bottom: 15px;
 }
-.col-md-7 input{
+.colMd7 input{
     width: 70%;
     text-align: left;
     border: solid #572C71 2px;

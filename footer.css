@@ -94,3 +94,6 @@ form.foot input[type=text], select, textarea {
   a#a:hover{
     color: #572C57;
   }
+  footer{
+    margin-top: 50px;
+  }

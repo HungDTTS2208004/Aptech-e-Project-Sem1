@@ -8,14 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../Navbar.css">
+    <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="Products.css">
-    <script src="https://kit.fontawesome.com/6d3cbfa844.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../footer.css">
+
+   
 </head>
 <body>
      
     <!-- header desktop --> 
     <header>
-        <div class="row desktopHeader">
+        <div class="row row1 desktopHeader">
             <div class="col-md-3">
                 <a href="../index.html"><img src="../GeneralFormat/Logo.png" alt="" width="200px"></a>
             </div>
@@ -55,7 +58,7 @@
                 </div>
                 <div class="offcanvas-body">
                     <p>
-                        <b><a href="">COLLECTIONS</a></b>
+                        <b><a href="../Collection/collection.html">COLLECTIONS</a></b>
                         <button class="showHideBtn collDropDownBtn">
                             +
                         </button>
@@ -73,20 +76,20 @@
                             +
                         </button>
                         <div class="mobileProductDropdown">
-                            <div><a href="">- Brands</a></div>
-                            <div><a href="">- Categories</a></div>
-                            <div><a href="">- Color</a></div>
+                            <div><a href="../Products/brand.html">- Brands</a></div>
+                            <div><a href="../Products/category.html">- Categories</a></div>
+                            <div><a href="../Products/color.html">- Color</a></div>
                         </div>
                     </p>
-                    <p><b><a href="">ABOUT US</a></b></p>
-                    <p><b><a href="">CONTACT</a></b></p>
+                    <p><b><a href="../AboutUs/about.html">ABOUT US</a></b></p>
+                    <p><b><a href="../ContactUs/contact.html">CONTACT</a></b></p>
                     <p><b><a href="../Login/signIn.html" class="account-login"><i class="fa-solid fa-right-to-bracket"></i> Sign in </a></b></p>
                     <p><b><a href="../Login/Information.html" class="account-logout"><i class="fa-solid fa-file-invoice"></i> User's Information</a></b></p>
                     <p><b><a href="#" class="account-logout signOutBtn"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a></b></p>   
                 </div>
             </div>
             
-            <div class="row">
+            <div class="row row1">
                 <div class="col-2">
                     <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"></i>
                 </div>
@@ -110,8 +113,8 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="filterForm">
+                    <form>
                         <H1 class="filterBigTitle">FILTER</H1>
-                        
                         <div class="row">
                             <div class="col-sm-12">
                                 <a class="titleFilter brandFilterBtn">
@@ -121,15 +124,15 @@
                             </div>
                             <div class="row brandFilterContent">
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="OPIFilter" name="filter" class="brandFilter" value="OPI"> 
+                                    <input type="checkbox" id="OPIFilter" name="filter" class="brandFilter filterCB" value="OPI"> 
                                     <label for="OPIFilter">O.P.I</label>
                                 </div>
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="EssieFilter" name="filter" class="brandFilter" value="Essie"> 
+                                    <input type="checkbox" id="EssieFilter" name="filter" class="brandFilter filterCB" value="Essie"> 
                                     <label for="EssieFilter">Essie</label>
                                 </div>
                                 <div class="col-sm-12">
-                                    <input type="checkbox" id="TenovertenFilter" name="filter" class="brandFilter" value="Tenoverten">
+                                    <input type="checkbox" id="TenovertenFilter" name="filter" class="brandFilter filterCB" value="Tenoverten">
                                     <label for="TenovertenFilter">Tenoverten</label> 
                                 </div>
                             </div>
@@ -146,15 +149,15 @@
                         </div>
                         <div class="row cateFilterContent">
                             <div class="col-sm-12">
-                                <input type="checkbox" id="NailPolishFilter" name="filter" class="cateFilter" value="Nail Polish">
+                                <input type="checkbox" id="NailPolishFilter" name="filter" class="cateFilter filterCB" value="Nail Polish">
                                 <label for="NailPolishFilter">Nail Polish</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="AccessoryFilter" name="filter" class="cateFilter" value="Accessory"> 
+                                <input type="checkbox" id="AccessoryFilter" name="filter" class="cateFilter filterCB" value="Accessory"> 
                                 <label for="AccessoryFilter">Accessory</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="ToolFilter" name="filter" class="cateFilter" value="Tool">
+                                <input type="checkbox" id="ToolFilter" name="filter" class="cateFilter filterCB" value="Tool">
                                 <label for="ToolFilter">Tool</label>    
                             </div>
                         </div>
@@ -169,27 +172,27 @@
                         </div>
                         <div class="row colorFilterContent">
                             <div class="col-sm-12">
-                                <input type="checkbox" id="BlackFilter" name="filter" class="colorFilter" value="Black"> 
+                                <input type="checkbox" id="BlackFilter" name="filter" class="colorFilter filterCB" value="Black"> 
                                 <label for="BlackFilter">Black</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="BlueFilter" name="filter" class="colorFilter" value="Blue">
+                                <input type="checkbox" id="BlueFilter" name="filter" class="colorFilter filterCB" value="Blue">
                                 <label for="BlueFilter">Blue</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="GreenFilter" name="filter" class="colorFilter" value="Green"> 
+                                <input type="checkbox" id="GreenFilter" name="filter" class="colorFilter filterCB" value="Green"> 
                                 <label for="GreenFilter">Green</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="PurpleFilter" name="filter" class="colorFilter" value="Purple"> 
+                                <input type="checkbox" id="PurpleFilter" name="filter" class="colorFilter filterCB" value="Purple"> 
                                 <label for="PurpleFilter">Purple</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="RedFilter" name="filter" class="colorFilter" value="Red">
+                                <input type="checkbox" id="RedFilter" name="filter" class="colorFilter filterCB" value="Red">
                                 <label for="RedFilter">Red</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="checkbox" id="YellowFilter" name="filter" class="colorFilter" value="Yellow"> 
+                                <input type="checkbox" id="YellowFilter" name="filter" class="colorFilter filterCB" value="Yellow"> 
                                 <label for="YellowFilter">Yellow</label>
                             </div>
                         </div>
@@ -198,15 +201,16 @@
                             <div class="col-sm-12">
                                 <div class="row" style="justify-content: center;">
                                     <div class="col-3 col-lg-12 col-xl-6 "><button class="applyBtn">Apply</button></div>
-                                    <div class="col-3 col-lg-12 col-xl-6"><button type="reset" class="resetBtn">Reset</button></div>
+                                    <div class="col-3 col-lg-12 col-xl-6"><button type="reset" class="resBtn">Reset</button></div>
                                 </div>
                             </div>
                         </div>
+                    </form>
                 </div>
             </div>
             
             <div class="col-lg-9">
-                <div class="col-12 sortByDropdown">
+                <!-- <div class="col-12 sortByDropdown">
                     <button class="sortByBtn">Sort by</button>
                     <div class="sortByDropdownContent">
                         <span>Price: Low to High</span> <br>
@@ -216,7 +220,7 @@
                         <span>Date: Old to New</span> <br>
                         <span>Date: New to Low</span>
                     </div>
-                </div>
+                </div> -->
                 <div class="itemList">
                     <div class="row itemShow">
                         
@@ -225,11 +229,85 @@
             </div>    
         </div>
     </section>
+    <footer class="container-fluid">
+        <h1 class="thankSen">We truly appreciate your access and also your support !</h1>
 
+        <div class="row" id="row">
+            <div class="col-sm-4" id="col-4">
+                <p id="pb"><b>Send feedback to us</b></p>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer" id="afooter"><b>Click here to feedback</b></a>
+            </div>
+            <div class="col-sm-3" id="col">
+                <a href="/Collection/collection.html" id="a"><b>Collections</b></a>
+                <div>
+                    <a href="/Collection/art/season.html" id="a">- Season</a> <br>
+                    <a href="/Collection/art/holiday.html" id="a">- Holiday</a><br>
+                    <a href="/Collection/art/kid.html" id="a">- Kid</a><br>
+                    <a href="/Collection/art/twinkle.html" id="a">- Twinkle</a><br>
+                    <a href="/Collection/art/crystal.html" id="a">- Crystal</a>
+                </div>
+            </div>
+            <div class="col-sm-2" id="col1">
+                <a href="/Products/Products.html" id="a"><b>Products</b></a>
+                <div>
+                    <p><a href="/Products/brand.html" id="a">- Brands</a></p>
+                    <p><a href="/Products/category.html" id="a">- Categories</a></p>
+                    <p><a href="/Products/color.html" id="a">- Colors</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <b  class="row" id="col"><a href="/AboutUs/about.html" id="a"> About Us</a></b>
+                <b class="row" id="col2"><a href="/ContactUs/contact.html" id="a">Contact Us</a></b>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- The Modal Footer -->
+    <div class="modal" id="footer">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+          <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+            <div>
+                <form action="#" class="foot">
+                            <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
+                            <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
+                            <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
+                            <label for="sub">Subject</label>
+                <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
+                            <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>  
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="../System.js"></script>
     <script src="../Cart.js"></script>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+        cartDisplay();
+    </script>
 </body>
 </html>

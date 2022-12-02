@@ -7,7 +7,8 @@ var data = {
             "name":"Decked to the Pines",
             "price":14.00,
             "img":["ID_001_01.jpg","ID_001_02.jpg","ID_001_03.jpg"],
-            "star":4.9,
+            "star":3.5,
+            "vote":11,
             "content":"-Bling on an edgy new attitude with this green long-lasting nail polish.<br>-Take your manicure to the next level with a gilded metallic finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
             "brand":["OPI"],
@@ -20,7 +21,8 @@ var data = {
             "name":"OPIm a Gem",
             "price":14.00,
             "img":["ID_002_01.jpg","ID_002_02.jpg","ID_002_03.jpg"],
-            "star":4,
+            "star":3.5,
+            "vote":15,
             "starRate":33,
             "content":"-Dazzle your next dinner party with a powerful black glitter long-lasting nail polish.<br>-Make a statement with a blinged-out glitter finish.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
@@ -34,7 +36,8 @@ var data = {
             "name":"Rhinestone Red-y",
             "price":14.00,
             "img":["ID_003_01.jpg","ID_003_02.jpg","ID_003_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":12,
             "content":"-Spread holiday joy with a sophisticated and versatile red long-lasting nail polish.<br>-The striking pearl finish will set you apart from the crowd this season.<br>-OPI's Infinite Shine is a three-step long lasting nail polish line that provides gel-like high shine and 11 days of wear.<br>-Use with Infinite Shine Primer and Infinite Shine Gloss for extended wear.<br>-Made in the USA.",
             "cmt":[],
             "brand":["OPI"],
@@ -47,7 +50,8 @@ var data = {
             "name":"Tealing Festive",
             "price":14.00,
             "img":["ID_004_01.jpg","ID_004_02.jpg","ID_004_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":20,
             "content":"-Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>-Express yourself through color with OPI Nail Lacquer and Infinite Shine. Available in a variety of shades to suit every mood, outfit, and occasion, use OPI to take your look to the next level. Stay classic with OPI Nail Lacquer in tried-and-true shades like Big Apple Red. Or get the look of gel without the commitment with OPI Infinite Shine.",
             "cmt":[],
             "brand":["OPI"],
@@ -60,7 +64,8 @@ var data = {
             "name":"Sleigh Bells Bling",
             "price":20.00,
             "img":["ID_005_01.jpg","ID_005_02.jpg","ID_005_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":29,
             "content":`
                 -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>
                 -Make your holiday manis major eye candy with a jewelry box of effects. In 15 iconic shades that sleigh-and are perfect for mixing and matching for multiple looks and moods.<br>
@@ -77,7 +82,8 @@ var data = {
             "name":"Charmed, Im Sure",
             "price":14.00,
             "img":["ID_006_01.jpg","ID_006_02.jpg","ID_006_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":10,
             "content":`
                 - Bling holiday cheer wherever you go with a rich fuchsia long-lasting nail polish.<br>
                 - Dial up your elegance with a shimmery finish.<br>   
@@ -96,7 +102,8 @@ var data = {
             "name":"Cherry",
             "price":12.00,
             "img":["ID_007_01.jpg","ID_007_02.jpg","ID_007_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":30,
             "content":`
                 -Cerise and shine. A beyond-bombshell red. Elegant and eternally modern. 0.45 fl oz/13.3 mL.<br>
                 <b>-8-free + cruelty-free + vegan:</b><br>
@@ -115,7 +122,8 @@ var data = {
             "name":"Church",
             "price":12.00,
             "img":["ID_008_01.jpg","ID_008_02.jpg","ID_008_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":21,
             "content":`
                 -Show-stopping Bordeaux, dense and deep. A midnight burgundy to savor for days. 0.45 fl oz/13.3 mL.<br>
                 <b>-8-free + cruelty-free + vegan:</b><br>
@@ -134,7 +142,8 @@ var data = {
             "name":"Jane",
             "price":20.00,
             "img":["ID_009_01.jpg","ID_009_02.jpg","ID_009_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":9,
             "content":`
                 -A milky neutral pink for an instant boost of brightness. Feminine and flattering. 0.45 fl oz/13.3 mL.<br>
                 <b>-8-free + cruelty-free + vegan:</b><br>
@@ -153,7 +162,8 @@ var data = {
             "name":"(Un)Guilty pleasures",
             "price":9.00,
             "img":["ID_010_01.jpg","ID_010_02.jpg","ID_010_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":14,
             "content":`
                 life is too short for regrets, so leave the guilt behind with this rich teal green vegan nail polish with blue undertones<br>
                 - inspired by your favorite (un)guilty pleasures, the new essie (un)guilty pleasures collection is all about saying yes to the things that make you happy and leaving the guilt behind.<br>
@@ -172,7 +182,8 @@ var data = {
             "name":"Tropic low",
             "price":10.00,
             "img":["ID_011_01.jpg","ID_011_02.jpg","ID_011_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":5,
             "content":`
                 <b><u>summer 2022</u></b><br>
                 steal the spotlight on the dance floor with this shimmering, mossy green nail polish with gold duochrome pearls (shimmer)<br>
@@ -193,7 +204,8 @@ var data = {
             "name":"Caught in the rain",
             "price":10.00,
             "img":["ID_012_01.jpg","ID_012_02.jpg","ID_012_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":8,
             "content":`
                 <b><u>(un)guilty pleasures cream green</u></b><br>
                 dance like no one's watching and enjoy that it's pouring with this muted neutral sage green vegan nail polish with gray undertones<br>
@@ -213,7 +225,8 @@ var data = {
             "name":"The Big Clip",
             "price":30.00,
             "img":["ID_013_01.jpg","ID_013_02.jpg","ID_013_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":2,
             "content":`
                 <b><u>Detail</u></b><br>
                 Start your pedicure off on the right foot with this durable, straight-edged toenail trimmer.<br>
@@ -233,7 +246,8 @@ var data = {
             "name":"Tool Roll",
             "price":38.00,
             "img":["ID_014_01.jpg","ID_014_02.jpg","ID_014_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":45,
             "content":`
                 <b><u>Detail</u></b><br>
                 Upgrade your drawer or cosmetic bag full of nail tools with our vegan leather tool roll. Store your Tenoverten manicure & pedicure tools in the roomy pouch, which folds over and secures with an elastic closure. 6.5" x 4" when open. <br>
@@ -249,7 +263,8 @@ var data = {
             "name":"Heart Shape Nail Charms",
             "price":4.00,
             "img":["ID_015_01.jpg","ID_015_02.jpg","ID_015_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":27,
             "content":`
                 - Material: Acrylic<br>
                 - Perfect for: Nail Art, Craft, Phone Pop Sockets Art etc.<br>
@@ -266,7 +281,8 @@ var data = {
             "name":"Metal Nail Charms",
             "price":3.5,
             "img":["ID_016_01.jpg","ID_016_02.jpg","ID_016_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":34,
             "content":`
                 - 50pcs mixed chrome cross nail charms, 10 different style includes cross, goat, key, star...<br>
                 - Size: 5-10mm<br>
@@ -285,7 +301,8 @@ var data = {
             "name":"Moon and Stars Decals",
             "price":3.5,
             "img":["ID_017_01.jpg","ID_017_02.jpg","ID_017_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":32,
             "content":`
                 - Create your own design with these gold stars and moon nail decals!<br>
                 - SIZE: The size of the temporary nail tattoo sheet is 9,6 x 6,6 cm (3 4/5 inch x 2 3/5 inch).<br>
@@ -302,7 +319,8 @@ var data = {
             "name":"Polar Light Crystals",
             "price":6.5,
             "img":["ID_018_01.jpg","ID_018_02.jpg","ID_018_03.jpg"],
-            "star":4.3,
+            "star":3.5,
+            "vote":40,
             "content":`
                 - Glass aurora geometrical crystals color changing super shine<br>
                 - Material: Glass<br>
@@ -399,6 +417,7 @@ $(document).ready(function(){
                 border: 2px solid black;
                 border-radius: 50%;
             `)
+            $('#accountLogoNav').attr("href","Login/Information.html")
         } else {
             $('.accountIcon').attr("src","../GeneralFormat/"+ava);
             $('.accountIcon').attr("style",`
@@ -407,6 +426,7 @@ $(document).ready(function(){
                 border: 2px solid black;
                 border-radius: 50%;
             `)
+            $('#accountLogoNav').attr("href","../Login/Information.html")
         }
         
     }
@@ -718,7 +738,7 @@ function productDetail(){
                                 <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
                                 <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
                                 <i class="fa-solid fa-star voting-star" style="color: #572C71;"></i>
-                                (${v.starRate})
+                                (${v.vote})
                             </div>
                         </div>
                         <div class="row">
@@ -757,24 +777,24 @@ function productDetail(){
                     </div>
                 </div>
             </div>
-            <hr width="70%" style="margin:auto">
-            <div class="row cmtPart">   
-                <div class="col-12"><b>Comments</b></div>
-                <div class="col-9 comment">
-                    <div class="row">
-                        <div class="col-3 cmtInfo">
-                            <img src="" alt="" width="100px" height="100px"> <br>
-                            Name
-                        </div>
-                        <div class="col-9">
-                            <div class="cmtContent">
-                                Comment sth in this box
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-                `;
+            <hr width="70%" style="margin:auto">`;
+            // <div class="row cmtPart">   
+            //     <div class="col-12"><b>Comments</b></div>
+            //     <div class="col-9 comment">
+            //         <div class="row">
+            //             <div class="col-3 cmtInfo">
+            //                 <img src="" alt="" width="100px" height="100px"> <br>
+            //                 Name
+            //             </div>
+            //             <div class="col-9">
+            //                 <div class="cmtContent">
+            //                     Comment sth in this box
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div>  
+                
             break;
         }
 
@@ -907,23 +927,26 @@ function displayItemProduct(items){
             cartList.push(cartItem);
         }
         localStorage.shopCart = JSON.stringify(cartList);
-        alert(localStorage.shopCart)
         $('.cartQuantity').html(parseInt(localStorage.cartQuan));
     });
 }
 
 
 //filter feature
-$('.applyBtn').click(function(){
+$('.applyBtn, .resBtn').click(function(){
+    if ($(this).hasClass("resBtn")){
+        $('.brandFilter:checked, .cateFilter:checked, .colorFilter:checked').prop('checked', false);
+    }
     let brandFilter = $('.brandFilter:checked');
-    let brandFilterList =[];
-    let cateFilter = $('.cateFilter:checked');
-    let cateFilterList = [];
-    let colorFilter = $('.colorFilter:checked');
-    let colorFilterList = [];
-    let productList = JSON.parse(localStorage.proList);
-    let productFilter = [];
-    let productFilterAfter =[];
+        let brandFilterList =[];
+        let cateFilter = $('.cateFilter:checked');
+        let cateFilterList = [];
+        let colorFilter = $('.colorFilter:checked');
+        let colorFilterList = [];
+        let productList = JSON.parse(localStorage.proList);
+        let productFilter = [];
+        let productFilterAfter =[];
+
     if (brandFilter.length > 0){
         brandFilter.each(function(){
             brandFilterList.push($(this).val());
@@ -993,8 +1016,8 @@ $('.applyBtn').click(function(){
     if (JSON.stringify(productFilter) == "[]" ){
         $('.itemShow').html("There's no item in this filter list");
     }
+    return false;
 })
-
 
 
 //==============================
