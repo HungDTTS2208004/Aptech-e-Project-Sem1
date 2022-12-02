@@ -165,9 +165,9 @@
             <div class="col-sm-2" id="col1">
                 <a href="/Products/Products.html" id="a"><b>Products</b></a>
                 <div>
-                    <p><a href="" id="a">- Brands</a></p>
-                    <p><a href="" id="a">- Categories</a></p>
-                    <p><a href="" id="a">- Colors</a></p>
+                    <p><a href="/Products/brand.html" id="a">- Brands</a></p>
+                    <p><a href="/Products/category.html" id="a">- Categories</a></p>
+                    <p><a href="/Products/color.html" id="a">- Colors</a></p>
                     
                 </div>
             </div>
@@ -177,6 +177,43 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- The Modal Footer -->
+    <div class="modal" id="footer">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+          <h1 class="modal-title" id="title"><b>Feedback Form</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+            <div>
+                <form action="#" class="foot">
+                            <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..."  class="in" required pattern="\w">
+                            <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..."  class="in" required>
+                            <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..."  class="in" required>
+                            <label for="sub">Subject</label>
+                <input type="text" id="sub" name="sub" placeholder="Subject..."  class="in" required>
+                            <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Your writing..." cols="5" rows="2" ></textarea required>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- The Modal Footer -->
