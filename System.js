@@ -558,7 +558,7 @@ $('.signIn-Btn').click(function(){
 // Sign In feature end
 
 // Sign Out feature start
-$('.signOutBtn').click(function(){
+$('.signOutBtn').click(function signOut(){
     localStorage.login = "false";
     localStorage.loginIndex = -1;
     if (window.location.href.slice(-10)=="index.html"){
