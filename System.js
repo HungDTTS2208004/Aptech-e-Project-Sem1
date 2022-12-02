@@ -776,24 +776,24 @@ function productDetail(){
                     </div>
                 </div>
             </div>
-            <hr width="70%" style="margin:auto">
-            <div class="row cmtPart">   
-                <div class="col-12"><b>Comments</b></div>
-                <div class="col-9 comment">
-                    <div class="row">
-                        <div class="col-3 cmtInfo">
-                            <img src="" alt="" width="100px" height="100px"> <br>
-                            Name
-                        </div>
-                        <div class="col-9">
-                            <div class="cmtContent">
-                                Comment sth in this box
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-                `;
+            <hr width="70%" style="margin:auto">`;
+            // <div class="row cmtPart">   
+            //     <div class="col-12"><b>Comments</b></div>
+            //     <div class="col-9 comment">
+            //         <div class="row">
+            //             <div class="col-3 cmtInfo">
+            //                 <img src="" alt="" width="100px" height="100px"> <br>
+            //                 Name
+            //             </div>
+            //             <div class="col-9">
+            //                 <div class="cmtContent">
+            //                     Comment sth in this box
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div>  
+                
             break;
         }
 
