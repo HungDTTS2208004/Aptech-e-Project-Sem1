@@ -401,32 +401,33 @@ if (localStorage.accountList==null){
 //show avatar of user
 $(document).ready(function(){
     if (localStorage.login == "false"){
-        // if (window.location.href.slice(-10)=="index.html"){
-            $('.accountIcon').attr("src","/GeneralFormat/AccountIcon.png");
-        // } else {
-        //     $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
-        // }
+        if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","GeneralFormat/AccountIcon.png");
+        } else {
+            $('.accountIcon').attr("src","../GeneralFormat/AccountIcon.png");
+        }
     
     } else {
         let ava = JSON.parse(localStorage.accountList)[localStorage.loginIndex].Avatar;
-        // if (window.location.href.slice(-10)=="index.html"){
-            $('.accountIcon').attr("src","/GeneralFormat/"+ava);
+        if (window.location.href.slice(-10)=="index.html"){
+            $('.accountIcon').attr("src","GeneralFormat/"+ava);
             $('.accountIcon').attr("style",`
                 width: 50px;
                 height: 69px;
                 border: 2px solid black;
                 border-radius: 50%;
             `)
-            $('#accountLogoNav').attr("href","/Login/Information.html")
-        // } else {
-        //     $('.accountIcon').attr("src","../GeneralFormat/"+ava);
-        //     $('.accountIcon').attr("style",`
-        //         width: 50px;
-        //         height: 69px;
-        //         border: 2px solid black;
-        //         border-radius: 50%;
-        //     `)
-        // }
+            $('#accountLogoNav').attr("href","Login/Information.html")
+        } else {
+            $('.accountIcon').attr("src","../GeneralFormat/"+ava);
+            $('.accountIcon').attr("style",`
+                width: 50px;
+                height: 69px;
+                border: 2px solid black;
+                border-radius: 50%;
+            `)
+            $('#accountLogoNav').attr("href","../Login/Information.html")
+        }
         
     }
 })
@@ -542,7 +543,7 @@ $('.signIn-Btn').click(function(){
     for (var i in accList){
         if (accountName == accList[i].name && accountPass == accList[i].password){
             localStorage.login = "true"
-            location.href = '/index.html';
+            location.href = '../index.html';
             c=0;
             localStorage.loginIndex = i;
             break;
@@ -563,7 +564,7 @@ $('.signOutBtn').click(function(){
     if (window.location.href.slice(-10)=="index.html"){
         location.href='index.html';
     } else {
-        location.href='/index.html';
+        location.href='../index.html';
     }
     localStorage.cartQuan = 0;
     localStorage.shopCart = "[]";
