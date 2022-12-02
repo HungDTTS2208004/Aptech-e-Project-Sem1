@@ -417,6 +417,7 @@ $(document).ready(function(){
                 border: 2px solid black;
                 border-radius: 50%;
             `)
+            $('#accountLogoNav').attr("href","/Login/Information.html")
         // } else {
         //     $('.accountIcon').attr("src","../GeneralFormat/"+ava);
         //     $('.accountIcon').attr("style",`
@@ -541,7 +542,7 @@ $('.signIn-Btn').click(function(){
     for (var i in accList){
         if (accountName == accList[i].name && accountPass == accList[i].password){
             localStorage.login = "true"
-            location.href = '../index.html';
+            location.href = '/index.html';
             c=0;
             localStorage.loginIndex = i;
             break;
@@ -562,7 +563,7 @@ $('.signOutBtn').click(function(){
     if (window.location.href.slice(-10)=="index.html"){
         location.href='index.html';
     } else {
-        location.href='../index.html';
+        location.href='/index.html';
     }
     localStorage.cartQuan = 0;
     localStorage.shopCart = "[]";
@@ -931,16 +932,20 @@ function displayItemProduct(items){
 
 
 //filter feature
-$('.applyBtn').click(function(){
+$('.applyBtn, .resBtn').click(function(){
+    if ($(this).hasClass("resBtn")){
+        $('.brandFilter:checked, .cateFilter:checked, .colorFilter:checked').prop('checked', false);
+    }
     let brandFilter = $('.brandFilter:checked');
-    let brandFilterList =[];
-    let cateFilter = $('.cateFilter:checked');
-    let cateFilterList = [];
-    let colorFilter = $('.colorFilter:checked');
-    let colorFilterList = [];
-    let productList = JSON.parse(localStorage.proList);
-    let productFilter = [];
-    let productFilterAfter =[];
+        let brandFilterList =[];
+        let cateFilter = $('.cateFilter:checked');
+        let cateFilterList = [];
+        let colorFilter = $('.colorFilter:checked');
+        let colorFilterList = [];
+        let productList = JSON.parse(localStorage.proList);
+        let productFilter = [];
+        let productFilterAfter =[];
+
     if (brandFilter.length > 0){
         brandFilter.each(function(){
             brandFilterList.push($(this).val());
