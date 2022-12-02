@@ -558,17 +558,11 @@ $('.signIn-Btn').click(function(){
 // Sign In feature end
 
 // Sign Out feature start
-$('.signOutBtn').click(function signOut(){
+$('.signOutBtn').click(function(){
     localStorage.login = "false";
     localStorage.loginIndex = -1;
-    if (window.location.href.slice(-10)=="index.html"){
-        location.href='index.html';
-    } else {
-        location.href='../index.html';
-    }
     localStorage.cartQuan = 0;
-    localStorage.shopCart = "[]";
-    
+    localStorage.shopCart = "[]";  
 })
 //Sign Out feature end
 

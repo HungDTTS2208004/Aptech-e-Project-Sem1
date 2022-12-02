@@ -262,7 +262,9 @@
         $('.addressInput').html('<input type="text" class="infoInput" id="addressInfo" value='+userInfo[localStorage.loginIndex].Address+'>');        
         $('.emailInput').html('<input type="text" class="infoInput" id="emailInfo" value='+userInfo[localStorage.loginIndex].Email+'>');
         $('.phoneInput').html('<input type="text" class="infoInput" id="phoneInfo" value='+userInfo[localStorage.loginIndex].Phone+'>');   
-
+        $('.signOutBtn').click(function(){
+            window.location.href = '../index.html'
+        })
     </script>
 </body>
 </html>
